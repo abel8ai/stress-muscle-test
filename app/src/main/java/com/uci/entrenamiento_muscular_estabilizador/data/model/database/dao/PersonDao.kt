@@ -1,10 +1,10 @@
-package com.uci.entrenamiento_muscular_estabilizador.model.database.dao
+package com.uci.entrenamiento_muscular_estabilizador.data.model.database.dao
 
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy.REPLACE
 import androidx.room.Query
-import com.uci.entrenamiento_muscular_estabilizador.model.database.entities.PersonEntity
+import com.uci.entrenamiento_muscular_estabilizador.data.model.database.entities.PersonEntity
 
 @Dao
 interface PersonDao {

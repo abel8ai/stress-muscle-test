@@ -1,10 +1,9 @@
-package com.uci.entrenamiento_muscular_estabilizador.view
+package com.uci.entrenamiento_muscular_estabilizador.ui.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.activity.viewModels
 import com.uci.entrenamiento_muscular_estabilizador.databinding.ActivityMainBinding
-import com.uci.entrenamiento_muscular_estabilizador.view_model.PersonViewModel
+import com.uci.entrenamiento_muscular_estabilizador.ui.view_model.PersonViewModel
 
 
 class MainActivity : AppCompatActivity() {

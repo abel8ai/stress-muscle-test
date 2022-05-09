@@ -1,4 +1,4 @@
-package com.uci.entrenamiento_muscular_estabilizador.model.database.entities
+package com.uci.entrenamiento_muscular_estabilizador.data.model.database.entities
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
