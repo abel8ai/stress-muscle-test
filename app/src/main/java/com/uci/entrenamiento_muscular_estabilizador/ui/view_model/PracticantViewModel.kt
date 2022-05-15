@@ -6,23 +6,22 @@ import androidx.lifecycle.ViewModel
 import androidx.room.Room
 import com.uci.entrenamiento_muscular_estabilizador.data.model.database.PersonDatabase
 import com.uci.entrenamiento_muscular_estabilizador.data.model.database.entities.PersonEntity
+import com.uci.entrenamiento_muscular_estabilizador.data.model.database.entities.PracticantEntity
 import dagger.hilt.android.lifecycle.HiltViewModel
-import dagger.hilt.android.scopes.ViewModelScoped
 import javax.inject.Inject
 
 @HiltViewModel
-class PersonViewModel @Inject constructor(val personDatabase: PersonDatabase) : ViewModel() {
+class PracticantViewModel@Inject constructor(private val personDatabase: PersonDatabase): ViewModel() {
 
-    val personModel = MutableLiveData<List<PersonEntity>>()
-    //private val personDatabase = Room.databaseBuilder(appContext, PersonDatabase::class.java, "database").build()
+    val practicantModel = MutableLiveData<List<PracticantEntity>>()
 
-    suspend fun getAllPersons() {
-        personModel.postValue(personDatabase.getPersonDao().getAllPersons())
+    suspend fun getAllPracticants() {
+        practicantModel.postValue(personDatabase.getPracticantDao().getAllPracticants())
     }
 
-    suspend fun addPerson(person:PersonEntity):Long {
+    suspend fun addPractricant(person:PersonEntity):Long {
         val success = personDatabase.getPersonDao().insertPerson(person)
-        personModel.postValue(personDatabase.getPersonDao().getAllPersons())
+        practicantModel.postValue(personDatabase.getPracticantDao().getAllPracticants())
         return success
     }
 }

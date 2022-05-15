@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Entrenamiento Muscular Estabilizador</string>
+    <string name="button_add">Adicionar Persona</string>
 </resources>

@@ -5,16 +5,17 @@ import androidx.room.Insert
 import androidx.room.OnConflictStrategy.REPLACE
 import androidx.room.Query
 import com.uci.entrenamiento_muscular_estabilizador.data.model.database.entities.PersonEntity
+import com.uci.entrenamiento_muscular_estabilizador.data.model.database.entities.PracticantEntity
 
 @Dao
-interface PersonDao {
+interface PracticantDao {
 
-    @Query("Select * from person_table")
-    suspend fun getAllPersons():List<PersonEntity>
-
-    @Insert(onConflict = REPLACE)
-    suspend fun insertAll(persons:List<PersonEntity>): List<Long>
+    @Query("Select * from practicant_table")
+    suspend fun getAllPracticants():List<PracticantEntity>
 
     @Insert(onConflict = REPLACE)
-    suspend fun insertPerson(person : PersonEntity):Long
+    suspend fun insertAll(practicants:List<PracticantEntity>): List<Long>
+
+    @Insert(onConflict = REPLACE)
+    suspend fun insertPracticant(practicant : PracticantEntity):Long
 }

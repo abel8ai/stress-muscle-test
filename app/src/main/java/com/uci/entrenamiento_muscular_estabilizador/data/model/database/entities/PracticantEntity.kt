@@ -2,23 +2,26 @@ package com.uci.entrenamiento_muscular_estabilizador.data.model.database.entitie
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
-import com.uci.entrenamiento_muscular_estabilizador.data.model.database.entities.PersonEntity
+import androidx.room.PrimaryKey
+import javax.annotation.Nullable
 
 @Entity(tableName = "practicant_table")
 data class PracticantEntity(
-    @ColumnInfo override val id: Int,
-    override val fullName: String,
-    override val gender: String,
-    override val age: Int,
-    override val height: Double,
-    override val weight: Double,
-    override val province: String,
-    override val municipality: String,
-    @ColumnInfo var aerobicExcercise: Boolean,
-    @ColumnInfo var spinning: Boolean,
-    @ColumnInfo var muscleTrainnig: Boolean,
-    @ColumnInfo var crossfit: Boolean,
-    @ColumnInfo var yoga: Boolean,
-    @ColumnInfo var pilates: Boolean,
-    @ColumnInfo var other: String,
-) : PersonEntity(id, fullName, gender, age, height, weight, province, municipality)
+    @Nullable
+    @PrimaryKey(autoGenerate = true)
+    @ColumnInfo(name = "person_id") val id : Int?,
+    @ColumnInfo(name = "full_name") val fullName: String,
+    @ColumnInfo(name = "gender") val gender: String,
+    @ColumnInfo(name = "age") val age: Int,
+    @ColumnInfo(name = "height") val height: Double,
+    @ColumnInfo(name = "weight") val weight: Double,
+    @ColumnInfo(name = "province") val province: String,
+    @ColumnInfo(name = "municipality") val municipality: String,
+    @ColumnInfo(name = "aerobic_exercise") var aerobicExercise: Boolean,
+    @ColumnInfo(name = "spinning") var spinning: Boolean,
+    @ColumnInfo(name = "muscle_training") var muscleTraining: Boolean,
+    @ColumnInfo(name = "crossfit") var crossfit: Boolean,
+    @ColumnInfo(name = "yoga") var yoga: Boolean,
+    @ColumnInfo(name = "pilates") var pilates: Boolean,
+    @ColumnInfo(name = "other") var other: String,
+)

@@ -2,17 +2,20 @@ package com.uci.entrenamiento_muscular_estabilizador.data.model.database.entitie
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
+import androidx.room.PrimaryKey
+import javax.annotation.Nullable
 
 @Entity(tableName = "athlete_table")
 data class AthleteEntity(
-    @ColumnInfo override val id: Int,
-    override val fullName: String,
-    override val gender: String,
-    override val age: Int,
-    override val height: Double,
-    override val weight: Double,
-    override val province: String,
-    override val municipality: String,
-    @ColumnInfo var sport: String? = null,
-    @ColumnInfo var yearsInSport: Int = 0
-) : PersonEntity(id, fullName, gender, age, height, weight, province, municipality)
+    @PrimaryKey(autoGenerate = true)
+    @ColumnInfo(name = "person_id") val id : Int?,
+    @ColumnInfo(name = "full_name") val fullName: String,
+    @ColumnInfo(name = "gender") val gender: String,
+    @ColumnInfo(name = "age") val age: Int,
+    @ColumnInfo(name = "height") val height: Double,
+    @ColumnInfo(name = "weight") val weight: Double,
+    @ColumnInfo(name = "province") val province: String,
+    @ColumnInfo(name = "municipality") val municipality: String,
+    @ColumnInfo(name = "sport") var sport: String? = null,
+    @ColumnInfo(name = "years_in_sport") var yearsInSport: Int
+)
