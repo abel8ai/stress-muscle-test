@@ -10,5 +10,8 @@ class PersonViewHolder(view:View):RecyclerView.ViewHolder(view){
     private val binding = ItemDocumentBinding.bind(view)
     fun bind(person:PersonEntity){
         binding.tvDocName.text = person.fullName
+        binding.cvElement.setOnClickListener{
+
+        }
     }
 }

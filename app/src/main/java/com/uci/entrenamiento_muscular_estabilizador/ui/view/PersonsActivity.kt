@@ -1,13 +1,16 @@
 package com.uci.entrenamiento_muscular_estabilizador.ui.view
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.activity.viewModels
+import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.uci.entrenamiento_muscular_estabilizador.R
 import com.uci.entrenamiento_muscular_estabilizador.data.model.database.entities.PersonEntity
 import com.uci.entrenamiento_muscular_estabilizador.databinding.ActivityPersonsBinding
+import com.uci.entrenamiento_muscular_estabilizador.databinding.DialogAddPersonBinding
 import com.uci.entrenamiento_muscular_estabilizador.ui.view.adapters.PersonAdapter
 import com.uci.entrenamiento_muscular_estabilizador.ui.view_model.PersonViewModel
 import dagger.hilt.android.AndroidEntryPoint
@@ -30,18 +33,20 @@ class PersonsActivity : AppCompatActivity() {
         initRecycleView()
         loadData()
         binding.favAddPerson.setOnClickListener {
-            addData()
+            addUserDialog()
         }
         personViewModel.personModel.observe(this, Observer {
             adapter = PersonAdapter(it)
             binding.rvPersonList.adapter = adapter
         })
     }
+
     private fun initRecycleView() {
         adapter = PersonAdapter(list)
         binding.rvPersonList.layoutManager = LinearLayoutManager(this)
         binding.rvPersonList.adapter = adapter
     }
+
     private fun loadData() {
         CoroutineScope(Dispatchers.IO).launch {
             personViewModel.getAllPersons()
@@ -62,6 +67,21 @@ class PersonsActivity : AppCompatActivity() {
 
 
             }
+        }
+    }
+
+    private fun addUserDialog() {
+        val bindingForm: DialogAddPersonBinding = DialogAddPersonBinding.inflate(layoutInflater)
+        //val nameField = bindingForm.enterUserName
+        //val passField = bindingForm.enterUserPass
+        //val repPassField = bindingForm.repeatUserPass
+
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle(resources.getString(R.string.dialog_record_add_user))
+        builder.setView(bindingForm.root)
+        builder.create()
+        builder.setPositiveButton(resources.getString(R.string.button_add)) { dialog, which ->
+
         }
     }
 }
