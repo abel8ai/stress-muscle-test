@@ -10,13 +10,6 @@
         android:id="@+id/rv_person_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
-    <ProgressBar
-        android:id="@+id/pb_loading"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:visibility="gone"/>
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fav_add_person"
         android:background="@drawable/add_24"

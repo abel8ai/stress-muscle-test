@@ -5,6 +5,9 @@
       <map>
         <entry key="..\:/Users/Abel/AndroidStudioProjects/EntrenamientoMuscularEstabilizador/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/Abel/AndroidStudioProjects/EntrenamientoMuscularEstabilizador/app/src/main/res/layout/activity_persons.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Abel/AndroidStudioProjects/EntrenamientoMuscularEstabilizador/app/src/main/res/layout/dialog_add_athlete.xml" value="0.24739583333333334" />
+        <entry key="..\:/Users/Abel/AndroidStudioProjects/EntrenamientoMuscularEstabilizador/app/src/main/res/layout/dialog_add_person.xml" value="0.264" />
+        <entry key="..\:/Users/Abel/AndroidStudioProjects/EntrenamientoMuscularEstabilizador/app/src/main/res/layout/dialog_add_practicant.xml" value="0.24739583333333334" />
         <entry key="..\:/Users/Abel/AndroidStudioProjects/EntrenamientoMuscularEstabilizador/app/src/main/res/layout/form_add_user.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/Abel/AndroidStudioProjects/EntrenamientoMuscularEstabilizador/app/src/main/res/layout/item_document.xml" value="0.22826086956521738" />
       </map>
