@@ -1,9 +1,14 @@
 <resources>
     <string name="app_name">Entrenamiento Muscular Estabilizador</string>
     <string name="button_add">Adicionar</string>
+    <string name="button_accept">Aceptar</string>
     <string name="button_cancel">Cancelar</string>
     <string name="dialog_add_athlete">Adicionar Atleta</string>
     <string name="dialog_add_practicant">Adicionar Practicante</string>
+
+    <string name="dialog_block_1">Bloque 1</string>
+    <string name="dialog_block_2">Bloque 2</string>
+    <string name="dialog_block_3">Bloque 3</string>
 
     <string-array name="genders">
         <item>Masculino</item>

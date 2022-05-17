@@ -108,7 +108,6 @@ class PersonsActivity : AppCompatActivity() {
         builder.setTitle(resources.getString(R.string.dialog_add_practicant))
         builder.setView(bindingForm.root)
         builder.setCancelable(false)
-        builder.create()
         builder.setNegativeButton(resources.getString(R.string.button_cancel)) { dialog, which ->
             dialog.dismiss()
         }
@@ -136,6 +135,8 @@ class PersonsActivity : AppCompatActivity() {
                 practicantViewModel.addPractricant(practicant)
             }
         }
+        builder.create()
+        builder.show()
     }
     private fun addAthleteDialog() {
         val bindingForm: DialogAddAthleteBinding =
@@ -151,7 +152,6 @@ class PersonsActivity : AppCompatActivity() {
         builder.setTitle(resources.getString(R.string.dialog_add_athlete))
         builder.setView(bindingForm.root)
         builder.setCancelable(false)
-        builder.create()
         builder.setNegativeButton(resources.getString(R.string.button_cancel)) { dialog, which ->
             dialog.dismiss()
         }
@@ -165,7 +165,7 @@ class PersonsActivity : AppCompatActivity() {
             val province = bindingForm.etProvincia.text.toString()
             val municip = bindingForm.etMunicipio.text.toString()
             val sport = bindingForm.etDeporte.text.toString()
-            val yearsInSport = bindingForm.etAnnos.toString().toInt()
+            val yearsInSport = bindingForm.etAnnos.text.toString().toInt()
 
             val athlete = AthleteEntity(
                 null, "$name $lastName", gender, age, height, weight,
@@ -175,5 +175,7 @@ class PersonsActivity : AppCompatActivity() {
                 athleteViewModel.addAthlete(athlete)
             }
         }
+        builder.create()
+        builder.show()
     }
 }

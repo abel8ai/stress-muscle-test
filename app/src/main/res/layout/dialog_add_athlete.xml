@@ -90,7 +90,7 @@
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_weight="1"
+            android:layout_weight="0.5"
             android:layout_height="match_parent"
             android:orientation="horizontal"
             android:gravity="center_vertical">
@@ -106,6 +106,7 @@
                 android:id="@+id/et_edad"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:inputType="number"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:layout_marginStart="16dp"/>
 
@@ -137,6 +138,7 @@
             <EditText
                 android:id="@+id/et_estatura"
                 android:layout_width="match_parent"
+                android:inputType="numberDecimal"
                 android:layout_height="wrap_content"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:layout_marginStart="16dp"
@@ -161,6 +163,7 @@
             <EditText
                 android:id="@+id/et_peso"
                 android:layout_width="match_parent"
+                android:inputType="numberDecimal"
                 android:layout_height="wrap_content"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:layout_marginStart="16dp"/>
@@ -252,6 +255,7 @@
                     android:id="@+id/et_annos"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:inputType="number"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:layout_marginStart="16dp"/>
 

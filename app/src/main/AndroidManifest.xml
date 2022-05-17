@@ -3,13 +3,22 @@
     package="com.uci.entrenamiento_muscular_estabilizador">
 
     <application
+        android:name=".EntrenaminetoMusculoEstabilizador"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:name=".EntrenaminetoMusculoEstabilizador"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EntrenamientoMuscularEstabilizador">
+        <activity
+            android:name=".ui.view.TestsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.EvaluationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.view.PersonDetailsActivity"
+            android:exported="false" />
         <activity
             android:name=".ui.view.PersonsActivity"
             android:exported="true" />

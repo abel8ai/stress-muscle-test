@@ -3,6 +3,7 @@ package com.uci.entrenamiento_muscular_estabilizador.data.model.database.entitie
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import java.io.Serializable
 import javax.annotation.Nullable
 
 @Entity(tableName = "practicant_table")
@@ -23,5 +24,25 @@ data class PracticantEntity(
     @ColumnInfo(name = "crossfit") var crossfit: Boolean,
     @ColumnInfo(name = "yoga") var yoga: Boolean,
     @ColumnInfo(name = "pilates") var pilates: Boolean,
-    @ColumnInfo(name = "other") var other: String,
-)
+    @ColumnInfo(name = "other") var other: String
+): Serializable {
+    @ColumnInfo(name = "meassure_adb60") var meassureAdb60: Double? = 0.0
+    @ColumnInfo(name = "meassure_pp") var meassurePp: Double? = 0.0
+    @ColumnInfo(name = "meassure_pld") var meassurePld: Double? = 0.0
+    @ColumnInfo(name = "meassure_pli") var meassurePli: Double? = 0.0
+    @ColumnInfo(name = "meassure_ismt") var meassureIsmt: Double? = 0.0
+    @ColumnInfo(name = "meassure_cs") var meassureCs: Double? = 0.0
+    @ColumnInfo(name = "meassure_cn") var meassureCn: Double? = 0.0
+    @ColumnInfo(name = "meassure_isocuad") var meassureIsocuad: Double? = 0.0
+    @ColumnInfo(name = "meassure_pd") var meassurePd: Double? = 0.0
+
+    @ColumnInfo(name = "eval_adb60") var evalAdb60: String? = ""
+    @ColumnInfo(name = "eval_pp") var evalPp: String? = ""
+    @ColumnInfo(name = "eval_pld") var evalPld: String? = ""
+    @ColumnInfo(name = "eval_pli") var evalPli: String? = ""
+    @ColumnInfo(name = "eval_ismt") var evalIsmt: String? = ""
+    @ColumnInfo(name = "eval_cs") var evalCs: String? = ""
+    @ColumnInfo(name = "eval_cn") var evalCn: String? = ""
+    @ColumnInfo(name = "eval_isocuad") var evalIsocuad: String? = ""
+    @ColumnInfo(name = "eval_pd") var evalPd: String? = ""
+}
