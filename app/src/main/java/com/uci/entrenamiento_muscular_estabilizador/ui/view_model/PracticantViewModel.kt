@@ -10,6 +10,8 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import org.apache.poi.hssf.usermodel.HSSFWorkbook
 import org.apache.poi.poifs.filesystem.POIFSFileSystem
 import org.apache.poi.ss.usermodel.CellType
+import java.io.File
+import java.io.FileOutputStream
 import javax.inject.Inject
 
 @HiltViewModel
@@ -28,7 +30,7 @@ class PracticantViewModel@Inject constructor(private val personDatabase: PersonD
     }
     fun evaluateTest(testType : TestType, age:Int, gender: String, measure:Double):String {
         // Obtain specific test row
-        val baseRow = ((age-7)*20)+3
+        val baseRow = ((age-7)*20)+2
         var genderValue = 0
         if (gender == "Masculino")
             genderValue = 1
@@ -48,5 +50,13 @@ class PracticantViewModel@Inject constructor(private val personDatabase: PersonD
         val cell = mySheet.getRow(row).getCell(6)
         val evaluator = myWorkBook.creationHelper.createFormulaEvaluator()
         return evaluator.evaluate(cell).toString()
+    }
+    fun exportData(){
+        val workbook = HSSFWorkbook()
+        val practicantsheet = workbook.createSheet()
+
+        val out = FileOutputStream(File("results.xlsx"))
+        workbook.write(out)
+        out.close()
     }
 }

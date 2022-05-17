@@ -21,7 +21,7 @@ class TestsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityTestsBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        val result = athleteViewModel.evaluateTest(TestType.ISMT,9,"Masculino",156.0)
+        val result = athleteViewModel.evaluateTest(TestType.ISOCUAD,27,"Femenino",189.0)
         binding.tv.text = result
     }
 

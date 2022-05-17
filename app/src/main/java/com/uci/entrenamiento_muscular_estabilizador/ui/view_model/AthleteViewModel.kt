@@ -29,7 +29,7 @@ class AthleteViewModel @Inject constructor(private val personDatabase: PersonDat
     }
     fun evaluateTest(testType : TestType, age:Int, gender: String, measure:Double):String {
         // Obtain specific test row
-        val baseRow = ((age-7)*20)+3
+        val baseRow = ((age-7)*20)+2
         var genderValue = 0
         if (gender == "Masculino")
             genderValue = 1
@@ -48,6 +48,6 @@ class AthleteViewModel @Inject constructor(private val personDatabase: PersonDat
         // Get value in result column (6)
         val cell = mySheet.getRow(row).getCell(6)
         val evaluator = myWorkBook.creationHelper.createFormulaEvaluator()
-        return evaluator.evaluate(cell).toString()
+        return evaluator.evaluate(cell).stringValue
     }
 }
