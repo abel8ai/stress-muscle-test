@@ -26,15 +26,15 @@ data class PracticantEntity(
     @ColumnInfo(name = "pilates") var pilates: Boolean,
     @ColumnInfo(name = "other") var other: String
 ): Serializable {
-    @ColumnInfo(name = "meassure_adb60") var meassureAdb60: Double? = 0.0
-    @ColumnInfo(name = "meassure_pp") var meassurePp: Double? = 0.0
-    @ColumnInfo(name = "meassure_pld") var meassurePld: Double? = 0.0
-    @ColumnInfo(name = "meassure_pli") var meassurePli: Double? = 0.0
-    @ColumnInfo(name = "meassure_ismt") var meassureIsmt: Double? = 0.0
-    @ColumnInfo(name = "meassure_cs") var meassureCs: Double? = 0.0
-    @ColumnInfo(name = "meassure_cn") var meassureCn: Double? = 0.0
-    @ColumnInfo(name = "meassure_isocuad") var meassureIsocuad: Double? = 0.0
-    @ColumnInfo(name = "meassure_pd") var meassurePd: Double? = 0.0
+    @ColumnInfo(name = "measure_adb60") var measureAdb60: Double? = 0.0
+    @ColumnInfo(name = "measure_pp") var measurePp: Double? = 0.0
+    @ColumnInfo(name = "measure_pld") var measurePld: Double? = 0.0
+    @ColumnInfo(name = "measure_pli") var measurePli: Double? = 0.0
+    @ColumnInfo(name = "measure_ismt") var measureIsmt: Double? = 0.0
+    @ColumnInfo(name = "measure_cs") var measureCs: Double? = 0.0
+    @ColumnInfo(name = "measure_cn") var measureCn: Double? = 0.0
+    @ColumnInfo(name = "measure_isocuad") var measureIsocuad: Double? = 0.0
+    @ColumnInfo(name = "measure_pd") var measurePd: Double? = 0.0
 
     @ColumnInfo(name = "eval_adb60") var evalAdb60: String? = ""
     @ColumnInfo(name = "eval_pp") var evalPp: String? = ""

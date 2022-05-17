@@ -1,33 +1,28 @@
 package com.uci.entrenamiento_muscular_estabilizador.ui.view
 
 import android.os.Bundle
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import com.uci.entrenamiento_muscular_estabilizador.core.TestType
 import com.uci.entrenamiento_muscular_estabilizador.databinding.ActivityTestsBinding
+import com.uci.entrenamiento_muscular_estabilizador.ui.view_model.AthleteViewModel
+import com.uci.entrenamiento_muscular_estabilizador.ui.view_model.PracticantViewModel
+import dagger.hilt.android.AndroidEntryPoint
 import org.apache.poi.hssf.usermodel.HSSFWorkbook
 import org.apache.poi.poifs.filesystem.POIFSFileSystem
 import org.apache.poi.ss.usermodel.CellType
 
-
+@AndroidEntryPoint
 class TestsActivity : AppCompatActivity() {
     private lateinit var binding: ActivityTestsBinding
+    private val practicantViewModel: PracticantViewModel by viewModels()
+    private val athleteViewModel: AthleteViewModel by viewModels()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityTestsBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        evaluateTest()
+        val result = athleteViewModel.evaluateTest(TestType.ISMT,9,"Masculino",156.0)
+        binding.tv.text = result
     }
 
-    fun evaluateTest() {
-        val myInput = assets.open("testResult.xls");
-        val myFileSystem = POIFSFileSystem(myInput)
-        val myWorkBook = HSSFWorkbook(myFileSystem)
-        // Get the first sheet from workbook
-        val mySheet = myWorkBook.getSheetAt(0)
-        // We now need something to iterate through the cells.
-        mySheet.getRow(3).createCell(5,CellType.NUMERIC).setCellValue(25.0)
-        val cell = mySheet.getRow(3).getCell(6)
-        val evaluator = myWorkBook.creationHelper.createFormulaEvaluator()
-        val result = evaluator.evaluate(cell)
-        binding.tv.text = result.stringValue
-    }
 }
