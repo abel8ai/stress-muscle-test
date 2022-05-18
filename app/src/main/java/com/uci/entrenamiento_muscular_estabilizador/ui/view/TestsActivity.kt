@@ -8,9 +8,6 @@ import com.uci.entrenamiento_muscular_estabilizador.databinding.ActivityTestsBin
 import com.uci.entrenamiento_muscular_estabilizador.ui.view_model.AthleteViewModel
 import com.uci.entrenamiento_muscular_estabilizador.ui.view_model.PracticantViewModel
 import dagger.hilt.android.AndroidEntryPoint
-import org.apache.poi.hssf.usermodel.HSSFWorkbook
-import org.apache.poi.poifs.filesystem.POIFSFileSystem
-import org.apache.poi.ss.usermodel.CellType
 
 @AndroidEntryPoint
 class TestsActivity : AppCompatActivity() {

@@ -10,8 +10,7 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import org.apache.poi.hssf.usermodel.HSSFWorkbook
 import org.apache.poi.poifs.filesystem.POIFSFileSystem
 import org.apache.poi.ss.usermodel.CellType
-import java.io.File
-import java.io.FileOutputStream
+import org.apache.poi.ss.usermodel.Workbook
 import javax.inject.Inject
 
 @HiltViewModel
@@ -51,12 +50,85 @@ class PracticantViewModel@Inject constructor(private val personDatabase: PersonD
         val evaluator = myWorkBook.creationHelper.createFormulaEvaluator()
         return evaluator.evaluate(cell).toString()
     }
-    fun exportData(){
-        val workbook = HSSFWorkbook()
-        val practicantsheet = workbook.createSheet()
+    suspend fun createPracticantSheet(workbook : Workbook){
+        val practicantsheet = workbook.createSheet("Practicantes")
+        val practicantList = personDatabase.getPracticantDao().getAllPracticants()
+        // Create Header
+        val head = practicantsheet.createRow(0)
+        head.createCell(0).setCellValue("Nombre y Apellidos")
+        head.createCell(1).setCellValue("Género")
+        head.createCell(2).setCellValue("Edad")
+        head.createCell(3).setCellValue("Estatura")
+        head.createCell(4).setCellValue("Peso")
+        head.createCell(5).setCellValue("Provincia")
+        head.createCell(6).setCellValue("Municipio")
 
-        val out = FileOutputStream(File("results.xlsx"))
-        workbook.write(out)
-        out.close()
+        head.createCell(7).setCellValue("Ejercicio Aerobio")
+        head.createCell(8).setCellValue("Spinning")
+        head.createCell(9).setCellValue("Entrenamiento muscular")
+        head.createCell(10).setCellValue("Crossfit")
+        head.createCell(11).setCellValue("Yoga")
+        head.createCell(12).setCellValue("Pilates")
+        head.createCell(13).setCellValue("Otro")
+
+        head.createCell(14).setCellValue("ADB60")
+        head.createCell(15).setCellValue("Eval_ADB60")
+        head.createCell(16).setCellValue("PP")
+        head.createCell(17).setCellValue("Eval_PP")
+        head.createCell(18).setCellValue("PLD")
+        head.createCell(19).setCellValue("Eval_PLD")
+        head.createCell(20).setCellValue("PLI")
+        head.createCell(21).setCellValue("Eval_PLI")
+        head.createCell(22).setCellValue("ISMT")
+        head.createCell(23).setCellValue("Eval_")
+        head.createCell(24).setCellValue("CS")
+        head.createCell(25).setCellValue("Eval_CS")
+        head.createCell(26).setCellValue("CN")
+        head.createCell(27).setCellValue("Eval_CN")
+        head.createCell(28).setCellValue("ISOCUAD")
+        head.createCell(29).setCellValue("Eval_ISOCUAD")
+        head.createCell(30).setCellValue("PD")
+        head.createCell(31).setCellValue("Eval_PD")
+
+        var i = 1
+        practicantList.forEach { practicant ->
+            val row = practicantsheet.createRow(i)
+            row.createCell(0).setCellValue(practicant.fullName)
+            row.createCell(1).setCellValue(practicant.gender)
+            row.createCell(2).setCellValue(practicant.age.toString())
+            row.createCell(3).setCellValue(practicant.height)
+            row.createCell(4).setCellValue(practicant.weight)
+            row.createCell(5).setCellValue(practicant.province)
+            row.createCell(6).setCellValue(practicant.municipality)
+
+            row.createCell(7).setCellValue(practicant.aerobicExercise)
+            row.createCell(8).setCellValue(practicant.spinning)
+            row.createCell(9).setCellValue(practicant.muscleTraining)
+            row.createCell(10).setCellValue(practicant.crossfit)
+            row.createCell(11).setCellValue(practicant.yoga)
+            row.createCell(12).setCellValue(practicant.pilates)
+            row.createCell(13).setCellValue(practicant.other)
+
+            row.createCell(14).setCellValue(practicant.measureAdb60)
+            row.createCell(15).setCellValue(practicant.evalAdb60)
+            row.createCell(16).setCellValue(practicant.measurePp)
+            row.createCell(17).setCellValue(practicant.evalPp)
+            row.createCell(18).setCellValue(practicant.measurePld)
+            row.createCell(19).setCellValue(practicant.evalPld)
+            row.createCell(20).setCellValue(practicant.measurePli)
+            row.createCell(21).setCellValue(practicant.evalPli)
+            row.createCell(22).setCellValue(practicant.measureIsmt)
+            row.createCell(23).setCellValue(practicant.evalIsmt)
+            row.createCell(24).setCellValue(practicant.measureCs)
+            row.createCell(25).setCellValue(practicant.evalCs)
+            row.createCell(26).setCellValue(practicant.measureCn)
+            row.createCell(27).setCellValue(practicant.evalCn)
+            row.createCell(28).setCellValue(practicant.measureIsocuad)
+            row.createCell(29).setCellValue(practicant.evalIsocuad)
+            row.createCell(30).setCellValue(practicant.measurePd)
+            row.createCell(31).setCellValue(practicant.evalPd)
+
+            i++
+        }
     }
 }

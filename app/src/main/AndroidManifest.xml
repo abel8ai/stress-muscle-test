@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.uci.entrenamiento_muscular_estabilizador">
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:name=".EntrenaminetoMusculoEstabilizador"
         android:allowBackup="true"
@@ -12,9 +15,6 @@
         android:theme="@style/Theme.EntrenamientoMuscularEstabilizador">
         <activity
             android:name=".ui.view.TestsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.view.EvaluationActivity"
             android:exported="false" />
         <activity
             android:name=".ui.view.PersonDetailsActivity"

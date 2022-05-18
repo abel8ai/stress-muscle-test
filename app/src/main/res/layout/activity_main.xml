@@ -10,12 +10,23 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         android:id="@+id/bt_practicant_list"
+        android:text="practicant"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
     <Button
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:id="@+id/bt_athlete_list"
+        android:text="athlete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="export"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/bt_export"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
