@@ -7,12 +7,9 @@ import com.uci.entrenamiento_muscular_estabilizador.core.TestType
 import com.uci.entrenamiento_muscular_estabilizador.data.model.database.PersonDatabase
 import com.uci.entrenamiento_muscular_estabilizador.data.model.database.entities.PracticantEntity
 import dagger.hilt.android.lifecycle.HiltViewModel
-import org.apache.commons.collections4.IterableUtils
 import org.apache.poi.hssf.usermodel.HSSFWorkbook
 import org.apache.poi.poifs.filesystem.POIFSFileSystem
 import org.apache.poi.ss.usermodel.CellType
-import java.io.File
-import java.io.FileOutputStream
 import javax.inject.Inject
 
 @HiltViewModel
@@ -74,23 +71,23 @@ class PracticantViewModel@Inject constructor(private val personDatabase: PersonD
             row.createCell(12).setCellValue(practicant.pilates)
             row.createCell(13).setCellValue(practicant.other)
 
-            row.createCell(14).setCellValue(practicant.measureAdb60!!)
+            row.createCell(14).setCellValue(practicant.measureAdb60)
             row.createCell(15).setCellValue(practicant.evalAdb60)
-            row.createCell(16).setCellValue(practicant.measurePp!!)
+            row.createCell(16).setCellValue(practicant.measurePp)
             row.createCell(17).setCellValue(practicant.evalPp)
-            row.createCell(18).setCellValue(practicant.measurePld!!)
+            row.createCell(18).setCellValue(practicant.measurePld)
             row.createCell(19).setCellValue(practicant.evalPld)
-            row.createCell(20).setCellValue(practicant.measurePli!!)
+            row.createCell(20).setCellValue(practicant.measurePli)
             row.createCell(21).setCellValue(practicant.evalPli)
-            row.createCell(22).setCellValue(practicant.measureIsmt!!)
+            row.createCell(22).setCellValue(practicant.measureIsmt)
             row.createCell(23).setCellValue(practicant.evalIsmt)
-            row.createCell(24).setCellValue(practicant.measureCs!!)
+            row.createCell(24).setCellValue(practicant.measureCs)
             row.createCell(25).setCellValue(practicant.evalCs)
-            row.createCell(26).setCellValue(practicant.measureCn!!)
+            row.createCell(26).setCellValue(practicant.measureCn)
             row.createCell(27).setCellValue(practicant.evalCn)
-            row.createCell(28).setCellValue(practicant.measureIsocuad!!)
+            row.createCell(28).setCellValue(practicant.measureIsocuad)
             row.createCell(29).setCellValue(practicant.evalIsocuad)
-            row.createCell(30).setCellValue(practicant.measurePd!!)
+            row.createCell(30).setCellValue(practicant.measurePd)
             row.createCell(31).setCellValue(practicant.evalPd)
 
             i++
