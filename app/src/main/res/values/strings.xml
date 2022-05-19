@@ -5,6 +5,7 @@
     <string name="button_cancel">Cancelar</string>
     <string name="dialog_add_athlete">Adicionar Atleta</string>
     <string name="dialog_add_practicant">Adicionar Practicante</string>
+    <string name="mandatory_field">*Campo obligatorio*</string>
 
     <string name="dialog_block_1">Bloque 1</string>
     <string name="dialog_block_2">Bloque 2</string>

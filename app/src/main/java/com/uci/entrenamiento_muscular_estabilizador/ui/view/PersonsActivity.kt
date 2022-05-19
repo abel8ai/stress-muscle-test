@@ -1,5 +1,6 @@
 package com.uci.entrenamiento_muscular_estabilizador.ui.view
 
+import android.graphics.Color
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import androidx.activity.viewModels
@@ -31,8 +32,8 @@ class PersonsActivity : AppCompatActivity() {
     private lateinit var athleteAdapter: AthleteAdapter
     private val athletelist = emptyList<AthleteEntity>()
     private val practicantList = emptyList<PracticantEntity>()
-    private var isAthlete : Boolean = false
-    private var isPracticant : Boolean = false
+    private var isAthlete: Boolean = false
+    private var isPracticant: Boolean = false
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -55,13 +56,12 @@ class PersonsActivity : AppCompatActivity() {
             else if (isPracticant)
                 addPracticantDialog()
         }
-        if (isAthlete){
+        if (isAthlete) {
             athleteViewModel.athleteModel.observe(this, Observer {
                 athleteAdapter = AthleteAdapter(it)
                 binding.rvPersonList.adapter = athleteAdapter
             })
-        }
-        else if (isPracticant){
+        } else if (isPracticant) {
             practicantViewModel.practicantModel.observe(this, Observer {
                 practicantAdapter = PracticantAdapter(it)
                 binding.rvPersonList.adapter = practicantAdapter
@@ -72,11 +72,10 @@ class PersonsActivity : AppCompatActivity() {
 
     private fun initRecycleView() {
         binding.rvPersonList.layoutManager = LinearLayoutManager(this)
-        if (isAthlete){
+        if (isAthlete) {
             athleteAdapter = AthleteAdapter(athletelist)
             binding.rvPersonList.adapter = athleteAdapter
-        }
-        else if (isPracticant){
+        } else if (isPracticant) {
             practicantAdapter = PracticantAdapter(practicantList)
             binding.rvPersonList.adapter = practicantAdapter
         }
@@ -102,42 +101,76 @@ class PersonsActivity : AppCompatActivity() {
             android.R.layout.simple_spinner_item,
             resources.getStringArray(R.array.genders)
         )
+        val hint = resources.getString(R.string.mandatory_field)
         bindingForm.spinnerSexo.adapter = adapter
-
         val builder = AlertDialog.Builder(this)
         builder.setTitle(resources.getString(R.string.dialog_add_practicant))
         builder.setView(bindingForm.root)
         builder.setCancelable(false)
-        builder.setNegativeButton(resources.getString(R.string.button_cancel)) { dialog, which ->
+        builder.create()
+        val dialog = builder.show()
+        bindingForm.btCancelar.setOnClickListener {
             dialog.dismiss()
         }
-        builder.setPositiveButton(resources.getString(R.string.button_add)) { dialog, which ->
-            val name = bindingForm.etNombre.text.toString()
-            val lastName = bindingForm.etApellidos.text.toString()
-            val gender = bindingForm.spinnerSexo.selectedItem.toString()
-            val age = bindingForm.etEdad.text.toString().toInt()
-            val height = bindingForm.etEstatura.text.toString().toDouble()
-            val weight = bindingForm.etPeso.text.toString().toDouble()
-            val province = bindingForm.etProvincia.text.toString()
-            val municip = bindingForm.etMunicipio.text.toString()
-            val aerobics = bindingForm.cbEjercicioAerobio.isChecked
-            val spinning = bindingForm.cbSpinning.isChecked
-            val muscle = bindingForm.cbEntrenamientoMusculacion.isChecked
-            val yoga = bindingForm.cbYoga.isChecked
-            val pilates = bindingForm.cbPilates.isChecked
-            val crossfit = bindingForm.cbCrossfit.isChecked
-            val other = bindingForm.etOtro.text.toString()
-            val practicant = PracticantEntity(
-                null, "$name $lastName", gender, age, height, weight,
-                province, municip,aerobics,spinning,muscle,crossfit,yoga,pilates,other
-            )
-            CoroutineScope(Dispatchers.IO).launch {
-                practicantViewModel.addPractricant(practicant)
+        bindingForm.btAdicionar.setOnClickListener {
+            if (!validAthleteFields(bindingForm)) {
+                if (bindingForm.etNombre.text.isEmpty()) {
+                    bindingForm.etNombre.hint = hint
+                    bindingForm.etNombre.setHintTextColor(Color.RED)
+                }
+                if (bindingForm.etApellidos.text.isEmpty()) {
+                    bindingForm.etApellidos.hint = hint
+                    bindingForm.etApellidos.setHintTextColor(Color.RED)
+                }
+                if (bindingForm.etEdad.text.isEmpty()) {
+                    bindingForm.etEdad.hint = hint
+                    bindingForm.etEdad.setHintTextColor(Color.RED)
+                }
+                if (bindingForm.etEstatura.text.isEmpty()) {
+                    bindingForm.etEstatura.hint = hint
+                    bindingForm.etEstatura.setHintTextColor(Color.RED)
+                }
+                if (bindingForm.etPeso.text.isEmpty()) {
+                    bindingForm.etPeso.hint = hint
+                    bindingForm.etPeso.setHintTextColor(Color.RED)
+                }
+                if (bindingForm.etProvincia.text.isEmpty()) {
+                    bindingForm.etProvincia.hint = hint
+                    bindingForm.etProvincia.setHintTextColor(Color.RED)
+                }
+                if (bindingForm.etMunicipio.text.isEmpty()) {
+                    bindingForm.etMunicipio.hint = hint
+                    bindingForm.etMunicipio.setHintTextColor(Color.RED)
+                }
+
+            } else {
+                val name = bindingForm.etNombre.text.toString()
+                val lastName = bindingForm.etApellidos.text.toString()
+                val gender = bindingForm.spinnerSexo.selectedItem.toString()
+                val age = bindingForm.etEdad.text.toString().toInt()
+                val height = bindingForm.etEstatura.text.toString().toDouble()
+                val weight = bindingForm.etPeso.text.toString().toDouble()
+                val province = bindingForm.etProvincia.text.toString()
+                val municip = bindingForm.etMunicipio.text.toString()
+                val aerobics = bindingForm.cbEjercicioAerobio.isChecked
+                val spinning = bindingForm.cbSpinning.isChecked
+                val muscle = bindingForm.cbEntrenamientoMusculacion.isChecked
+                val yoga = bindingForm.cbYoga.isChecked
+                val pilates = bindingForm.cbPilates.isChecked
+                val crossfit = bindingForm.cbCrossfit.isChecked
+                val other = bindingForm.etOtro.text.toString()
+                val practicant = PracticantEntity(
+                    null, "$name $lastName", gender, age, height, weight,
+                    province, municip, aerobics, spinning, muscle, crossfit, yoga, pilates, other
+                )
+                CoroutineScope(Dispatchers.IO).launch {
+                    practicantViewModel.addPractricant(practicant)
+                }
+                dialog.dismiss()
             }
         }
-        builder.create()
-        builder.show()
     }
+
     private fun addAthleteDialog() {
         val bindingForm: DialogAddAthleteBinding =
             DialogAddAthleteBinding.inflate(layoutInflater)
@@ -146,36 +179,99 @@ class PersonsActivity : AppCompatActivity() {
             android.R.layout.simple_spinner_item,
             resources.getStringArray(R.array.genders)
         )
+        val hint = resources.getString(R.string.mandatory_field)
         bindingForm.spinnerSexo.adapter = adapter
 
         val builder = AlertDialog.Builder(this)
         builder.setTitle(resources.getString(R.string.dialog_add_athlete))
         builder.setView(bindingForm.root)
         builder.setCancelable(false)
-        builder.setNegativeButton(resources.getString(R.string.button_cancel)) { dialog, which ->
+        builder.create()
+        val dialog = builder.show()
+        bindingForm.btCancelar.setOnClickListener {
             dialog.dismiss()
         }
-        builder.setPositiveButton(resources.getString(R.string.button_add)) { dialog, which ->
-            val name = bindingForm.etNombre.text.toString()
-            val lastName = bindingForm.etApellidos.text.toString()
-            val gender = bindingForm.spinnerSexo.selectedItem.toString()
-            val age = bindingForm.etEdad.text.toString().toInt()
-            val height = bindingForm.etEstatura.text.toString().toDouble()
-            val weight = bindingForm.etPeso.text.toString().toDouble()
-            val province = bindingForm.etProvincia.text.toString()
-            val municip = bindingForm.etMunicipio.text.toString()
-            val sport = bindingForm.etDeporte.text.toString()
-            val yearsInSport = bindingForm.etAnnos.text.toString().toInt()
+        bindingForm.btAdicionar.setOnClickListener {
+            if (!validAthleteFields(bindingForm)) {
+                if (bindingForm.etNombre.text.isEmpty()) {
+                    bindingForm.etNombre.hint = hint
+                    bindingForm.etNombre.setHintTextColor(Color.RED)
+                }
+                if (bindingForm.etApellidos.text.isEmpty()) {
+                    bindingForm.etApellidos.hint = hint
+                    bindingForm.etApellidos.setHintTextColor(Color.RED)
+                }
+                if (bindingForm.etEdad.text.isEmpty()) {
+                    bindingForm.etEdad.hint = hint
+                    bindingForm.etEdad.setHintTextColor(Color.RED)
+                }
+                if (bindingForm.etEstatura.text.isEmpty()) {
+                    bindingForm.etEstatura.hint = hint
+                    bindingForm.etEstatura.setHintTextColor(Color.RED)
+                }
+                if (bindingForm.etPeso.text.isEmpty()) {
+                    bindingForm.etPeso.hint = hint
+                    bindingForm.etPeso.setHintTextColor(Color.RED)
+                }
+                if (bindingForm.etProvincia.text.isEmpty()) {
+                    bindingForm.etProvincia.hint = hint
+                    bindingForm.etProvincia.setHintTextColor(Color.RED)
+                }
+                if (bindingForm.etMunicipio.text.isEmpty()) {
+                    bindingForm.etMunicipio.hint = hint
+                    bindingForm.etMunicipio.setHintTextColor(Color.RED)
+                }
+                if (bindingForm.etDeporte.text.isEmpty()) {
+                    bindingForm.etDeporte.hint = hint
+                    bindingForm.etDeporte.setHintTextColor(Color.RED)
+                }
+                if (bindingForm.etAnnos.text.isEmpty()) {
+                    bindingForm.etAnnos.hint = hint
+                    bindingForm.etAnnos.setHintTextColor(Color.RED)
+                }
+            } else {
+                val name = bindingForm.etNombre.text.toString()
+                val lastName = bindingForm.etApellidos.text.toString()
+                val gender = bindingForm.spinnerSexo.selectedItem.toString()
+                val age = bindingForm.etEdad.text.toString().toInt()
+                val height = bindingForm.etEstatura.text.toString().toDouble()
+                val weight = bindingForm.etPeso.text.toString().toDouble()
+                val province = bindingForm.etProvincia.text.toString()
+                val municip = bindingForm.etMunicipio.text.toString()
+                val sport = bindingForm.etDeporte.text.toString()
+                val yearsInSport = bindingForm.etAnnos.text.toString().toInt()
 
-            val athlete = AthleteEntity(
-                null, "$name $lastName", gender, age, height, weight,
-                province, municip,sport, yearsInSport
-            )
-            CoroutineScope(Dispatchers.IO).launch {
-                athleteViewModel.addAthlete(athlete)
+                val athlete = AthleteEntity(
+                    null, "$name $lastName", gender, age, height, weight,
+                    province, municip, sport, yearsInSport
+                )
+                CoroutineScope(Dispatchers.IO).launch {
+                    athleteViewModel.addAthlete(athlete)
+                }
+                dialog.dismiss()
             }
         }
-        builder.create()
-        builder.show()
+    }
+
+    private fun validAthleteFields(bindingForm: DialogAddPracticantBinding): Boolean {
+        return !(bindingForm.etNombre.text.isEmpty() ||
+                bindingForm.etApellidos.text.isEmpty() ||
+                bindingForm.etEdad.text.isEmpty() ||
+                bindingForm.etEstatura.text.isEmpty() ||
+                bindingForm.etPeso.text.isEmpty() ||
+                bindingForm.etProvincia.text.isEmpty() ||
+                bindingForm.etMunicipio.text.isEmpty())
+    }
+
+    private fun validAthleteFields(bindingForm: DialogAddAthleteBinding): Boolean {
+        return !(bindingForm.etNombre.text.isEmpty() ||
+                bindingForm.etApellidos.text.isEmpty() ||
+                bindingForm.etEdad.text.isEmpty() ||
+                bindingForm.etEstatura.text.isEmpty() ||
+                bindingForm.etPeso.text.isEmpty() ||
+                bindingForm.etProvincia.text.isEmpty() ||
+                bindingForm.etDeporte.text.isEmpty() ||
+                bindingForm.etAnnos.text.isEmpty() ||
+                bindingForm.etMunicipio.text.isEmpty())
     }
 }

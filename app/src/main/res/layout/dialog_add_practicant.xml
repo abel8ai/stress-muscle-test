@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:scrollbarSize="1dp">
 
         <LinearLayout
@@ -105,9 +106,9 @@
                     <EditText
                         android:id="@+id/et_edad"
                         android:layout_width="match_parent"
-                        android:inputType="number"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
+                        android:inputType="number"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
                 </LinearLayout>
@@ -139,9 +140,9 @@
                         android:id="@+id/et_estatura"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="numberDecimal"
                         android:layout_marginStart="16dp"
                         android:layout_marginEnd="10dp"
+                        android:inputType="numberDecimal"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
                 </LinearLayout>
@@ -163,9 +164,9 @@
                     <EditText
                         android:id="@+id/et_peso"
                         android:layout_width="match_parent"
-                        android:inputType="numberDecimal"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
+                        android:inputType="numberDecimal"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
                 </LinearLayout>
@@ -230,8 +231,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Ejercicio Aerobio"
-                    android:textStyle="bold"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textStyle="bold" />
 
                 <androidx.appcompat.widget.AppCompatCheckBox
                     android:id="@+id/cbSpinning"
@@ -239,8 +240,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Spinning"
-                    android:textStyle="bold"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -251,23 +252,23 @@
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
-                    <androidx.appcompat.widget.AppCompatCheckBox
-                        android:id="@+id/cbEntrenamientoMusculacion"
-                        android:layout_width="0dp"
-                        android:layout_weight="1.2"
-                        android:layout_height="wrap_content"
-                        android:text="Entrenamiento Musculacion"
-                        android:textStyle="bold"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/cbEntrenamientoMusculacion"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:text="Entrenamiento Musculacion"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textStyle="bold" />
 
                 <androidx.appcompat.widget.AppCompatCheckBox
                     android:id="@+id/cbYoga"
                     android:layout_width="0dp"
-                    android:layout_weight="0.8"
                     android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
                     android:text="Yoga"
-                    android:textStyle="bold"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textStyle="bold" />
 
 
             </LinearLayout>
@@ -280,23 +281,23 @@
                 android:orientation="horizontal">
 
 
-                    <androidx.appcompat.widget.AppCompatCheckBox
-                        android:id="@+id/cbCrossfit"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:layout_height="wrap_content"
-                        android:text="Crossfit"
-                        android:textStyle="bold"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/cbCrossfit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Crossfit"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textStyle="bold" />
 
                 <androidx.appcompat.widget.AppCompatCheckBox
                     android:id="@+id/cbPilates"
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:text="Pilates"
-                    android:textStyle="bold"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textStyle="bold" />
 
 
             </LinearLayout>
@@ -323,10 +324,36 @@
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
             </LinearLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
+                <Button
+                    android:id="@+id/bt_Cancelar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00FFFFFF"
+                    android:text="@string/button_cancel"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    app:layout_constraintEnd_toStartOf="@id/bt_adicionar"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/bt_adicionar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00FFFFFF"
+                    android:text="@string/button_add"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>
+
 
 </LinearLayout>
