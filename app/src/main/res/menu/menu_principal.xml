@@ -2,30 +2,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-        <!-- first group (text color) of text style sub menu -->
-<!--        <group-->
-<!--            android:id="@+id/seleccion_idioma"-->
-<!--            android:checkableBehavior="single"-->
-<!--            >-->
-<!--            &lt;!&ndash; text color group's items &ndash;&gt;-->
-<!--            <item-->
-<!--                android:title="@string/menu_idioma"-->
-<!--                android:checkable="false"-->
-<!--                />-->
-<!--            <item-->
-<!--                android:id="@+id/idioma_es"-->
-<!--                android:title="@string/espa_ol"-->
-<!--                android:icon="@drawable/banderita_cup"-->
-<!--                android:enabled="false"-->
-<!--                android:checkable="true"-->
-<!--                android:checked="true"/>-->
-<!--            <item-->
-<!--                android:id="@+id/idioma_en"-->
-<!--                android:title="@string/ingl_s"-->
-<!--                android:icon="@drawable/banderita_gbp"-->
-<!--                android:checkable="true"/>-->
-<!--        </group>-->
-
     <item android:id="@+id/seleccion_idioma"
         android:title="@string/menu_idioma">
         <menu>

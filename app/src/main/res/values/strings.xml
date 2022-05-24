@@ -39,6 +39,21 @@
     <string name="estatura1">Estatura:</string>
     <string name="peso">Peso</string>
     <string name="peso1">Peso:</string>
+    <string name="provincia">Provincia</string>
+    <string name="provincia1">Provincia:</string>
+    <string name="municipio">Municipio</string>
+    <string name="municipio1">Municipio:</string>
+    <string name="deporte">Deporte</string>
+    <string name="deporte1">Deporte:</string>
+    <string name="a_os_en_el_deporte">Años en el deporte</string>
+    <string name="a_os_en_el_deporte1">Años en el deporte:</string>
+    <string name="ejercicio_aerobio">Ejercicio Aerobio</string>
+    <string name="spinning">Spinning</string>
+    <string name="entrenamiento_musculacion">Entrenamiento Musculacion</string>
+    <string name="yoga">Yoga</string>
+    <string name="crossfit">Crossfit</string>
+    <string name="pilates">Pilates</string>
+    <string name="otro">Otro</string>
 
     <string-array name="genders">
         <item>Masculino</item>
