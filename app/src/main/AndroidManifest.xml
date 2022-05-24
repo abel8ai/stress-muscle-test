@@ -14,16 +14,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EntrenamientoMuscularEstabilizador">
         <activity
-            android:name=".AboutActivity"
+            android:name=".ui.view.AboutActivity"
             android:exported="false" />
         <activity
-            android:name=".BloqueTresActivity"
+            android:name=".ui.view.BloqueTresActivity"
             android:exported="false" />
         <activity
-            android:name=".BloqueDosActivity"
+            android:name=".ui.view.BloqueDosActivity"
             android:exported="false" />
         <activity
-            android:name=".BloqueUnoActivity"
+            android:name=".ui.view.BloqueUnoActivity"
             android:exported="false" />
         <activity
             android:name=".ui.view.TestsActivity"

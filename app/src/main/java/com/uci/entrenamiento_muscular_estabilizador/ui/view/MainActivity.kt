@@ -27,6 +27,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private val practicantViewModel: PracticantViewModel by viewModels()
     private val athleteViewModel: AthleteViewModel by viewModels()
+    private var writingPermissionGranted:Boolean = false
+    private val REQUEST_WRITE_EXTERNAL_STORAGE = 334533
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,6 +47,7 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("person_type","athlete")
             startActivity(intent)
         }
+        getWritingPermission()
     }
     fun exportExcel(){
         CoroutineScope(Dispatchers.IO).launch {
@@ -94,6 +97,33 @@ class MainActivity : AppCompatActivity() {
             }
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    private fun getWritingPermission() {
+        if (ContextCompat.checkSelfPermission(this.applicationContext,
+                Manifest.permission.WRITE_EXTERNAL_STORAGE)
+            == PackageManager.PERMISSION_GRANTED) {
+            writingPermissionGranted = true
+        } else {
+            ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.WRITE_EXTERNAL_STORAGE),
+                REQUEST_WRITE_EXTERNAL_STORAGE)
+        }
+    }
+
+    override fun onRequestPermissionsResult(requestCode: Int,
+                                            permissions: Array<String>,
+                                            grantResults: IntArray) {
+        writingPermissionGranted = false
+        when (requestCode) {
+            REQUEST_WRITE_EXTERNAL_STORAGE -> {
+
+                if (grantResults.isNotEmpty() &&
+                    grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    writingPermissionGranted = true
+                }
+            }
+            else -> super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        }
     }
 
 }
