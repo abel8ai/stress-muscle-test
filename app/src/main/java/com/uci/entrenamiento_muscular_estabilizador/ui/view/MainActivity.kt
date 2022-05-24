@@ -5,10 +5,13 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
 import android.os.Environment
+import android.view.Menu
+import android.view.MenuItem
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import com.uci.entrenamiento_muscular_estabilizador.R
 import com.uci.entrenamiento_muscular_estabilizador.databinding.ActivityMainBinding
 import com.uci.entrenamiento_muscular_estabilizador.ui.view_model.AthleteViewModel
 import com.uci.entrenamiento_muscular_estabilizador.ui.view_model.PracticantViewModel
@@ -73,5 +76,26 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        val inflater = menuInflater
+        inflater.inflate(R.menu.menu_principal, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        // Handle presses on the action bar menu items
+        when (item.itemId) {
+            R.id.seleccion_idioma -> {
+                return true
+            }
+            R.id.ic_informacion -> {
+                return true
+            }
+            R.id.excel_export -> {
+                return true
+            }
+        }
+        return super.onOptionsItemSelected(item)
+    }
 
 }

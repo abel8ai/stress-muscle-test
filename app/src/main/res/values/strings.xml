@@ -10,6 +10,35 @@
     <string name="dialog_block_1">Bloque 1</string>
     <string name="dialog_block_2">Bloque 2</string>
     <string name="dialog_block_3">Bloque 3</string>
+    <string name="menu_informaci_n">Información</string>
+    <string name="menu_idioma">Idioma</string>
+    <string name="menu_exportar_excel">Exportar Excel</string>
+    <string name="misi_n">MISIÓN</string>
+    <string name="misi_n1">Promover la gestión de conocimientos sobre actividad física, el deporte y la educación para la salud, anticipando la demanda social con un enfoque inter, multi y transdisciplinario.</string>
+    <string name="objetivo">OBJETIVO</string>
+    <string name="objetivo1">Contribuir a la generación de conocimientos y formación de competencias que promuevan un desempeño profesional eficiente y responsable, en el ámbito de la Actividad Física, el Deporte, la Promoción y Educación para la Salud.</string>
+    <string name="principales_l_neas_de_investigaci_n">PRINCIPALES LÍNEAS DE INVESTIGACIÓN</string>
+    <string name="principales_l_neas_de_investigaci_n1">1. Estilo de vida y la actividad física y el deporte.\n2. La educación física, el desarrollo humano y la inclusión social.\n3. Gestión del conocimiento sobre condición física saludable y ciclo de vida</string>
+    <string name="leer_m_s">LEER MÁS</string>
+    <string name="sobre_la_apk_stabilizer_muscle_tests">SOBRE LA APK STABILIZER MUSCLE TESTS</string>
+    <string name="sobre_la_apk_stabilizer_muscle_tests1">La apk Stabilizer Muscle Tests es el resultado de la actividad investigativa del proyecto I+D+i “Prevención de Lesiones en la Actividad Física y el Deporte” que surge en el 2018 y es aprobado por el Consejo Científico de la Universidad de Ciencias de la Cultura Física y el Deporte “Manuel Fajardo” en el 2019.</string>
+    <string name="ic_ceades_tema">Centro de estudios de Actividad Física, Deporte y Promoción de salud</string>
+    <string name="practicante">Practicante</string>
+    <string name="atleta">Atleta</string>
+    <string name="espa_ol">Español</string>
+    <string name="ingl_s">Inglés</string>
+    <string name="nombre">Nombre</string>
+    <string name="nombre1">Nombre:</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="apellidos1">Apellidos:</string>
+    <string name="sexo">Sexo</string>
+    <string name="sexo1">Sexo:</string>
+    <string name="edad">Edad</string>
+    <string name="edad1">Edad:</string>
+    <string name="estatura">Estatura</string>
+    <string name="estatura1">Estatura:</string>
+    <string name="peso">Peso</string>
+    <string name="peso1">Peso:</string>
 
     <string-array name="genders">
         <item>Masculino</item>
