@@ -11,7 +11,7 @@ class AthleteViewHolder(view:View):RecyclerView.ViewHolder(view){
 
     private val binding = ItemDocumentBinding.bind(view)
     fun bind(athlete:AthleteEntity){
-        binding.tvDocName.text = athlete.fullName
+        binding.tv1.text = athlete.fullName
         binding.cvElement.setOnClickListener{
             val intent = Intent(binding.root.context,PersonDetailsActivity::class.java)
             intent.putExtra("person",athlete)

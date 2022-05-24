@@ -45,9 +45,6 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("person_type","athlete")
             startActivity(intent)
         }
-        binding.btExport.setOnClickListener {
-            exportExcel()
-        }
     }
     fun exportExcel(){
         CoroutineScope(Dispatchers.IO).launch {
@@ -92,6 +89,7 @@ class MainActivity : AppCompatActivity() {
                 return true
             }
             R.id.excel_export -> {
+                exportExcel()
                 return true
             }
         }

@@ -23,8 +23,8 @@
     <string name="sobre_la_apk_stabilizer_muscle_tests">SOBRE LA APK STABILIZER MUSCLE TESTS</string>
     <string name="sobre_la_apk_stabilizer_muscle_tests1">La apk Stabilizer Muscle Tests es el resultado de la actividad investigativa del proyecto I+D+i “Prevención de Lesiones en la Actividad Física y el Deporte” que surge en el 2018 y es aprobado por el Consejo Científico de la Universidad de Ciencias de la Cultura Física y el Deporte “Manuel Fajardo” en el 2019.</string>
     <string name="ic_ceades_tema">Centro de estudios de Actividad Física, Deporte y Promoción de salud</string>
-    <string name="practicante">Practicante</string>
-    <string name="atleta">Atleta</string>
+    <string name="practicante">PRACTICANTE DE EJERCICIO FÍSICO</string>
+    <string name="atleta">ATLETA DE ALTO RENDIMIENTO</string>
     <string name="espa_ol">Español</string>
     <string name="ingl_s">Inglés</string>
     <string name="nombre">Nombre</string>
@@ -54,6 +54,7 @@
     <string name="crossfit">Crossfit</string>
     <string name="pilates">Pilates</string>
     <string name="otro">Otro</string>
+    <string name="pruebas">Pruebas</string>
 
     <string-array name="genders">
         <item>Masculino</item>

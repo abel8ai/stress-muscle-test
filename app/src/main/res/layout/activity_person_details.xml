@@ -6,11 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".ui.view.PersonDetailsActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
         <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -494,6 +489,5 @@
 
             </LinearLayout>
         </androidx.core.widget.NestedScrollView>
-    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
