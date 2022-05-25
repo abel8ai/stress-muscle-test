@@ -32,13 +32,13 @@ class PracticantViewModel@Inject constructor(private val personDatabase: PersonD
         practicantsModel.postValue(personDatabase.getPracticantDao().getAllPracticants())
         return success
     }
-    fun evaluateTest(testType : TestType, age:Int, gender: String, measure:Double):String {
+    fun evaluateTest(testType : TestType, practicant: PracticantEntity, measure:Double):String {
         // Obtain specific test row
-        val baseRow = ((age-7)*20)+2
+        val baseRow = ((practicant.age-7)*20)+2
         var genderValue = 0
-        if (gender == "Masculino")
+        if (practicant.gender == "Masculino")
             genderValue = 1
-        else if (gender == "Femenino")
+        else if (practicant.gender == "Femenino")
             genderValue = 2
         val testRow = (testType.ordinal+1) * genderValue
         val row = baseRow + testRow
@@ -53,8 +53,24 @@ class PracticantViewModel@Inject constructor(private val personDatabase: PersonD
         // Get value in result column (6)
         val cell = mySheet.getRow(row).getCell(6)
         val evaluator = myWorkBook.creationHelper.createFormulaEvaluator()
-        return evaluator.evaluate(cell).toString()
+        return evaluator.evaluate(cell).stringValue
     }
+
+    suspend fun evaluatePracticant(practicant: PracticantEntity){
+        practicant.evalAbd60 = evaluateTest(TestType.ADB60,practicant,practicant.measureAbd60)
+        practicant.evalPp = evaluateTest(TestType.PP,practicant,practicant.measurePp)
+        practicant.evalPld = evaluateTest(TestType.PLD,practicant,practicant.measurePld)
+        practicant.evalPli = evaluateTest(TestType.PLI,practicant,practicant.measurePli)
+        practicant.evalIsmt = evaluateTest(TestType.ISMT,practicant,practicant.measureIsmt)
+
+        practicant.evalCs = evaluateTest(TestType.CS,practicant,practicant.measureCs)
+        practicant.evalCn = evaluateTest(TestType.CN,practicant,practicant.measureCn)
+
+        practicant.evalIsocuad = evaluateTest(TestType.ISOCUAD,practicant,practicant.measureIsocuad)
+        practicant.evalPd = evaluateTest(TestType.PD,practicant,practicant.measurePd)
+        personDatabase.getPracticantDao().updatePracticant(practicant)
+    }
+
     suspend fun createPracticantSheet(workbook : Workbook){
         val practicantsheet = workbook.createSheet("Practicantes")
         val practicantList = personDatabase.getPracticantDao().getAllPracticants()
@@ -115,7 +131,7 @@ class PracticantViewModel@Inject constructor(private val personDatabase: PersonD
             row.createCell(13).setCellValue(practicant.other)
 
             row.createCell(14).setCellValue(practicant.measureAbd60)
-            row.createCell(15).setCellValue(practicant.evalAdb60)
+            row.createCell(15).setCellValue(practicant.evalAbd60)
             row.createCell(16).setCellValue(practicant.measurePp)
             row.createCell(17).setCellValue(practicant.evalPp)
             row.createCell(18).setCellValue(practicant.measurePld)

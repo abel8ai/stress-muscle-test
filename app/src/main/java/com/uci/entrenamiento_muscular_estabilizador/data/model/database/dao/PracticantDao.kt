@@ -4,6 +4,8 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy.REPLACE
 import androidx.room.Query
+import androidx.room.Update
+import com.uci.entrenamiento_muscular_estabilizador.data.model.database.entities.AthleteEntity
 import com.uci.entrenamiento_muscular_estabilizador.data.model.database.entities.PracticantEntity
 
 @Dao
@@ -14,6 +16,9 @@ interface PracticantDao {
 
     @Query("Select * from practicant_table where person_id = :id")
     suspend fun getPracticantById(id:Int):PracticantEntity
+
+    @Update(entity = PracticantEntity::class)
+    suspend fun updatePracticant(practicant: PracticantEntity)
 
     @Insert(onConflict = REPLACE)
     suspend fun insertAll(practicants:List<PracticantEntity>): List<Long>

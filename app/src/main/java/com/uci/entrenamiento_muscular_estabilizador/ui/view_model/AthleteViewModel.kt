@@ -32,13 +32,13 @@ class AthleteViewModel @Inject constructor(private val personDatabase: PersonDat
         athletesModel.postValue(personDatabase.getAthleteDao().getAllAthletes())
         return success
     }
-    fun evaluateTest(testType : TestType, age:Int, gender: String, measure:Double):String {
+    fun evaluateTest(testType : TestType, athlete: AthleteEntity, measure:Double):String {
         // Obtain specific test row
-        val baseRow = ((age-7)*20)+2
+        val baseRow = ((athlete.age-7)*20)+2
         var genderValue = 0
-        if (gender == "Masculino")
+        if (athlete.gender == "Masculino")
             genderValue = 1
-        else if (gender == "Femenino")
+        else if (athlete.gender == "Femenino")
             genderValue = 2
         val testRow = (testType.ordinal+1) * genderValue
         val row = baseRow + testRow
@@ -54,6 +54,20 @@ class AthleteViewModel @Inject constructor(private val personDatabase: PersonDat
         val cell = mySheet.getRow(row).getCell(6)
         val evaluator = myWorkBook.creationHelper.createFormulaEvaluator()
         return evaluator.evaluate(cell).stringValue
+    }
+    suspend fun evaluateAthlete(athlete: AthleteEntity){
+        athlete.evalAbd60 = evaluateTest(TestType.ADB60,athlete,athlete.measureAbd60)
+        athlete.evalPp = evaluateTest(TestType.PP,athlete,athlete.measurePp)
+        athlete.evalPld = evaluateTest(TestType.PLD,athlete,athlete.measurePld)
+        athlete.evalPli = evaluateTest(TestType.PLI,athlete,athlete.measurePli)
+        athlete.evalIsmt = evaluateTest(TestType.ISMT,athlete,athlete.measureIsmt)
+
+        athlete.evalCs = evaluateTest(TestType.CS,athlete,athlete.measureCs)
+        athlete.evalCn = evaluateTest(TestType.CN,athlete,athlete.measureCn)
+
+        athlete.evalIsocuad = evaluateTest(TestType.ISOCUAD,athlete,athlete.measureIsocuad)
+        athlete.evalPd = evaluateTest(TestType.PD,athlete,athlete.measurePd)
+        personDatabase.getAthleteDao().updateAthlete(athlete)
     }
 
     suspend fun createAthleteSheet(workbook : Workbook){
@@ -105,7 +119,7 @@ class AthleteViewModel @Inject constructor(private val personDatabase: PersonDat
             row.createCell(8).setCellValue(athlete.yearsInSport.toString())
 
             row.createCell(9).setCellValue(athlete.measureAbd60)
-            row.createCell(10).setCellValue(athlete.evalAdb60)
+            row.createCell(10).setCellValue(athlete.evalAbd60)
             row.createCell(11).setCellValue(athlete.measurePp)
             row.createCell(12).setCellValue(athlete.evalPp)
             row.createCell(13).setCellValue(athlete.measurePld)

@@ -30,7 +30,7 @@ data class AthleteEntity(
     @ColumnInfo(name = "measure_isocuad") var measureIsocuad: Double = 0.0
     @ColumnInfo(name = "measure_pd") var measurePd: Double = 0.0
 
-    @ColumnInfo(name = "eval_adb60") var evalAdb60: String = ""
+    @ColumnInfo(name = "eval_adb60") var evalAbd60: String = ""
     @ColumnInfo(name = "eval_pp") var evalPp: String = ""
     @ColumnInfo(name = "eval_pld") var evalPld: String = ""
     @ColumnInfo(name = "eval_pli") var evalPli: String = ""

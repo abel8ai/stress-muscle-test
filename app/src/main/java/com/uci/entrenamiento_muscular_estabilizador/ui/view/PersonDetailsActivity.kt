@@ -44,16 +44,27 @@ class PersonDetailsActivity : AppCompatActivity() {
                 practicantViewModel.getPracticantById(intent.extras!!.getInt("practicant_id"))
             }
         }
-
         practicantViewModel.practicantModel.observe(this, Observer {
             practicant = it
+            CoroutineScope(Dispatchers.IO).launch {
+                practicantViewModel.evaluatePracticant(practicant!!)
+                runOnUiThread {
+                    loadResultsAndEvaluations()
+                }
+
+            }
             loadData()
-            loadResultsAndEvaluations()
         })
         athleteViewModel.athleteModel.observe(this, Observer {
             athlete = it
+            CoroutineScope(Dispatchers.IO).launch {
+                athleteViewModel.evaluateAthlete(athlete!!)
+                runOnUiThread {
+                    loadResultsAndEvaluations()
+                }
+            }
             loadData()
-            loadResultsAndEvaluations()
+
         })
 
         binding.btBloque1.setOnClickListener {
@@ -157,7 +168,7 @@ class PersonDetailsActivity : AppCompatActivity() {
             binding.tvResultIsocuad.text = athlete!!.measureIsocuad.toString()
             binding.tvResultPd.text = athlete!!.measurePd.toString()
             // evaluacion de atleta
-            binding.tvEvalAbd60.text = athlete!!.evalAdb60
+            binding.tvEvalAbd60.text = athlete!!.evalAbd60
             binding.tvEvalPp.text = athlete!!.evalPp
             binding.tvEvalPld.text = athlete!!.evalPld
             binding.tvEvalPli.text = athlete!!.evalPli
@@ -183,7 +194,7 @@ class PersonDetailsActivity : AppCompatActivity() {
             binding.tvResultIsocuad.text = practicant!!.measureIsocuad.toString()
             binding.tvResultPd.text = practicant!!.measurePd.toString()
             // evaluacion de practicante
-            binding.tvEvalAbd60.text = practicant!!.evalAdb60
+            binding.tvEvalAbd60.text = practicant!!.evalAbd60
             binding.tvEvalPp.text = practicant!!.evalPp
             binding.tvEvalPld.text = practicant!!.evalPld
             binding.tvEvalPli.text = practicant!!.evalPli
