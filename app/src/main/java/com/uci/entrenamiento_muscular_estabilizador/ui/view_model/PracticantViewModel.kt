@@ -16,15 +16,20 @@ import javax.inject.Inject
 @HiltViewModel
 class PracticantViewModel@Inject constructor(private val personDatabase: PersonDatabase, private val assetManager: AssetManager): ViewModel() {
 
-    val practicantModel = MutableLiveData<List<PracticantEntity>>()
+    val practicantsModel = MutableLiveData<List<PracticantEntity>>()
+    val practicantModel = MutableLiveData<PracticantEntity>()
 
     suspend fun getAllPracticants() {
-        practicantModel.postValue(personDatabase.getPracticantDao().getAllPracticants())
+        practicantsModel.postValue(personDatabase.getPracticantDao().getAllPracticants())
+    }
+
+    suspend fun getPracticantById(id:Int){
+        practicantModel.postValue(personDatabase.getPracticantDao().getPracticantById(id))
     }
 
     suspend fun addPractricant(practicant:PracticantEntity):Long {
         val success = personDatabase.getPracticantDao().insertPracticant(practicant)
-        practicantModel.postValue(personDatabase.getPracticantDao().getAllPracticants())
+        practicantsModel.postValue(personDatabase.getPracticantDao().getAllPracticants())
         return success
     }
     fun evaluateTest(testType : TestType, age:Int, gender: String, measure:Double):String {

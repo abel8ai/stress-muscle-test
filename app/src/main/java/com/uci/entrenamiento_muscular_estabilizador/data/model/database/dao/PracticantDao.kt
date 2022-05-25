@@ -12,6 +12,9 @@ interface PracticantDao {
     @Query("Select * from practicant_table")
     suspend fun getAllPracticants():List<PracticantEntity>
 
+    @Query("Select * from practicant_table where person_id = :id")
+    suspend fun getPracticantById(id:Int):PracticantEntity
+
     @Insert(onConflict = REPLACE)
     suspend fun insertAll(practicants:List<PracticantEntity>): List<Long>
 

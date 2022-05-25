@@ -11,10 +11,15 @@ class PracticantViewHolder(view:View):RecyclerView.ViewHolder(view){
 
     private val binding = ItemDocumentBinding.bind(view)
     fun bind(practicant:PracticantEntity){
-        binding.tv1.text = practicant.fullName
+        binding.tvNombre.text = practicant.fullName
+        binding.tvEdad.text = practicant.age.toString()
+        binding.tvEstatura.text = practicant.height.toString()
+        binding.tvPeso.text = practicant.weight.toString()
+        binding.tvSexo.text = practicant.gender
         binding.cvElement.setOnClickListener{
             val intent = Intent(binding.root.context,PersonDetailsActivity::class.java)
-            intent.putExtra("person",practicant)
+            intent.putExtra("practicant_id",practicant.id)
+            intent.putExtra("person_type", "practicant")
             binding.root.context.startActivity(intent)
         }
 

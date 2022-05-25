@@ -57,12 +57,12 @@ class PersonsActivity : AppCompatActivity() {
                 addPracticantDialog()
         }
         if (isAthlete) {
-            athleteViewModel.athleteModel.observe(this, Observer {
+            athleteViewModel.athletesModel.observe(this, Observer {
                 athleteAdapter = AthleteAdapter(it)
                 binding.rvPersonList.adapter = athleteAdapter
             })
         } else if (isPracticant) {
-            practicantViewModel.practicantModel.observe(this, Observer {
+            practicantViewModel.practicantsModel.observe(this, Observer {
                 practicantAdapter = PracticantAdapter(it)
                 binding.rvPersonList.adapter = practicantAdapter
             })

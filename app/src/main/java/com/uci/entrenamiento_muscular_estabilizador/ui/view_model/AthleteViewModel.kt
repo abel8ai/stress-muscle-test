@@ -16,15 +16,20 @@ import javax.inject.Inject
 @HiltViewModel
 class AthleteViewModel @Inject constructor(private val personDatabase: PersonDatabase, private val assetManager: AssetManager) : ViewModel() {
 
-    val athleteModel = MutableLiveData<List<AthleteEntity>>()
+    val athletesModel = MutableLiveData<List<AthleteEntity>>()
+    val athleteModel = MutableLiveData<AthleteEntity>()
 
     suspend fun getAllAthletes() {
-        athleteModel.postValue(personDatabase.getAthleteDao().getAllAthletes())
+        athletesModel.postValue(personDatabase.getAthleteDao().getAllAthletes())
+    }
+
+    suspend fun getAthleteById(id:Int){
+        athleteModel.postValue(personDatabase.getAthleteDao().getAthleteById(id))
     }
 
     suspend fun addAthlete(athlete:AthleteEntity):Long {
         val success = personDatabase.getAthleteDao().insertAthlete(athlete)
-        athleteModel.postValue(personDatabase.getAthleteDao().getAllAthletes())
+        athletesModel.postValue(personDatabase.getAthleteDao().getAllAthletes())
         return success
     }
     fun evaluateTest(testType : TestType, age:Int, gender: String, measure:Double):String {
