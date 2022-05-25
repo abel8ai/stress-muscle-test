@@ -26,7 +26,7 @@ data class PracticantEntity(
     @ColumnInfo(name = "pilates") var pilates: Boolean,
     @ColumnInfo(name = "other") var other: String
 ): Serializable {
-    @ColumnInfo(name = "measure_adb60") var measureAdb60: Double = 0.0
+    @ColumnInfo(name = "measure_adb60") var measureAbd60: Double = 0.0
     @ColumnInfo(name = "measure_pp") var measurePp: Double = 0.0
     @ColumnInfo(name = "measure_pld") var measurePld: Double = 0.0
     @ColumnInfo(name = "measure_pli") var measurePli: Double = 0.0

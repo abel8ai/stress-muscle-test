@@ -35,12 +35,11 @@ class PersonDetailsActivity : AppCompatActivity() {
         isAthlete = intent.extras!!.getString("person_type").equals("athlete")
         isPracticant = intent.extras!!.getString("person_type").equals("practicant")
 
-        if (isAthlete){
+        if (isAthlete) {
             CoroutineScope(Dispatchers.IO).launch {
                 athleteViewModel.getAthleteById(intent.extras!!.getInt("athlete_id"))
             }
-        }
-        else if (isPracticant){
+        } else if (isPracticant) {
             CoroutineScope(Dispatchers.IO).launch {
                 practicantViewModel.getPracticantById(intent.extras!!.getInt("practicant_id"))
             }
@@ -49,19 +48,20 @@ class PersonDetailsActivity : AppCompatActivity() {
         practicantViewModel.practicantModel.observe(this, Observer {
             practicant = it
             loadData()
+            loadResultsAndEvaluations()
         })
         athleteViewModel.athleteModel.observe(this, Observer {
             athlete = it
             loadData()
+            loadResultsAndEvaluations()
         })
 
         binding.btBloque1.setOnClickListener {
             val intent = Intent(this, BloqueUnoActivity::class.java)
-            if (isAthlete){
+            if (isAthlete) {
                 intent.putExtra("person_type", "athlete")
                 intent.putExtra("athlete_id", athlete!!.id)
-            }
-            else if (isPracticant){
+            } else if (isPracticant) {
                 intent.putExtra("person_type", "practicant")
                 intent.putExtra("practicant_id", practicant!!.id)
             }
@@ -69,11 +69,10 @@ class PersonDetailsActivity : AppCompatActivity() {
         }
         binding.btBloque2.setOnClickListener {
             val intent = Intent(this, BloqueDosActivity::class.java)
-            if (isAthlete){
+            if (isAthlete) {
                 intent.putExtra("person_type", "athlete")
                 intent.putExtra("athlete_id", athlete!!.id)
-            }
-            else if (isPracticant){
+            } else if (isPracticant) {
                 intent.putExtra("person_type", "practicant")
                 intent.putExtra("practicant_id", practicant!!.id)
             }
@@ -81,11 +80,10 @@ class PersonDetailsActivity : AppCompatActivity() {
         }
         binding.btBloque3.setOnClickListener {
             val intent = Intent(this, BloqueTresActivity::class.java)
-            if (isAthlete){
+            if (isAthlete) {
                 intent.putExtra("person_type", "athlete")
                 intent.putExtra("athlete_id", athlete!!.id)
-            }
-            else if (isPracticant){
+            } else if (isPracticant) {
                 intent.putExtra("person_type", "practicant")
                 intent.putExtra("practicant_id", practicant!!.id)
             }
@@ -141,6 +139,61 @@ class PersonDetailsActivity : AppCompatActivity() {
                 binding.tvOtro.text = practicant!!.other
             }
 
+        }
+    }
+
+    private fun loadResultsAndEvaluations() {
+        if (isAthlete) {
+            // resultados de atleta
+            binding.tvResultAbd60.text = athlete!!.measureAbd60.toString()
+            binding.tvResultPp.text = athlete!!.measurePp.toString()
+            binding.tvResultPld.text = athlete!!.measurePld.toString()
+            binding.tvResultPli.text = athlete!!.measurePli.toString()
+            binding.tvResultIsmt.text = athlete!!.measureIsmt.toString()
+
+            binding.tvResultCs.text = athlete!!.measureCs.toString()
+            binding.tvResultCn.text = athlete!!.measureCn.toString()
+
+            binding.tvResultIsocuad.text = athlete!!.measureIsocuad.toString()
+            binding.tvResultPd.text = athlete!!.measurePd.toString()
+            // evaluacion de atleta
+            binding.tvEvalAbd60.text = athlete!!.evalAdb60
+            binding.tvEvalPp.text = athlete!!.evalPp
+            binding.tvEvalPld.text = athlete!!.evalPld
+            binding.tvEvalPli.text = athlete!!.evalPli
+            binding.tvEvalIsmt.text = athlete!!.evalIsmt
+
+            binding.tvEvalCs.text = athlete!!.evalCs
+            binding.tvEvalCn.text = athlete!!.evalCn
+
+            binding.tvEvalIsocuad.text = athlete!!.evalIsocuad
+            binding.tvEvalPd.text = athlete!!.evalPp
+        }
+        else if (isPracticant) {
+            // resultados de practicante
+            binding.tvResultAbd60.text = practicant!!.measureAbd60.toString()
+            binding.tvResultPp.text = practicant!!.measurePp.toString()
+            binding.tvResultPld.text = practicant!!.measurePld.toString()
+            binding.tvResultPli.text = practicant!!.measurePli.toString()
+            binding.tvResultIsmt.text = practicant!!.measureIsmt.toString()
+
+            binding.tvResultCs.text = practicant!!.measureCs.toString()
+            binding.tvResultCn.text = practicant!!.measureCn.toString()
+
+            binding.tvResultIsocuad.text = practicant!!.measureIsocuad.toString()
+            binding.tvResultPd.text = practicant!!.measurePd.toString()
+            // evaluacion de practicante
+            binding.tvEvalAbd60.text = practicant!!.evalAdb60
+            binding.tvEvalPp.text = practicant!!.evalPp
+            binding.tvEvalPld.text = practicant!!.evalPld
+            binding.tvEvalPli.text = practicant!!.evalPli
+            binding.tvEvalIsmt.text = practicant!!.evalIsmt
+
+            binding.tvEvalCs.text = practicant!!.evalCs
+            binding.tvEvalCn.text = practicant!!.evalCn
+
+            binding.tvEvalIsocuad.text = practicant!!.evalIsocuad
+            binding.tvEvalPd.text = practicant!!.evalPp
         }
     }
 }

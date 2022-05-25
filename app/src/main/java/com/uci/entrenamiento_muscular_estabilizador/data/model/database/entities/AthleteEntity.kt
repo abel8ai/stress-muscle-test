@@ -20,7 +20,7 @@ data class AthleteEntity(
     @ColumnInfo(name = "sport") val sport: String,
     @ColumnInfo(name = "years_in_sport") val yearsInSport: Int
 ):Serializable {
-    @ColumnInfo(name = "measure_adb60") var measureAdb60: Double = 0.0
+    @ColumnInfo(name = "measure_adb60") var measureAbd60: Double = 0.0
     @ColumnInfo(name = "measure_pp") var measurePp: Double = 0.0
     @ColumnInfo(name = "measure_pld") var measurePld: Double = 0.0
     @ColumnInfo(name = "measure_pli") var measurePli: Double = 0.0

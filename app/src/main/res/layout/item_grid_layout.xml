@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/grey_3">
+    <TextView
+        android:id="@+id/tv_prueba"
+        android:layout_width="0dp"
+        android:layout_weight="0.33"
+        android:layout_height="wrap_content"
+        android:text="PRUEBA"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="0dp"
+        android:layout_weight="0.33"
+        android:layout_height="wrap_content"
+        android:text="RESULTADO"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_eval"
+        android:layout_width="0dp"
+        android:layout_weight="0.33"
+        android:layout_height="wrap_content"
+        android:text="EVALUACIÓN"
+        android:padding="8dp"/>
+
+</LinearLayout>

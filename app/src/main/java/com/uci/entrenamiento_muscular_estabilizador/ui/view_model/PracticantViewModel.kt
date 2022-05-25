@@ -114,7 +114,7 @@ class PracticantViewModel@Inject constructor(private val personDatabase: PersonD
             row.createCell(12).setCellValue(practicant.pilates)
             row.createCell(13).setCellValue(practicant.other)
 
-            row.createCell(14).setCellValue(practicant.measureAdb60)
+            row.createCell(14).setCellValue(practicant.measureAbd60)
             row.createCell(15).setCellValue(practicant.evalAdb60)
             row.createCell(16).setCellValue(practicant.measurePp)
             row.createCell(17).setCellValue(practicant.evalPp)

@@ -104,7 +104,7 @@ class AthleteViewModel @Inject constructor(private val personDatabase: PersonDat
             row.createCell(7).setCellValue(athlete.sport)
             row.createCell(8).setCellValue(athlete.yearsInSport.toString())
 
-            row.createCell(9).setCellValue(athlete.measureAdb60)
+            row.createCell(9).setCellValue(athlete.measureAbd60)
             row.createCell(10).setCellValue(athlete.evalAdb60)
             row.createCell(11).setCellValue(athlete.measurePp)
             row.createCell(12).setCellValue(athlete.evalPp)
