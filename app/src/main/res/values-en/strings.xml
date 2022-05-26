@@ -122,6 +122,15 @@
     <string name="insertar_evaluaci_n">Insert evaluation</string>
     <string name="masculino">Male</string>
     <string name="femenino">Female</string>
-    <string name="bibliograf_a">Bibliography</string>
+    <string name="bibliograf_a">Bibliographies</string>
+    <string name="rb_tema">Cuban Test Battery that evaluates the strength resistance of the stabilizing muscles is supported by the following bibliographical references:</string>
+    <string name="rb1">Anderson, A., Hoffman, J. Johnson, B., Simonson, A., Urquhart, L. (2014). Core Strength Testing: Developing Normative Data for Three Clinical Tests. University Retrieved from Sophia, the St. Catherine University repository</string>
+    <string name="rb2">Dejanovic, A., Cambridge, E., McGill, S. (2014). Isometric torso muscle endurance profiles in adolescents aged 15–18: normative values for age and gender differences. Ann Hum Biol,; 41(2): 153–158</string>
+    <string name="rb3">Heredia, J.R.; Peña, G.; Segarra, V.; Martín, M.; Edir Da Silva Grigoletto, M.E. Moyano, M.; Sampietro, M. (2014) Entrenamiento de la resistencia específica del core: reflexiones y propuestas. Instituto Internacional de Ciencias del Ejercicio Físico y Salud. Recuperado de:</string>
+    <string name="rb4">Dejanovic, A., Harvey, E., McGill, S. (2012). Changes in Torso Muscle Endurance Profiles in Children Aged 7 to 14 Years: Reference Values. Arch Phys Med Rehabil;93 (12):2295–301.</string>
+    <string name="rb5">Vera, F.J.; Barbado, D.; Flores, B.; Alonso, J.I. y Elvira, J.L.L. (2013). Activación de los músculos del tronco en ejercicios de estabilización raquídea / Trunk muscle activation in spine stabilization exercises. Revista Internacional de Medicina y Ciencias de la Actividad Física y el Deporte vol. 13 (52) pp. 673–685.</string>
+    <string name="rb6"><![CDATA[Mckeon, M. D., Albert, W. J., & Neary, J. P. (2006). Assesment of neuromuscular and haemodynamic activity in individuals with and without chronic low back pain. Dynamic medicine: DM, 5,6.]]></string>
+    <string name="rb7"><![CDATA[McGill, S. M., Hughson, R. L., & Parks, K. (2000). Lumbar erector spinae oxygenation during prolonged contractions: implications for prolonged work. Ergonomics, 43(4), 486–493.]]></string>
+    <string name="rb8">McGill, S.M., Childs, A. and Liebenson, C. (1999). Endurance times for low back stabilization exercises: clinical targets for testing and training from a normal database. Archives of Physical Medicine and Rehabilitation, 80(8), 941–944. doi:10.1016/S0003–9993(99)90087–4</string>
 
 </resources>

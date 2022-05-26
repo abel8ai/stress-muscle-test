@@ -363,8 +363,8 @@
                     android:background="#00FFFFFF"
                     android:text="@string/button_cancel"
                     android:textAllCaps="true"
-                    android:textStyle="bold"
                     android:textColor="@color/blue_dark"
+                    android:textStyle="bold"
                     app:layout_constraintEnd_toStartOf="@id/bt_adicionar"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -376,8 +376,8 @@
                     android:background="#00FFFFFF"
                     android:text="@string/button_add"
                     android:textAllCaps="true"
-                    android:textStyle="bold"
                     android:textColor="@color/blue_dark"
+                    android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 

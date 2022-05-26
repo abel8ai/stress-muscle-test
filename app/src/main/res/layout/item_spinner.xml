@@ -10,23 +10,23 @@
         android:orientation="vertical"
         tools:ignore="MissingConstraints">
 
-    <TextView
-        android:id="@+id/tv_gener_masculino"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@color/grey_60"
-        android:text="@string/masculino"
-        android:layout_margin="8dp"/>
+        <TextView
+            android:id="@+id/tv_gener_masculino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="@string/masculino"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/grey_60" />
 
         <TextView
             android:id="@+id/tv_gener_femenino"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textColor="@color/grey_60"
+            android:layout_margin="8dp"
             android:text="@string/femenino"
-            android:layout_margin="8dp"/>
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/grey_60" />
 
     </LinearLayout>
 

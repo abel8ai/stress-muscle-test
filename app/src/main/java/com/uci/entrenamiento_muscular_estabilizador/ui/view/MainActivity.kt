@@ -94,6 +94,8 @@ class MainActivity : AppCompatActivity() {
                 return true
             }
             R.id.ic_bibliografia -> {
+                    val intent = Intent(this,BibliographyActivity::class.java)
+                    startActivity(intent)
                 return true
             }
             R.id.excel_export -> {

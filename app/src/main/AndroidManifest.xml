@@ -14,8 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EntrenamientoMuscularEstabilizador">
         <activity
-            android:name=".BibliographyActivity"
-            android:exported="false" />
+            android:name=".ui.view.BibliographyActivity"
+            android:exported="false"
+            android:label="@string/bibliograf_a"/>
         <activity
             android:name=".ui.view.AboutActivity"
             android:exported="false"

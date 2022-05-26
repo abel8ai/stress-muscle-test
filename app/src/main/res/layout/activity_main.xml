@@ -155,130 +155,130 @@
             android:background="@color/white"
             android:orientation="vertical">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:gravity="center_horizontal"
-            android:text="@string/pruebas"
-            android:textAllCaps="true"
-            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
-            android:textColor="@color/blue_dark"
-            android:textSize="14sp" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:background="@color/white"
-            android:orientation="horizontal"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp">
-
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:text="@string/pruebas"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+                android:textColor="@color/blue_dark"
+                android:textSize="14sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
-                android:orientation="horizontal">
+                android:layout_height="120dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp">
 
-                <RelativeLayout
-                    android:id="@+id/bt_practicant_list"
-                    android:layout_width="0dp"
+
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="10dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:orientation="horizontal">
 
-                    <ImageView
-                        android:layout_width="52dp"
-                        android:layout_height="52dp"
-                        android:layout_centerHorizontal="true"
-                        android:elevation="5dp"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/ic_practicant" />
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="match_parent"
+                    <RelativeLayout
+                        android:id="@+id/bt_practicant_list"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginTop="30dp"
-                        android:visibility="visible"
-                        app:cardCornerRadius="10dp"
-                        app:cardElevation="2dp">
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
 
-                        <LinearLayout
+                        <ImageView
+                            android:layout_width="52dp"
+                            android:layout_height="52dp"
+                            android:layout_centerHorizontal="true"
+                            android:elevation="5dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/ic_practicant" />
+
+                        <androidx.cardview.widget.CardView
                             android:layout_width="match_parent"
-                            android:layout_height="80dp"
-                            android:background="@drawable/ic_light_mark"
-                            android:orientation="horizontal">
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginTop="30dp"
+                            android:visibility="visible"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="2dp">
 
-                            <TextView
+                            <LinearLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:gravity="center_horizontal|center_vertical"
-                                android:padding="10dp"
-                                android:text="@string/practicante"
-                                android:textAllCaps="true"
-                                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
-                                android:textColor="@color/white"
-                                android:textSize="14sp" />
+                                android:layout_height="80dp"
+                                android:background="@drawable/ic_light_mark"
+                                android:orientation="horizontal">
 
-                        </LinearLayout>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_horizontal|center_vertical"
+                                    android:padding="10dp"
+                                    android:text="@string/practicante"
+                                    android:textAllCaps="true"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp" />
 
-                    </androidx.cardview.widget.CardView>
+                            </LinearLayout>
 
-                </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
 
-                <RelativeLayout
-                    android:id="@+id/bt_athlete_list"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
+                    </RelativeLayout>
 
-                    <ImageView
-                        android:layout_width="52dp"
-                        android:layout_height="52dp"
-                        android:layout_centerHorizontal="true"
-                        android:elevation="5dp"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/ic_athlete" />
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="match_parent"
+                    <RelativeLayout
+                        android:id="@+id/bt_athlete_list"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_alignParentBottom="true"
-                        android:layout_marginTop="30dp"
-                        android:visibility="visible"
-                        app:cardCornerRadius="10dp"
-                        app:cardElevation="2dp">
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
 
-                        <LinearLayout
+                        <ImageView
+                            android:layout_width="52dp"
+                            android:layout_height="52dp"
+                            android:layout_centerHorizontal="true"
+                            android:elevation="5dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/ic_athlete" />
+
+                        <androidx.cardview.widget.CardView
                             android:layout_width="match_parent"
-                            android:layout_height="80dp"
-                            android:background="@drawable/ic_light_mark"
-                            android:orientation="horizontal">
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginTop="30dp"
+                            android:visibility="visible"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="2dp">
 
-                            <TextView
+                            <LinearLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:gravity="center_horizontal|center_vertical"
-                                android:padding="10dp"
-                                android:text="@string/atleta"
-                                android:textAllCaps="true"
-                                android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
-                                android:textColor="@color/white"
-                                android:textSize="14sp" />
+                                android:layout_height="80dp"
+                                android:background="@drawable/ic_light_mark"
+                                android:orientation="horizontal">
 
-                        </LinearLayout>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center_horizontal|center_vertical"
+                                    android:padding="10dp"
+                                    android:text="@string/atleta"
+                                    android:textAllCaps="true"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp" />
 
-                    </androidx.cardview.widget.CardView>
+                            </LinearLayout>
 
-                </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+
+                    </RelativeLayout>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
 
         </LinearLayout>
 

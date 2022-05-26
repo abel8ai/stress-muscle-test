@@ -61,179 +61,179 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent">
 
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="10dp"
-                                android:layout_marginRight="10dp"
-                                android:orientation="vertical">
-
-                                <TextView
+                                <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="8dp"
-                                    android:layout_marginBottom="6dp"
-                                    android:text="@string/bloque3_tema1"
-                                    android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
-                                    android:textColor="@color/grey_90"
-                                    android:textSize="14sp"
-                                    android:textStyle="bold" />
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:orientation="vertical">
 
-                                <androidx.core.widget.NestedScrollView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <LinearLayout
+                                    <TextView
                                         android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:orientation="vertical"
-                                        android:layout_marginBottom="120dp">
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginBottom="6dp"
+                                        android:text="@string/bloque3_tema1"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                                        android:textColor="@color/grey_90"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
 
-                                        <TextView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_marginBottom="6dp"
-                                            android:text="@string/bt7"
-                                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                                            android:textColor="@color/grey_90" />
+                                    <androidx.core.widget.NestedScrollView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
 
                                         <LinearLayout
                                             android:layout_width="match_parent"
-                                            android:layout_height="180dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginBottom="120dp"
                                             android:orientation="vertical">
 
-                                            <androidx.cardview.widget.CardView
+                                            <TextView
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
-                                                android:layout_marginLeft="6dp"
-                                                android:layout_marginTop="8dp"
-                                                android:layout_marginRight="6dp"
-                                                android:layout_marginBottom="8dp"
-                                                android:visibility="visible"
-                                                app:cardCornerRadius="10dp"
-                                                app:cardElevation="2dp">
+                                                android:layout_marginBottom="6dp"
+                                                android:text="@string/bt7"
+                                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                                android:textColor="@color/grey_90" />
 
-                                                <LinearLayout
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="180dp"
+                                                android:orientation="vertical">
+
+                                                <androidx.cardview.widget.CardView
                                                     android:layout_width="match_parent"
                                                     android:layout_height="wrap_content"
-                                                    android:orientation="vertical">
+                                                    android:layout_marginLeft="6dp"
+                                                    android:layout_marginTop="8dp"
+                                                    android:layout_marginRight="6dp"
+                                                    android:layout_marginBottom="8dp"
+                                                    android:visibility="visible"
+                                                    app:cardCornerRadius="10dp"
+                                                    app:cardElevation="2dp">
 
-                                                    <RelativeLayout
+                                                    <LinearLayout
                                                         android:layout_width="match_parent"
                                                         android:layout_height="wrap_content"
                                                         android:orientation="vertical">
 
-                                                        <ImageView
+                                                        <RelativeLayout
                                                             android:layout_width="match_parent"
-                                                            android:layout_height="180dp"
-                                                            android:scaleType="centerCrop"
-                                                            android:src="@drawable/cuadrupedia" />
+                                                            android:layout_height="wrap_content"
+                                                            android:orientation="vertical">
+
+                                                            <ImageView
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="180dp"
+                                                                android:scaleType="centerCrop"
+                                                                android:src="@drawable/cuadrupedia" />
 
 
-                                                    </RelativeLayout>
+                                                        </RelativeLayout>
 
-                                                </LinearLayout>
+                                                    </LinearLayout>
 
-                                            </androidx.cardview.widget.CardView>
+                                                </androidx.cardview.widget.CardView>
+
+                                            </LinearLayout>
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="4dp"
+                                                android:layout_marginBottom="6dp"
+                                                android:text="@string/bt1_obj1"
+                                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                                android:textColor="@color/grey_90"
+                                                android:textSize="14sp"
+                                                android:textStyle="bold" />
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="6dp"
+                                                android:text="@string/bt3_obj1"
+                                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                                android:textColor="@color/grey_90" />
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="4dp"
+                                                android:layout_marginBottom="6dp"
+                                                android:text="@string/bt1_obj3"
+                                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                                android:textColor="@color/grey_90"
+                                                android:textSize="14sp"
+                                                android:textStyle="bold" />
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="6dp"
+                                                android:text="@string/bt1_obj4"
+                                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                                android:textColor="@color/grey_90" />
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="4dp"
+                                                android:layout_marginBottom="6dp"
+                                                android:text="@string/bt1_obj5"
+                                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                                android:textColor="@color/grey_90"
+                                                android:textSize="14sp"
+                                                android:textStyle="bold" />
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="6dp"
+                                                android:text="@string/bt3_obj2"
+                                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                                android:textColor="@color/grey_90" />
 
                                         </LinearLayout>
-
-                                        <TextView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_marginTop="4dp"
-                                            android:layout_marginBottom="6dp"
-                                            android:text="@string/bt1_obj1"
-                                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                                            android:textColor="@color/grey_90"
-                                            android:textSize="14sp"
-                                            android:textStyle="bold" />
-
-                                        <TextView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_marginBottom="6dp"
-                                            android:text="@string/bt3_obj1"
-                                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                                            android:textColor="@color/grey_90" />
-
-                                        <TextView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_marginTop="4dp"
-                                            android:layout_marginBottom="6dp"
-                                            android:text="@string/bt1_obj3"
-                                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                                            android:textColor="@color/grey_90"
-                                            android:textSize="14sp"
-                                            android:textStyle="bold" />
-
-                                        <TextView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_marginBottom="6dp"
-                                            android:text="@string/bt1_obj4"
-                                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                                            android:textColor="@color/grey_90" />
-
-                                        <TextView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_marginTop="4dp"
-                                            android:layout_marginBottom="6dp"
-                                            android:text="@string/bt1_obj5"
-                                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                                            android:textColor="@color/grey_90"
-                                            android:textSize="14sp"
-                                            android:textStyle="bold" />
-
-                                        <TextView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_marginBottom="6dp"
-                                            android:text="@string/bt3_obj2"
-                                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                                            android:textColor="@color/grey_90" />
-
-                                    </LinearLayout>
-                                </androidx.core.widget.NestedScrollView>
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:orientation="horizontal"
-                                android:layout_alignParentBottom="true">
+                                    </androidx.core.widget.NestedScrollView>
+                                </LinearLayout>
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:orientation="vertical"
-                                    android:background="@color/white"
-                                    android:gravity="center_horizontal"
-                                    android:layout_marginTop="4dp">
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:orientation="horizontal">
 
-                                    <EditText
-                                        android:id="@+id/et_valor_cuad"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:hint="@string/insertar_evaluaci_n"
-                                        android:layout_marginTop="8dp"
-                                        android:inputType="number"
-                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                                        android:textColor="@color/grey_60"/>
-
-                                    <Button
-                                        android:id="@+id/btn_cuad"
+                                    <LinearLayout
                                         android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:text="@string/button_accept"
-                                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                                        android:layout_margin="8dp"/>
+                                        android:layout_height="match_parent"
+                                        android:layout_marginTop="4dp"
+                                        android:background="@color/white"
+                                        android:gravity="center_horizontal"
+                                        android:orientation="vertical">
+
+                                        <EditText
+                                            android:id="@+id/et_valor_cuad"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="8dp"
+                                            android:hint="@string/insertar_evaluaci_n"
+                                            android:inputType="number"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                            android:textColor="@color/grey_60" />
+
+                                        <Button
+                                            android:id="@+id/btn_cuad"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_margin="8dp"
+                                            android:text="@string/button_accept"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                                    </LinearLayout>
 
                                 </LinearLayout>
-
-                            </LinearLayout>
 
                             </RelativeLayout>
 
@@ -263,179 +263,179 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent">
 
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="10dp"
-                                android:layout_marginRight="10dp"
-                                android:orientation="vertical">
-
-                                <TextView
+                                <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="8dp"
-                                    android:layout_marginBottom="6dp"
-                                    android:text="@string/bloque3_tema2"
-                                    android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
-                                    android:textColor="@color/grey_90"
-                                    android:textSize="14sp"
-                                    android:textStyle="bold" />
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:orientation="vertical">
 
-                                <androidx.core.widget.NestedScrollView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <LinearLayout
+                                    <TextView
                                         android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:orientation="vertical"
-                                        android:layout_marginBottom="120dp">
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginBottom="6dp"
+                                        android:text="@string/bloque3_tema2"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                                        android:textColor="@color/grey_90"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
 
-                                        <TextView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_marginBottom="6dp"
-                                            android:text="@string/bt8"
-                                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                                            android:textColor="@color/grey_90" />
+                                    <androidx.core.widget.NestedScrollView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
 
                                         <LinearLayout
                                             android:layout_width="match_parent"
-                                            android:layout_height="180dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginBottom="120dp"
                                             android:orientation="vertical">
 
-                                            <androidx.cardview.widget.CardView
+                                            <TextView
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
-                                                android:layout_marginLeft="6dp"
-                                                android:layout_marginTop="8dp"
-                                                android:layout_marginRight="6dp"
-                                                android:layout_marginBottom="8dp"
-                                                android:visibility="visible"
-                                                app:cardCornerRadius="10dp"
-                                                app:cardElevation="2dp">
+                                                android:layout_marginBottom="6dp"
+                                                android:text="@string/bt8"
+                                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                                android:textColor="@color/grey_90" />
 
-                                                <LinearLayout
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="180dp"
+                                                android:orientation="vertical">
+
+                                                <androidx.cardview.widget.CardView
                                                     android:layout_width="match_parent"
                                                     android:layout_height="wrap_content"
-                                                    android:orientation="vertical">
+                                                    android:layout_marginLeft="6dp"
+                                                    android:layout_marginTop="8dp"
+                                                    android:layout_marginRight="6dp"
+                                                    android:layout_marginBottom="8dp"
+                                                    android:visibility="visible"
+                                                    app:cardCornerRadius="10dp"
+                                                    app:cardElevation="2dp">
 
-                                                    <RelativeLayout
+                                                    <LinearLayout
                                                         android:layout_width="match_parent"
                                                         android:layout_height="wrap_content"
                                                         android:orientation="vertical">
 
-                                                        <ImageView
+                                                        <RelativeLayout
                                                             android:layout_width="match_parent"
-                                                            android:layout_height="180dp"
-                                                            android:scaleType="centerCrop"
-                                                            android:src="@drawable/pd" />
+                                                            android:layout_height="wrap_content"
+                                                            android:orientation="vertical">
+
+                                                            <ImageView
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="180dp"
+                                                                android:scaleType="centerCrop"
+                                                                android:src="@drawable/pd" />
 
 
-                                                    </RelativeLayout>
+                                                        </RelativeLayout>
 
-                                                </LinearLayout>
+                                                    </LinearLayout>
 
-                                            </androidx.cardview.widget.CardView>
+                                                </androidx.cardview.widget.CardView>
+
+                                            </LinearLayout>
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="4dp"
+                                                android:layout_marginBottom="6dp"
+                                                android:text="@string/bt1_obj1"
+                                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                                android:textColor="@color/grey_90"
+                                                android:textSize="14sp"
+                                                android:textStyle="bold" />
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="6dp"
+                                                android:text="@string/bt3_obj3"
+                                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                                android:textColor="@color/grey_90" />
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="4dp"
+                                                android:layout_marginBottom="6dp"
+                                                android:text="@string/bt1_obj3"
+                                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                                android:textColor="@color/grey_90"
+                                                android:textSize="14sp"
+                                                android:textStyle="bold" />
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="6dp"
+                                                android:text="@string/bt3_obj4"
+                                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                                android:textColor="@color/grey_90" />
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="4dp"
+                                                android:layout_marginBottom="6dp"
+                                                android:text="@string/bt1_obj5"
+                                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                                android:textColor="@color/grey_90"
+                                                android:textSize="14sp"
+                                                android:textStyle="bold" />
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="6dp"
+                                                android:text="@string/bt3_obj5"
+                                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                                android:textColor="@color/grey_90" />
 
                                         </LinearLayout>
-
-                                        <TextView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_marginTop="4dp"
-                                            android:layout_marginBottom="6dp"
-                                            android:text="@string/bt1_obj1"
-                                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                                            android:textColor="@color/grey_90"
-                                            android:textSize="14sp"
-                                            android:textStyle="bold" />
-
-                                        <TextView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_marginBottom="6dp"
-                                            android:text="@string/bt3_obj3"
-                                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                                            android:textColor="@color/grey_90" />
-
-                                        <TextView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_marginTop="4dp"
-                                            android:layout_marginBottom="6dp"
-                                            android:text="@string/bt1_obj3"
-                                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                                            android:textColor="@color/grey_90"
-                                            android:textSize="14sp"
-                                            android:textStyle="bold" />
-
-                                        <TextView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_marginBottom="6dp"
-                                            android:text="@string/bt3_obj4"
-                                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                                            android:textColor="@color/grey_90" />
-
-                                        <TextView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_marginTop="4dp"
-                                            android:layout_marginBottom="6dp"
-                                            android:text="@string/bt1_obj5"
-                                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                                            android:textColor="@color/grey_90"
-                                            android:textSize="14sp"
-                                            android:textStyle="bold" />
-
-                                        <TextView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_marginBottom="6dp"
-                                            android:text="@string/bt3_obj5"
-                                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                                            android:textColor="@color/grey_90" />
-
-                                    </LinearLayout>
-                                </androidx.core.widget.NestedScrollView>
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:orientation="horizontal"
-                                android:layout_alignParentBottom="true">
+                                    </androidx.core.widget.NestedScrollView>
+                                </LinearLayout>
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:orientation="vertical"
-                                    android:background="@color/white"
-                                    android:gravity="center_horizontal"
-                                    android:layout_marginTop="4dp">
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:orientation="horizontal">
 
-                                    <EditText
-                                        android:id="@+id/et_valor_pd"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:hint="@string/insertar_evaluaci_n"
-                                        android:layout_marginTop="8dp"
-                                        android:inputType="number"
-                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                                        android:textColor="@color/grey_60"/>
-
-                                    <Button
-                                        android:id="@+id/btn_pd"
+                                    <LinearLayout
                                         android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:text="@string/button_accept"
-                                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                                        android:layout_margin="8dp"/>
+                                        android:layout_height="match_parent"
+                                        android:layout_marginTop="4dp"
+                                        android:background="@color/white"
+                                        android:gravity="center_horizontal"
+                                        android:orientation="vertical">
+
+                                        <EditText
+                                            android:id="@+id/et_valor_pd"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="8dp"
+                                            android:hint="@string/insertar_evaluaci_n"
+                                            android:inputType="number"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                            android:textColor="@color/grey_60" />
+
+                                        <Button
+                                            android:id="@+id/btn_pd"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_margin="8dp"
+                                            android:text="@string/button_accept"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                                    </LinearLayout>
 
                                 </LinearLayout>
-
-                            </LinearLayout>
 
                             </RelativeLayout>
 
@@ -464,179 +464,179 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent">
 
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="10dp"
-                                android:layout_marginRight="10dp"
-                                android:orientation="vertical">
-
-                                <TextView
+                                <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginTop="8dp"
-                                    android:layout_marginBottom="6dp"
-                                    android:text="@string/bloque3_tema3"
-                                    android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
-                                    android:textColor="@color/grey_90"
-                                    android:textSize="14sp"
-                                    android:textStyle="bold" />
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:orientation="vertical">
 
-                                <androidx.core.widget.NestedScrollView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent">
-
-                                    <LinearLayout
+                                    <TextView
                                         android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:orientation="vertical"
-                                        android:layout_marginBottom="120dp">
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginBottom="6dp"
+                                        android:text="@string/bloque3_tema3"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+                                        android:textColor="@color/grey_90"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
 
-                                        <TextView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_marginBottom="6dp"
-                                            android:text="@string/bt9"
-                                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                                            android:textColor="@color/grey_90" />
+                                    <androidx.core.widget.NestedScrollView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
 
                                         <LinearLayout
                                             android:layout_width="match_parent"
-                                            android:layout_height="180dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginBottom="120dp"
                                             android:orientation="vertical">
 
-                                            <androidx.cardview.widget.CardView
+                                            <TextView
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
-                                                android:layout_marginLeft="6dp"
-                                                android:layout_marginTop="8dp"
-                                                android:layout_marginRight="6dp"
-                                                android:layout_marginBottom="8dp"
-                                                android:visibility="visible"
-                                                app:cardCornerRadius="10dp"
-                                                app:cardElevation="2dp">
+                                                android:layout_marginBottom="6dp"
+                                                android:text="@string/bt9"
+                                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                                android:textColor="@color/grey_90" />
 
-                                                <LinearLayout
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="180dp"
+                                                android:orientation="vertical">
+
+                                                <androidx.cardview.widget.CardView
                                                     android:layout_width="match_parent"
                                                     android:layout_height="wrap_content"
-                                                    android:orientation="vertical">
+                                                    android:layout_marginLeft="6dp"
+                                                    android:layout_marginTop="8dp"
+                                                    android:layout_marginRight="6dp"
+                                                    android:layout_marginBottom="8dp"
+                                                    android:visibility="visible"
+                                                    app:cardCornerRadius="10dp"
+                                                    app:cardElevation="2dp">
 
-                                                    <RelativeLayout
+                                                    <LinearLayout
                                                         android:layout_width="match_parent"
                                                         android:layout_height="wrap_content"
                                                         android:orientation="vertical">
 
-                                                        <ImageView
+                                                        <RelativeLayout
                                                             android:layout_width="match_parent"
-                                                            android:layout_height="180dp"
-                                                            android:scaleType="fitXY"
-                                                            android:src="@drawable/cangrejo" />
+                                                            android:layout_height="wrap_content"
+                                                            android:orientation="vertical">
+
+                                                            <ImageView
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="180dp"
+                                                                android:scaleType="fitXY"
+                                                                android:src="@drawable/cangrejo" />
 
 
-                                                    </RelativeLayout>
+                                                        </RelativeLayout>
 
-                                                </LinearLayout>
+                                                    </LinearLayout>
 
-                                            </androidx.cardview.widget.CardView>
+                                                </androidx.cardview.widget.CardView>
+
+                                            </LinearLayout>
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="4dp"
+                                                android:layout_marginBottom="6dp"
+                                                android:text="@string/bt1_obj1"
+                                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                                android:textColor="@color/grey_90"
+                                                android:textSize="14sp"
+                                                android:textStyle="bold" />
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="6dp"
+                                                android:text="@string/bt3_obj6"
+                                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                                android:textColor="@color/grey_90" />
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="4dp"
+                                                android:layout_marginBottom="6dp"
+                                                android:text="@string/bt1_obj3"
+                                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                                android:textColor="@color/grey_90"
+                                                android:textSize="14sp"
+                                                android:textStyle="bold" />
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="6dp"
+                                                android:text="@string/bt1_obj4"
+                                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                                android:textColor="@color/grey_90" />
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="4dp"
+                                                android:layout_marginBottom="6dp"
+                                                android:text="@string/bt1_obj5"
+                                                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                                android:textColor="@color/grey_90"
+                                                android:textSize="14sp"
+                                                android:textStyle="bold" />
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="6dp"
+                                                android:text="@string/bt3_obj7"
+                                                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                                android:textColor="@color/grey_90" />
 
                                         </LinearLayout>
-
-                                        <TextView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_marginTop="4dp"
-                                            android:layout_marginBottom="6dp"
-                                            android:text="@string/bt1_obj1"
-                                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                                            android:textColor="@color/grey_90"
-                                            android:textSize="14sp"
-                                            android:textStyle="bold" />
-
-                                        <TextView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_marginBottom="6dp"
-                                            android:text="@string/bt3_obj6"
-                                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                                            android:textColor="@color/grey_90" />
-
-                                        <TextView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_marginTop="4dp"
-                                            android:layout_marginBottom="6dp"
-                                            android:text="@string/bt1_obj3"
-                                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                                            android:textColor="@color/grey_90"
-                                            android:textSize="14sp"
-                                            android:textStyle="bold" />
-
-                                        <TextView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_marginBottom="6dp"
-                                            android:text="@string/bt1_obj4"
-                                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                                            android:textColor="@color/grey_90" />
-
-                                        <TextView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_marginTop="4dp"
-                                            android:layout_marginBottom="6dp"
-                                            android:text="@string/bt1_obj5"
-                                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                                            android:textColor="@color/grey_90"
-                                            android:textSize="14sp"
-                                            android:textStyle="bold" />
-
-                                        <TextView
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:layout_marginBottom="6dp"
-                                            android:text="@string/bt3_obj7"
-                                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                                            android:textColor="@color/grey_90" />
-
-                                    </LinearLayout>
-                                </androidx.core.widget.NestedScrollView>
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:orientation="horizontal"
-                                android:layout_alignParentBottom="true">
+                                    </androidx.core.widget.NestedScrollView>
+                                </LinearLayout>
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:orientation="vertical"
-                                    android:background="@color/white"
-                                    android:gravity="center_horizontal"
-                                    android:layout_marginTop="4dp">
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:orientation="horizontal">
 
-                                    <EditText
-                                        android:id="@+id/et_valor_cang"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:hint="@string/insertar_evaluaci_n"
-                                        android:layout_marginTop="8dp"
-                                        android:inputType="number"
-                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                                        android:textColor="@color/grey_60"/>
-
-                                    <Button
-                                        android:id="@+id/btn_cang"
+                                    <LinearLayout
                                         android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:text="@string/button_accept"
-                                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                                        android:layout_margin="8dp"/>
+                                        android:layout_height="match_parent"
+                                        android:layout_marginTop="4dp"
+                                        android:background="@color/white"
+                                        android:gravity="center_horizontal"
+                                        android:orientation="vertical">
+
+                                        <EditText
+                                            android:id="@+id/et_valor_cang"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="8dp"
+                                            android:hint="@string/insertar_evaluaci_n"
+                                            android:inputType="number"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                            android:textColor="@color/grey_60" />
+
+                                        <Button
+                                            android:id="@+id/btn_cang"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_margin="8dp"
+                                            android:text="@string/button_accept"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                                    </LinearLayout>
 
                                 </LinearLayout>
-
-                            </LinearLayout>
 
                             </RelativeLayout>
 
