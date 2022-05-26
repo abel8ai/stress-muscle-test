@@ -44,9 +44,9 @@
     <string name="menu_exportar_excel">Excel Export</string>
     <string name="menu_idioma">Language</string>
     <string name="menu_informaci_n">Information</string>
-    <string name="dialog_block_3">Block 3</string>
-    <string name="dialog_block_2">Block 2</string>
-    <string name="dialog_block_1">Block 1</string>
+    <string name="dialog_block_3">Block III</string>
+    <string name="dialog_block_2">Block II</string>
+    <string name="dialog_block_1">Block I</string>
     <string name="mandatory_field">*Obligatory field*</string>
     <string name="dialog_add_practicant">Add Intern</string>
     <string name="dialog_add_athlete">Add Athlete</string>
@@ -77,6 +77,18 @@
     <string name="bt1_obj6">« There is a noticeable change in the position of the trunk in deviation of the spine.\n« Roll your shoulders forward.\n« There is an arch in the dorsal back.</string>
     <string name="bloque1_tema2">2. Prone bridge test (Bliss &amp; Teeple, 2005) (PB)</string>
     <string name="bt2">Isometric test to fundamentally assess the anterior and posterior muscular resistance of the core. Bliss and Teeple (2005) suggest that the time that the evaluated subjects should endure should be at least 60 seconds.</string>
-    <string name="bt1_obj7">The subject adopts the posture seen in the image and will have to maintain it, without modifying it, for as long as possible. Instruments: exercise mat and stopwatch.</string>
-    <string name="bt1_obj8">« Hay un cambio notable en la posición del tronco en desviación de la columna vertebral.\n« Las caderas cambian abajo o hacia arriba en un esfuerzo para mantener equilibrio y estabilidad.\n« Lleve los hombros hacia adelante.\n« Haya un arco en la espalda dorsal.</string>
+    <string name="bt1_obj7">The subject adopts the posture seen in the image and will have to maintain it, without modifying it, for as long as possible.</string>
+    <string name="bt1_obj8">« Hay un cambio notable en la posición del tronco en desviación de la columna vertebral.\n« Las caderas cambian abajo o hacia arriba en un esfuerzo para mantener equilibrio y estabilidad.\n« Lleve los hombros hacia adelante.\n« Haya un arco en la espalda dorsal.</string>
+    <string name="sobre_la_apk">About the APK</string>
+    <string name="bloque1_tema3">3. LsideB (Lateral side endurance tests-Left LsideB) Left lateral bridge (LLB) and RsideB (Lateral side endurance tests-Right RsideB) or Right lateral bridge (RLB)</string>
+    <string name="bt3">This test requires activation of the lateral muscles of the core, basically the quadratus lumborum and the internal and external oblique muscles, with low disc compression (Lehman et al., 2005; McGuill, 1998; Axler &amp; McGuill, 1997).</string>
+    <string name="tv_imagen_pld">Left Lateral Bridge (LLB)</string>
+    <string name="tv_imagen_pli">Right lateral bridge (RLB)</string>
+    <string name="bt1_obj9">The subject adopts the posture seen in the image and will have to maintain it, without modifying it, for as long as possible.</string>
+    <string name="bt1_obj10">« Hay un cambio notable en la posición del tronco en desviación de la columna vertebral.\n« Las caderas cambian hacia abajo, adelante o hacia atrás en un esfuerzo para mantener equilibrio y estabilidad.\n« Lleve el hombro sin apoyo hacia adelante o hacia atrás.\n« Haya un arco en la espalda dorsal.</string>
+    <string name="bloque1_tema4">4. Modified Biering-Sorensen test (Biering-Sorensen, 1984) or isometric trunk test (BS-T)</string>
+    <string name="bt4">This test activates the main extensor muscles of the trunk, the longissimus and the multifidus, which are part of the “local” stabilizing system (McGuill, 2007), but not the hip muscles.</string>
+    <string name="bt1_obj11">The subject adopts the posture seen in the image and will have to maintain it, without modifying it, for as long as possible.</string>
+    <string name="bt1_obj12">Exercise mat, massage table, equipment to do back extensions and stopwatch.</string>
+    <string name="bt1_obj13">« There is a noticeable change in the position of the trunk in deviation of the spine.\n« Cannot maintain neutral trunk position relative to horizontal.</string>
 </resources>

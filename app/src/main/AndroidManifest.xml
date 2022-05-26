@@ -15,16 +15,19 @@
         android:theme="@style/Theme.EntrenamientoMuscularEstabilizador">
         <activity
             android:name=".ui.view.AboutActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/sobre_la_apk"/>
         <activity
             android:name=".ui.view.BloqueTresActivity"
             android:exported="false" />
         <activity
             android:name=".ui.view.BloqueDosActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/dialog_block_2"/>
         <activity
             android:name=".ui.view.BloqueUnoActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/dialog_block_1"/>
         <activity
             android:name=".ui.view.TestsActivity"
             android:exported="false" />

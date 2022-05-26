@@ -7,9 +7,9 @@
     <string name="dialog_add_practicant">Adicionar Practicante</string>
     <string name="mandatory_field">*Campo obligatorio*</string>
 
-    <string name="dialog_block_1">Bloque 1</string>
-    <string name="dialog_block_2">Bloque 2</string>
-    <string name="dialog_block_3">Bloque 3</string>
+    <string name="dialog_block_1">Bloque I</string>
+    <string name="dialog_block_2">Bloque II</string>
+    <string name="dialog_block_3">Bloque III</string>
     <string name="menu_informaci_n">Información</string>
     <string name="menu_idioma">Idioma</string>
     <string name="menu_exportar_excel">Exportar Excel</string>
@@ -48,11 +48,11 @@
     <string name="a_os_en_el_deporte">Años en el deporte</string>
     <string name="a_os_en_el_deporte1">Años en el deporte:</string>
     <string name="ejercicio_aerobio">Ejercicio Aerobio</string>
-    <string name="spinning">Spinning</string>
+    <string name="spinning" translatable="false">Spinning</string>
     <string name="entrenamiento_musculacion">Entrenamiento Musculación</string>
-    <string name="yoga">Yoga</string>
-    <string name="crossfit">Crossfit</string>
-    <string name="pilates">Pilates</string>
+    <string name="yoga" translatable="false">Yoga</string>
+    <string name="crossfit" translatable="false">Crossfit</string>
+    <string name="pilates" translatable="false">Pilates</string>
     <string name="otro">Otro</string>
     <string name="pruebas">Pruebas</string>
     <string name="sobre_la_apk_stabilizer_muscle_tests2">La apk pretende ser una herramienta que le permite al usuario poder evaluar, controlar y dirigir el entrenamiento de la resistencia a la fuerza de los músculos estabilizadores para la Actividad Física y el Deporte. La misma le proporciona criterios evaluativos y dosificación de ejercicios físicos específicos para el desarrollo de los músculos estabilizadores.</string>
@@ -81,8 +81,20 @@
     <string name="bt1_obj6">« Hay un cambio notable en la posición del tronco en desviación de la columna vertebral.\n« Lleve los hombros hacia adelante.\n« Haya un arco en la espalda dorsal.</string>
     <string name="bloque1_tema2"><![CDATA[2.Test de puente prono (Bliss & Teeple, 2005) (PP)]]></string>
     <string name="bt2">Test isométrico para valorar fundamentalmente la resistencia muscular anterior y posterior del core. Bliss y Teeple (2005) sugieren que el tiempo que deberían soportar los sujetos evaluados debería ser de al menos 60 segundos.</string>
-    <string name="bt1_obj7">El sujeto adopta la postura que se observa en la imagen y tendrá que mantener la misma, sin modificarla, el mayor tiempo posible. Instrumentos: alfombra de ejercicios y cronometro.</string>
-    <string name="bt1_obj8">« Hay un cambio notable en la posición del tronco en desviación de la columna vertebral.\n« Las caderas cambian abajo o hacia arriba en un esfuerzo para mantener equilibrio y estabilidad.\n« Lleve los hombros hacia adelante.\n« Haya un arco en la espalda dorsal.</string>
+    <string name="bt1_obj7">El sujeto adopta la postura que se observa en la imagen y tendrá que mantener la misma, sin modificarla, el mayor tiempo posible.</string>
+    <string name="bt1_obj8">« Hay un cambio notable en la posición del tronco en desviación de la columna vertebral.\n« Las caderas cambian abajo o hacia arriba en un esfuerzo para mantener equilibrio y estabilidad.\n« Lleve los hombros hacia adelante.\n« Haya un arco en la espalda dorsal.</string>
+    <string name="sobre_la_apk">Sobre la APK</string>
+    <string name="bloque1_tema3">3.LsideB (Lateral side endurance tests-Left LsideB) Puente lateral izquierdo (PPLI) y RsideB (Lateral side endurance tests-Right RsideB) o Puente lateral derecho (PPLD)</string>
+    <string name="bt3"><![CDATA[Este test requiere la activación de la musculatura lateral del core, básicamente el cuadrado lumbar y la musculatura oblicua interna y externa, con una baja compresión discal (Lehman et al., 2005; McGuill, 1998; Axler & McGuill, 1997).]]></string>
+    <string name="tv_imagen_pld">Puente lateral izquierdo (PLD)</string>
+    <string name="tv_imagen_pli">Puente lateral derecho (PPLI)</string>
+    <string name="bt1_obj9">El sujeto adopta la postura que se observa en la imagen y tendrá que mantener la misma, sin modificarla, el mayor tiempo posible.</string>
+    <string name="bt1_obj10">« Hay un cambio notable en la posición del tronco en desviación de la columna vertebral.\n« Las caderas cambian hacia abajo, adelante o hacia atrás en un esfuerzo para mantener equilibrio y estabilidad.\n« Lleve el hombro sin apoyo hacia adelante o hacia atrás.\n« Haya un arco en la espalda dorsal.</string>
+    <string name="bloque1_tema4">4.Test modificado de Biering-Sorensen (Biering-Sorensen, 1984) o Isométrico de tronco (ISM-T)</string>
+    <string name="bt4">Este test activa los músculos principales extensores del tronco, el longísimo y el multífido, los cuales forman parte del sistema estabilizador “local” (McGuill, 2007), pero no de los músculos de la cadera.</string>
+    <string name="bt1_obj11">El sujeto adopta la postura que se observa en la imagen y tendrá que mantener la misma, sin modificarla, el mayor tiempo posible.</string>
+    <string name="bt1_obj12">Alfombra de ejercicios, mesa de masaje, equipo para hacer extensiones de espalda y cronometro.</string>
+    <string name="bt1_obj13">« Hay un cambio notable en la posición del tronco en desviación de la columna vertebral.\n« No puede mantener la posición neutra del tronco con respecto a la horizontal.</string>
 
     <string-array name="genders">
         <item>Masculino</item>
