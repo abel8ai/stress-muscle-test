@@ -53,4 +53,16 @@
     <string name="button_add">Add</string>
     <string name="sobre_la_apk_stabilizer_muscle_tests2">The apk aims to be a tool that allows the user to be able to evaluate, control and direct the training of resistance to the strength of the stabilizing muscles for Physical Activity and Sports. It provides evaluative criteria and dosage of specific physical exercises for the development of stabilizer muscles.</string>
     <string name="orientaciones_para_aplicar_los_tests1">GUIDELINES TO APPLY THE TESTS</string>
+    <string name="antes_de_aplicar_los_test_el_evaluado_debe">Before applying the tests, the evaluated must:</string>
+    <string name="orientacion1">1. Carry out the general and special warm-up.</string>
+    <string name="orientacion2">2. In each test, the fullness of the proper posture for the test must be respected (see figure by test) and the established methodology.</string>
+    <string name="orientacion3">3. The test is finished when the subject varies or modifies the appropriate posture for the test (see figure for test) or settles in a different position.</string>
+    <string name="orientacion4">4. A break between tests of 5 to 10 min is established.</string>
+    <string name="orientacion5">5. Block I tests are applied one day first in the order in which they have tests from 1 to 4.</string>
+    <string name="orientacion6">6. On a second day, the Block II tests are applied in the order in which they have tests 1 and 2.</string>
+    <string name="orientacion7">7. On a third day, the Block III tests are applied in the order in which they have tests from 1 to 3.</string>
+    <string name="orientacion8">8. With pain, injury and/or operation, none of the tests are performed.</string>
+    <string name="orientacion9">9. Tests can be applied every 7, 15 or 30 days.</string>
+    <string name="orientacion10">10. If the aim is to determine the test-retest reliability of the tests in a population group, each test must be repeated at least 3 times with rest periods between 5 and 7 days to perform the same test again.</string>
+    <string name="orientacion11">11. The recommended thing is to rest from 24 to 48 hours to apply the tests (Block I rest 24 to 48 hours, Block II rest 24 to 48 hours, Block III rest 24 to 48 hours and I can apply any other type of test).</string>
 </resources>

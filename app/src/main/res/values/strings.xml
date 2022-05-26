@@ -57,6 +57,18 @@
     <string name="pruebas">Pruebas</string>
     <string name="sobre_la_apk_stabilizer_muscle_tests2">La apk pretende ser una herramienta que le permite al usuario poder evaluar, controlar y dirigir el entrenamiento de la resistencia a la fuerza de los músculos estabilizadores para la Actividad Física y el Deporte. La misma le proporciona criterios evaluativos y dosificación de ejercicios físicos específicos para el desarrollo de los músculos estabilizadores.</string>
     <string name="orientaciones_para_aplicar_los_tests1">ORIENTACIONES PARA APLICAR LOS TESTS</string>
+    <string name="antes_de_aplicar_los_test_el_evaluado_debe">Antes de aplicar los test el evaluado debe:</string>
+    <string name="orientacion1">1. Realizar el calentamiento general y especial.</string>
+    <string name="orientacion2">2. En cada prueba se debe de respetar la cabalidad de la postura adecuada para la prueba (ver figura por prueba) y la metodología establecida.</string>
+    <string name="orientacion3">3. La prueba es finalizada cuando el sujeto varié o modifique la postura adecuada para la prueba (ver figura por prueba) o se acomode en una posición diferente.</string>
+    <string name="orientacion4">4. Se establece un descanso entre pruebas de 5 a 10 min.</string>
+    <string name="orientacion5">5. Se aplican un día primero los test del Bloque I por el orden en que tienen las pruebas de la 1 a la 4.</string>
+    <string name="orientacion6">6. Se aplican en un segundo día los test del Bloque II por el orden en que tienen las pruebas 1 y 2.</string>
+    <string name="orientacion7">7. Se aplican en un tercer día los test del Bloque III por el orden en que tienen las pruebas de la 1 a la 3.</string>
+    <string name="orientacion8">8. Con dolor, lesión y / o operación no se realiza ninguno de los test.</string>
+    <string name="orientacion9">9. Las pruebas pueden aplicarse cada 7, 15 ó 30 días.</string>
+    <string name="orientacion10">10. Si se pretende determinar la fiabilidad test-retest de las pruebas en un grupo población cada prueba como mínimo se debe de repetir al menos 3 veces con periodos de descanso entre 5 y 7 días para volver a realizar la misma prueba.</string>
+    <string name="orientacion11">11. Lo recomendado es descansar de 24 a 48 horas para aplicar los tests (Bloque I descanso 24 a 48 horas, Bloque II descanso 24 a 48 horas, Bloque III descanso 24 a 48 horas y puedo aplicar cualquier otro tipo de tests).</string>
 
     <string-array name="genders">
         <item>Masculino</item>
