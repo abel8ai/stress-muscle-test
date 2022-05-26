@@ -169,6 +169,7 @@ class PersonDetailsActivity : AppCompatActivity() {
 
             binding.tvResultIsocuad.text = athlete!!.measureIsocuad.toString()
             binding.tvResultPd.text = athlete!!.measurePd.toString()
+            binding.tvResultCang.text = athlete!!.measureCang.toString()
             // evaluacion de atleta
             binding.tvEvalAbd60.text = athlete!!.evalAbd60
             binding.tvEvalPp.text = athlete!!.evalPp
@@ -181,6 +182,7 @@ class PersonDetailsActivity : AppCompatActivity() {
 
             binding.tvEvalIsocuad.text = athlete!!.evalIsocuad
             binding.tvEvalPd.text = athlete!!.evalPp
+            binding.tvEvalCang.text = athlete!!.evalCang
         }
         else if (isPracticant) {
             // resultados de practicante
@@ -195,6 +197,7 @@ class PersonDetailsActivity : AppCompatActivity() {
 
             binding.tvResultIsocuad.text = practicant!!.measureIsocuad.toString()
             binding.tvResultPd.text = practicant!!.measurePd.toString()
+            binding.tvResultCang.text = practicant!!.measureCang.toString()
             // evaluacion de practicante
             binding.tvEvalAbd60.text = practicant!!.evalAbd60
             binding.tvEvalPp.text = practicant!!.evalPp
@@ -207,6 +210,8 @@ class PersonDetailsActivity : AppCompatActivity() {
 
             binding.tvEvalIsocuad.text = practicant!!.evalIsocuad
             binding.tvEvalPd.text = practicant!!.evalPp
+            binding.tvEvalCang.text = practicant!!.evalCang
         }
     }
+
 }

@@ -32,9 +32,13 @@ class AthleteViewModel @Inject constructor(private val personDatabase: PersonDat
         athletesModel.postValue(personDatabase.getAthleteDao().getAllAthletes())
         return success
     }
+    suspend fun updateAthlete(athlete: AthleteEntity){
+        personDatabase.getAthleteDao().updateAthlete(athlete)
+        athleteModel.postValue(personDatabase.getAthleteDao().getAthleteById(athlete.id!!))
+    }
     fun evaluateTest(testType : TestType, athlete: AthleteEntity, measure:Double):String {
         // Obtain specific test row
-        val baseRow = ((athlete.age-7)*20)+2
+        val baseRow = ((athlete.age-7)*20)+3
         var genderValue = 0
         if (athlete.gender == "Masculino")
             genderValue = 1
@@ -55,6 +59,7 @@ class AthleteViewModel @Inject constructor(private val personDatabase: PersonDat
         val evaluator = myWorkBook.creationHelper.createFormulaEvaluator()
         return evaluator.evaluate(cell).stringValue
     }
+
     suspend fun evaluateAthlete(athlete: AthleteEntity){
         athlete.evalAbd60 = evaluateTest(TestType.ADB60,athlete,athlete.measureAbd60)
         athlete.evalPp = evaluateTest(TestType.PP,athlete,athlete.measurePp)
@@ -67,6 +72,7 @@ class AthleteViewModel @Inject constructor(private val personDatabase: PersonDat
 
         athlete.evalIsocuad = evaluateTest(TestType.ISOCUAD,athlete,athlete.measureIsocuad)
         athlete.evalPd = evaluateTest(TestType.PD,athlete,athlete.measurePd)
+        athlete.evalCang = evaluateTest(TestType.CANG,athlete,athlete.measureCang)
         personDatabase.getAthleteDao().updateAthlete(athlete)
     }
 
@@ -104,6 +110,8 @@ class AthleteViewModel @Inject constructor(private val personDatabase: PersonDat
         head.createCell(24).setCellValue("Eval_ISOCUAD")
         head.createCell(25).setCellValue("PD")
         head.createCell(26).setCellValue("Eval_PD")
+        head.createCell(27).setCellValue("CANG")
+        head.createCell(28).setCellValue("Eval_CANG")
         var i = 1
         athleteList.forEach { athlete ->
             val row = athletesheet.createRow(i)
@@ -136,6 +144,8 @@ class AthleteViewModel @Inject constructor(private val personDatabase: PersonDat
             row.createCell(24).setCellValue(athlete.evalIsocuad)
             row.createCell(25).setCellValue(athlete.measurePd)
             row.createCell(26).setCellValue(athlete.evalPd)
+            row.createCell(27).setCellValue(athlete.measureCang)
+            row.createCell(28).setCellValue(athlete.evalCang)
 
             i++
         }

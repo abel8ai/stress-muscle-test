@@ -35,6 +35,7 @@ data class PracticantEntity(
     @ColumnInfo(name = "measure_cn") var measureCn: Double = 0.0
     @ColumnInfo(name = "measure_isocuad") var measureIsocuad: Double = 0.0
     @ColumnInfo(name = "measure_pd") var measurePd: Double = 0.0
+    @ColumnInfo(name = "measure_cang") var measureCang: Double = 0.0
 
     @ColumnInfo(name = "eval_adb60") var evalAbd60: String = ""
     @ColumnInfo(name = "eval_pp") var evalPp: String = ""
@@ -45,4 +46,5 @@ data class PracticantEntity(
     @ColumnInfo(name = "eval_cn") var evalCn: String = ""
     @ColumnInfo(name = "eval_isocuad") var evalIsocuad: String = ""
     @ColumnInfo(name = "eval_pd") var evalPd: String = ""
+    @ColumnInfo(name = "eval_cang") var evalCang: String = ""
 }

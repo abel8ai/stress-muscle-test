@@ -5,6 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.uci.entrenamiento_muscular_estabilizador.core.TestType
 import com.uci.entrenamiento_muscular_estabilizador.data.model.database.PersonDatabase
+import com.uci.entrenamiento_muscular_estabilizador.data.model.database.entities.AthleteEntity
 import com.uci.entrenamiento_muscular_estabilizador.data.model.database.entities.PracticantEntity
 import dagger.hilt.android.lifecycle.HiltViewModel
 import org.apache.poi.hssf.usermodel.HSSFWorkbook
@@ -32,9 +33,13 @@ class PracticantViewModel@Inject constructor(private val personDatabase: PersonD
         practicantsModel.postValue(personDatabase.getPracticantDao().getAllPracticants())
         return success
     }
+    suspend fun updatePracticant(practicant: PracticantEntity){
+        personDatabase.getPracticantDao().updatePracticant(practicant)
+        practicantModel.postValue(personDatabase.getPracticantDao().getPracticantById(practicant.id!!))
+    }
     fun evaluateTest(testType : TestType, practicant: PracticantEntity, measure:Double):String {
         // Obtain specific test row
-        val baseRow = ((practicant.age-7)*20)+2
+        val baseRow = ((practicant.age-7)*20)+3
         var genderValue = 0
         if (practicant.gender == "Masculino")
             genderValue = 1
@@ -68,6 +73,7 @@ class PracticantViewModel@Inject constructor(private val personDatabase: PersonD
 
         practicant.evalIsocuad = evaluateTest(TestType.ISOCUAD,practicant,practicant.measureIsocuad)
         practicant.evalPd = evaluateTest(TestType.PD,practicant,practicant.measurePd)
+        practicant.evalCang = evaluateTest(TestType.PD,practicant,practicant.measureCang)
         personDatabase.getPracticantDao().updatePracticant(practicant)
     }
 
@@ -110,6 +116,8 @@ class PracticantViewModel@Inject constructor(private val personDatabase: PersonD
         head.createCell(29).setCellValue("Eval_ISOCUAD")
         head.createCell(30).setCellValue("PD")
         head.createCell(31).setCellValue("Eval_PD")
+        head.createCell(32).setCellValue("CANG")
+        head.createCell(33).setCellValue("Eval_CANG")
 
         var i = 1
         practicantList.forEach { practicant ->
@@ -148,6 +156,8 @@ class PracticantViewModel@Inject constructor(private val personDatabase: PersonD
             row.createCell(29).setCellValue(practicant.evalIsocuad)
             row.createCell(30).setCellValue(practicant.measurePd)
             row.createCell(31).setCellValue(practicant.evalPd)
+            row.createCell(32).setCellValue(practicant.measureCang)
+            row.createCell(33).setCellValue(practicant.evalCang)
 
             i++
         }
