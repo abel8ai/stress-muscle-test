@@ -21,9 +21,9 @@
     </item>
 
     <item
-        android:id="@+id/ic_informacion"
+        android:id="@+id/ic_bibliografia"
         android:icon="@drawable/ic_informacion"
-        android:title="@string/menu_informaci_n"/>
+        android:title="@string/bibliograf_a"/>
 
     <item
         android:id="@+id/excel_export"

@@ -126,6 +126,7 @@
     <string name="insertar_evaluaci_n">Insertar evaluación</string>
     <string name="masculino">Masculino</string>
     <string name="femenino">Femenino</string>
+    <string name="bibliograf_a">Bibliografía</string>
 
     <string-array name="genders">
         <item>Masculino</item>

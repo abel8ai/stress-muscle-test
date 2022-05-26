@@ -14,9 +14,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EntrenamientoMuscularEstabilizador">
         <activity
+            android:name=".BibliographyActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.view.AboutActivity"
             android:exported="false"
-            android:label="@string/sobre_la_apk"/>
+            android:label="@string/sobre_la_apk" />
         <activity
             android:name=".ui.view.BloqueTresActivity"
             android:exported="false"
@@ -24,22 +27,22 @@
         <activity
             android:name=".ui.view.BloqueDosActivity"
             android:exported="false"
-            android:label="@string/dialog_block_2"/>
+            android:label="@string/dialog_block_2" />
         <activity
             android:name=".ui.view.BloqueUnoActivity"
             android:exported="false"
-            android:label="@string/dialog_block_1"/>
+            android:label="@string/dialog_block_1" />
         <activity
             android:name=".ui.view.TestsActivity"
             android:exported="false" />
         <activity
             android:name=".ui.view.PersonDetailsActivity"
             android:exported="false"
-            android:label="@string/detalle"/>
+            android:label="@string/detalle" />
         <activity
             android:name=".ui.view.PersonsActivity"
             android:exported="true"
-            android:label="@string/lista_personas"/>
+            android:label="@string/lista_personas" />
         <activity
             android:name=".ui.view.MainActivity"
             android:exported="true"

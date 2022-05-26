@@ -93,7 +93,7 @@ class MainActivity : AppCompatActivity() {
             R.id.seleccion_idioma -> {
                 return true
             }
-            R.id.ic_informacion -> {
+            R.id.ic_bibliografia -> {
                 return true
             }
             R.id.excel_export -> {
