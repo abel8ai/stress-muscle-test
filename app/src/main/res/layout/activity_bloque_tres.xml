@@ -57,6 +57,10 @@
                             app:cardCornerRadius="10dp"
                             app:cardElevation="2dp">
 
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -82,7 +86,8 @@
                                     <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:orientation="vertical">
+                                        android:orientation="vertical"
+                                        android:layout_marginBottom="120dp">
 
                                         <TextView
                                             android:layout_width="match_parent"
@@ -124,21 +129,6 @@
                                                             android:scaleType="centerCrop"
                                                             android:src="@drawable/cuadrupedia" />
 
-                                                        <ImageView
-                                                            android:layout_width="match_parent"
-                                                            android:layout_height="35dp"
-                                                            android:layout_alignParentBottom="true"
-                                                            android:scaleType="centerCrop"
-                                                            android:src="@color/transparente" />
-
-                                                        <TextView
-                                                            android:layout_width="match_parent"
-                                                            android:layout_height="wrap_content"
-                                                            android:layout_alignParentBottom="true"
-                                                            android:padding="10dp"
-                                                            android:text="@string/tv_imagen6"
-                                                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                                                            android:textColor="@color/white" />
 
                                                     </RelativeLayout>
 
@@ -208,6 +198,46 @@
                                     </LinearLayout>
                                 </androidx.core.widget.NestedScrollView>
                             </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_alignParentBottom="true">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:background="@color/white"
+                                    android:gravity="center_horizontal"
+                                    android:layout_marginTop="4dp">
+
+                                    <EditText
+                                        android:id="@+id/et_valor_cuad"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:hint="@string/insertar_evaluaci_n"
+                                        android:layout_marginTop="8dp"
+                                        android:inputType="number"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                        android:textColor="@color/grey_60"/>
+
+                                    <Button
+                                        android:id="@+id/btn_cuad"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/button_accept"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                        android:layout_margin="8dp"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            </RelativeLayout>
+
+
                         </androidx.cardview.widget.CardView>
                     </LinearLayout>
 
@@ -228,6 +258,10 @@
                             android:visibility="visible"
                             app:cardCornerRadius="10dp"
                             app:cardElevation="2dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -254,7 +288,8 @@
                                     <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:orientation="vertical">
+                                        android:orientation="vertical"
+                                        android:layout_marginBottom="120dp">
 
                                         <TextView
                                             android:layout_width="match_parent"
@@ -296,21 +331,6 @@
                                                             android:scaleType="centerCrop"
                                                             android:src="@drawable/pd" />
 
-                                                        <ImageView
-                                                            android:layout_width="match_parent"
-                                                            android:layout_height="35dp"
-                                                            android:layout_alignParentBottom="true"
-                                                            android:scaleType="centerCrop"
-                                                            android:src="@color/transparente" />
-
-                                                        <TextView
-                                                            android:layout_width="match_parent"
-                                                            android:layout_height="wrap_content"
-                                                            android:layout_alignParentBottom="true"
-                                                            android:padding="10dp"
-                                                            android:text="@string/tv_imagen7"
-                                                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                                                            android:textColor="@color/white" />
 
                                                     </RelativeLayout>
 
@@ -380,6 +400,45 @@
                                     </LinearLayout>
                                 </androidx.core.widget.NestedScrollView>
                             </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_alignParentBottom="true">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:background="@color/white"
+                                    android:gravity="center_horizontal"
+                                    android:layout_marginTop="4dp">
+
+                                    <EditText
+                                        android:id="@+id/et_valor_pd"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:hint="@string/insertar_evaluaci_n"
+                                        android:layout_marginTop="8dp"
+                                        android:inputType="number"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                        android:textColor="@color/grey_60"/>
+
+                                    <Button
+                                        android:id="@+id/btn_pd"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/button_accept"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                        android:layout_margin="8dp"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            </RelativeLayout>
+
                         </androidx.cardview.widget.CardView>
                     </LinearLayout>
 
@@ -400,6 +459,10 @@
                             android:visibility="visible"
                             app:cardCornerRadius="10dp"
                             app:cardElevation="2dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -426,7 +489,8 @@
                                     <LinearLayout
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
-                                        android:orientation="vertical">
+                                        android:orientation="vertical"
+                                        android:layout_marginBottom="120dp">
 
                                         <TextView
                                             android:layout_width="match_parent"
@@ -468,21 +532,6 @@
                                                             android:scaleType="fitXY"
                                                             android:src="@drawable/cangrejo" />
 
-                                                        <ImageView
-                                                            android:layout_width="match_parent"
-                                                            android:layout_height="50dp"
-                                                            android:layout_alignParentBottom="true"
-                                                            android:scaleType="centerCrop"
-                                                            android:src="@color/transparente" />
-
-                                                        <TextView
-                                                            android:layout_width="match_parent"
-                                                            android:layout_height="wrap_content"
-                                                            android:layout_alignParentBottom="true"
-                                                            android:padding="10dp"
-                                                            android:text="@string/tv_imagen8"
-                                                            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                                                            android:textColor="@color/white" />
 
                                                     </RelativeLayout>
 
@@ -552,6 +601,46 @@
                                     </LinearLayout>
                                 </androidx.core.widget.NestedScrollView>
                             </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_alignParentBottom="true">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:background="@color/white"
+                                    android:gravity="center_horizontal"
+                                    android:layout_marginTop="4dp">
+
+                                    <EditText
+                                        android:id="@+id/et_valor_cang"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:hint="@string/insertar_evaluaci_n"
+                                        android:layout_marginTop="8dp"
+                                        android:inputType="number"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                        android:textColor="@color/grey_60"/>
+
+                                    <Button
+                                        android:id="@+id/btn_cang"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/button_accept"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                        android:layout_margin="8dp"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            </RelativeLayout>
+
+
                         </androidx.cardview.widget.CardView>
                     </LinearLayout>
 
