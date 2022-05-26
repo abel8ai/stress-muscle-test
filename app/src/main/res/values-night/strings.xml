@@ -85,4 +85,16 @@
     <string name="bt1_obj11">El sujeto adopta la postura que se observa en la imagen y tendrá que mantener la misma, sin modificarla, el mayor tiempo posible.</string>
     <string name="bt1_obj12">Alfombra de ejercicios, mesa de masaje, equipo para hacer extensiones de espalda y cronometro.</string>
     <string name="bt1_obj13">« Hay un cambio notable en la posición del tronco en desviación de la columna vertebral.\n« No puede mantener la posición neutra del tronco con respecto a la horizontal.</string>
+    <string name="bloque2_tema">BLOQUE II. Tests de campo para la valoración de la estabilidad del complejo articular patelofermoral</string>
+    <string name="bloque2_tema1">1. Cuclilla Sissy (CS)</string>
+    <string name="bt5"><![CDATA[Este test implica los músculos principales que extiende la rodilla que conforman el cuádriceps, musculatura “grande y potente” (recto anterior, vasto externo, vasto interno y crural).\n\nPara lograr una correcta postura debes mantener los omóplatos unidos, el complejo lumbo pélvico, el abdomen y glúteos activados que son los que estabilizan la postura.\n\nLas rodillas se mantienen alejadas de la alfombra de ejercicios que se encuentra en el piso a la distancia de 5–7 cm.\n« 5 cm de distancia para ≥ 18 años.\n« 7 cm de distancia para < 18 años.]]></string>
+    <string name="tv_imagen4">Imagen tomada de Sporlife Julio 2017</string>
+    <string name="bt2_obj1">El sujeto adopta la postura que se observa en la imagen y tendrá que mantener la misma, sin modificarla, el mayor tiempo posible.</string>
+    <string name="bt2_obj2">Alfombra de ejercicios, pared o espaldera y cronometro.</string>
+    <string name="bt2_obj3">« Hay un cambio notable en la posición del tronco en desviación de la columna vertebral.\n« No puede mantener la posición neutra del tronco con respecto a la vertical.\n« Las caderas cambian adelante o hacia atrás en un esfuerzo para mantener equilibrio y estabilidad.\n« Cuando pegue las rodillas a la alfombra de ejercicios o modifique la distancia de la rodilla con respecto a la alfombra de ejercicios.</string>
+    <string name="bloque2_tema2">2. Curl Nordic o Curl Nórdico (CN)</string>
+    <string name="bt6">Test isométrico valora fundamentalmente la resistencia muscular de los músculos posteriores de la pierna (semitendinoso, semibembranoso y bíceps femoral). El complejo muscular Core, haciendo énfasis en la zona lumbo-pélvica deben estar activado y la región lumbar lo más aplanada posible.\n\nEl ángulo 40 se obtiene midiendo con un goniométro o cinta métrica la flexión del tronco con respecto al piso.</string>
+    <string name="tv_imagen5"><![CDATA[Imagen reproduced from Bahr and Mæhlum (2002) with permission from the publisher (rLill-Ann Pris & Gazette Bok)]]></string>
+    <string name="bt2_obj4">El sujeto adopta la postura que se observa en la imagen y tendrá que mantener postura el sujeto 1 a 40 grados (nivel donde está la flecha azul) lo más inclinado, recto y estable posible, sin modificarla, el mayor tiempo posible.</string>
+    <string name="bt2_obj5">« Hay un cambio notable en la posición del tronco en desviación de la columna vertebral.\n« No puede mantener la posición neutra del tronco con respecto a la vertical.\n« Lleve los glúteos hacia atrás.\n« Haya un arco en la espalda dorsal.</string>
 </resources>
