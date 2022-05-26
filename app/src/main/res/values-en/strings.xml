@@ -103,4 +103,27 @@
     <string name="tv_imagen5">Imagen reproduced from Bahr and Mæhlum (2002) with permission from the publisher (rLill-Ann Pris &amp; Gazette Bok)</string>
     <string name="bt2_obj4">The subject adopts the posture shown in the image and will have to maintain the subject is posture from 1 to 40 degrees (level where the blue arrow is) as inclined, straight and stable as possible, without modifying it, for as long as possible.</string>
     <string name="bt2_obj5">« There is a noticeable change in the position of the trunk in deviation of the spine.\n« Cannot maintain neutral trunk position relative to vertical.\n« Pull your buttocks back.\n« There is an arch in the dorsal back.</string>
+
+    <string name="detalle">Personal detail</string>
+    <string name="bloque3_tema">BLOCK III. Other field test proposals for stability assessment</string>
+    <string name="bloque3_tema1">1. Quadrupedism (QUAD)</string>
+    <string name="bt7"><![CDATA[This test involves the main muscles that stabilize the shoulder joint complex, lumbopelvic and patellofemoral.\n\nTo achieve a correct posture you must keep your shoulder blades together, your arms extended, your lumbopelvic complex in a neutral position, your quadriceps, abdomen and glutes activated, which are what stabilize your posture and your back as straight as possible.\n\nThe knees are kept away from the exercise mat lying on the floor at the distance of 5–7 cm.\n« 5 cm distance for ≥ 18 years.\n« 7 cm distance for < 18 years.]]></string>
+    <string name="tv_imagen6">Image taken from Sporlife October 2017</string>
+    <string name="bt3_obj1">The subject adopts the posture seen in the image and will have to maintain it, without modifying it, for as long as possible.</string>
+    <string name="bt3_obj2">« There is a noticeable change in the position of the trunk in deviation of the spine.\n« Cannot maintain neutral trunk position relative to horizontal.\n« The hips shift down or up in an effort to maintain balance and stability.\n« When you hit your knees or change the distance to the exercise mat.</string>
+    <string name="bloque3_tema2">2. Dorsal Bridge (DB)</string>
+    <string name="bt8">Este test implica los músculos principales que eleva la pelvis conforman musculatura extensora del tronco.\n\nPara lograr una correcta postura debes mantener los omóplatos unidos, el complejo lumbo pélvico, el abdomen y glúteos activados que son los que estabilizan la postura y la espalda lo más pegada al piso. Las manos se colocan con una separación a la anchura de los hombros y los pies juntos en flexión dorsal o plantar.</string>
+    <string name="tv_imagen7">Vera et al. (2013)</string>
+    <string name="bt3_obj3">The subject adopts the posture seen in the image and will have to maintain it, without modifying it, for as long as possible.</string>
+    <string name="bt3_obj4">Exercise mat, massage table and stopwatch.</string>
+    <string name="bt3_obj5">« There is a noticeable change in the position of the trunk in deviation of the spine.\n« Cannot maintain neutral trunk position relative to horizontal.\n« The hips shift down or up in an effort to maintain balance and stability.\n« Flexion of the elbow(s).\n« The buttocks and lower extremities are brought closer to the floor, stretcher or exercise mat.\n« There is an arch in the dorsal back.</string>
+    <string name="bloque3_tema3">3. Crab (CRAB)</string>
+    <string name="bt9">This test involves the main muscles that stabilize the trunk extensor complex. To achieve a correct posture, you must keep your shoulder blades together, arms extended, the lumbopelvic complex aligned with your knees, your abdomen and buttocks activated, which are what stabilize your posture and your back as straight as possible.</string>
+    <string name="tv_imagen8">Taken from https://.sp.depositphotos.com/stock-photos/pose-de-crab.html</string>
+    <string name="bt3_obj6">The subject adopts the posture seen in the image and will have to maintain it, without modifying it, for as long as possible.</string>
+    <string name="bt3_obj7">« There is a noticeable change in the position of the trunk in deviation of the spine.\n« Cannot maintain neutral trunk position relative to horizontal.\n« The hips shift down or up in an effort to maintain balance and stability.\n« Flexion of the elbow(s).</string>
+    <string name="prueba">TEST</string>
+    <string name="resultado">SCORE</string>
+    <string name="evaluaci_n">EVALUATION</string>
+
 </resources>

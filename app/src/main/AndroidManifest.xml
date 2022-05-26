@@ -19,7 +19,8 @@
             android:label="@string/sobre_la_apk"/>
         <activity
             android:name=".ui.view.BloqueTresActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/dialog_block_3" />
         <activity
             android:name=".ui.view.BloqueDosActivity"
             android:exported="false"
@@ -33,7 +34,8 @@
             android:exported="false" />
         <activity
             android:name=".ui.view.PersonDetailsActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/detalle"/>
         <activity
             android:name=".ui.view.PersonsActivity"
             android:exported="true" />

@@ -108,6 +108,28 @@
     <string name="bt2_obj4">El sujeto adopta la postura que se observa en la imagen y tendrá que mantener postura el sujeto 1 a 40 grados (nivel donde está la flecha azul) lo más inclinado, recto y estable posible, sin modificarla, el mayor tiempo posible.</string>
     <string name="bt2_obj5">« Hay un cambio notable en la posición del tronco en desviación de la columna vertebral.\n« No puede mantener la posición neutra del tronco con respecto a la vertical.\n« Lleve los glúteos hacia atrás.\n« Haya un arco en la espalda dorsal.</string>
 
+    <string name="detalle">Detalle personal</string>
+    <string name="bloque3_tema">BLOQUE III. Otras propuestas de tests de campos para la valoración de la estabilidad</string>
+    <string name="bloque3_tema1">1. Cuadrupedía (CUAD)</string>
+    <string name="bt7"><![CDATA[Este test implica los músculos principales que estabilizan el complejo articular de los hombros, lumbo pélvico y patelo femoral.\n\nPara lograr una correcta postura debes mantener los omóplatos unidos, brazos extendidos, el complejo lumbo pélvico en posición neutra, cuádriceps, abdomen y glúteos activados que son los que estabilizan la postura y la espalda lo más recta posible.\n\nLas rodillas se mantienen alejadas de la alfombra de ejercicios que se encuentra en el piso a la distancia de 5–7 cm.\n« 5 cm de distancia para ≥ 18 años.\n« 7 cm de distancia para < 18 años.]]></string>
+    <string name="tv_imagen6">Imagen tomada de Sporlife Octubre 2017</string>
+    <string name="bt3_obj1">El sujeto adopta la postura que se observa en la imagen y tendrá que mantener la misma, sin modificarla, el mayor tiempo posible.</string>
+    <string name="bt3_obj2">« Hay un cambio notable en la posición del tronco en desviación de la columna vertebral.\n« No puede mantener la posición neutra del tronco con respecto a la horizontal.\n« Las caderas cambian abajo o hacia arriba en un esfuerzo para mantener equilibrio y estabilidad.\n« Cuando pegue las rodillas o modifique la distancia a la alfombra de ejercicios.</string>
+    <string name="bloque3_tema2">2. Puente Dorsal (PD)</string>
+    <string name="bt8">Este test implica los músculos principales que eleva la pelvis conforman musculatura extensora del tronco.\n\nPara lograr una correcta postura debes mantener los omóplatos unidos, el complejo lumbo pélvico, el abdomen y glúteos activados que son los que estabilizan la postura y la espalda lo más pegada al piso. Las manos se colocan con una separación a la anchura de los hombros y los pies juntos en flexión dorsal o plantar.</string>
+    <string name="tv_imagen7">Vera et al. (2013)</string>
+    <string name="bt3_obj3">El sujeto adopta la postura que se observa en la imagen y tendrá que mantener la misma, sin modificarla, el mayor tiempo posible.</string>
+    <string name="bt3_obj4">Alfombra de ejercicios, mesa de masaje y cronometro.</string>
+    <string name="bt3_obj5">« Hay un cambio notable en la posición del tronco en desviación de la columna vertebral.\n« No puede mantener la posición neutra del tronco con respecto a la horizontal.\n« Las caderas cambian abajo o hacia arriba en un esfuerzo para mantener equilibrio y estabilidad.\n« Flexión del/os codo/s.\n« Los glúteos y extremidades inferiores se acercan al piso, camilla o alfombra de ejercicios.\n« Haya un arco en la espalda dorsal.</string>
+    <string name="bloque3_tema3">3. Cangrejo (CANG)</string>
+    <string name="bt9">Este test implica los músculos principales que estabilizan el complejo extensor del tronco. Para lograr una correcta postura debes mantener los omóplatos unidos, brazos extendidos, el complejo lumbo pélvico alineado con las rodillas, el abdomen y glúteos activados que son los que estabilizan la postura y la espalda lo más recta posible.</string>
+    <string name="tv_imagen8">Tomado de https://.sp.depositphotos.com/stock-photos/pose-de-cangrejo.html</string>
+    <string name="bt3_obj6">El sujeto adopta la postura que se observa en la imagen y tendrá que mantener la misma, sin modificarla, el mayor tiempo posible.</string>
+    <string name="bt3_obj7">« Hay un cambio notable en la posición del tronco en desviación de la columna vertebral.\n« No puede mantener la posición neutra del tronco con respecto a la horizontal.\n« Las caderas cambian abajo o hacia arriba en un esfuerzo para mantener equilibrio y estabilidad.\n« Flexión del/os codo/s.</string>
+    <string name="prueba">PRUEBA</string>
+    <string name="resultado">RESULTADO</string>
+    <string name="evaluaci_n">EVALUACIÓN</string>
+
     <string-array name="genders">
         <item>Masculino</item>
         <item>Femenino</item>
