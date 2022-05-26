@@ -59,4 +59,18 @@
     <string name="orientacion9">9. Las pruebas pueden aplicarse cada 7, 15 ó 30 días.</string>
     <string name="orientacion10">10. Si se pretende determinar la fiabilidad test-retest de las pruebas en un grupo población cada prueba como mínimo se debe de repetir al menos 3 veces con periodos de descanso entre 5 y 7 días para volver a realizar la misma prueba.</string>
     <string name="orientacion11">11. Lo recomendado es descansar de 24 a 48 horas para aplicar los tests (Bloque I descanso 24 a 48 horas, Bloque II descanso 24 a 48 horas, Bloque III descanso 24 a 48 horas y puedo aplicar cualquier otro tipo de tests).</string>
+    <string name="bloque1_tema">BLOQUE I. Tests de campo para la valoración de la estabilidad del core</string>
+    <string name="bloque1_tema1">1.AbdFle (Flexor endurance test) o Test de resistencia de flexores del tronco (ADB-600)</string>
+    <string name="bt1">Este test implica los músculos principales flexores del tronco, es decir el recto abdominal el cual es una musculatura “global” (McGuill, 2007) y los músculos profundos transverso abdominal cuadrado lumbar y erector espinal. Estos músculos estabilizan la columna vertebral. El ángulo 60 se obtiene midiendo con un goniométro o cinta métrica la flexión del tronco con respecto al piso.</string>
+    <string name="tv_imagen">Imagen tomada de Mcgill’s torso muscular endurance test battery</string>
+    <string name="bt1_obj1">Como se hace:</string>
+    <string name="bt1_obj2">El sujeto adopta la postura que se observa en la imagen y tendrá que mantener la misma, sin modificarla, el mayor tiempo posible que es medido con un cronometro por el profesor.</string>
+    <string name="bt1_obj3">Instrumentos:</string>
+    <string name="bt1_obj4">Alfombra de ejercicios y cronómetro.</string>
+    <string name="bt1_obj5">Se termina la prueba cuando:</string>
+    <string name="bt1_obj6">« Hay un cambio notable en la posición del tronco en desviación de la columna vertebral.\n« Lleve los hombros hacia adelante.\n« Haya un arco en la espalda dorsal.</string>
+    <string name="bloque1_tema2"><![CDATA[2.Test de puente prono (Bliss & Teeple, 2005) (PP)]]></string>
+    <string name="bt2">Test isométrico para valorar fundamentalmente la resistencia muscular anterior y posterior del core. Bliss y Teeple (2005) sugieren que el tiempo que deberían soportar los sujetos evaluados debería ser de al menos 60 segundos.</string>
+    <string name="bt1_obj7">El sujeto adopta la postura que se observa en la imagen y tendrá que mantener la misma, sin modificarla, el mayor tiempo posible. Instrumentos: alfombra de ejercicios y cronometro.</string>
+    <string name="bt1_obj8">« Hay un cambio notable en la posición del tronco en desviación de la columna vertebral.\n« Las caderas cambian abajo o hacia arriba en un esfuerzo para mantener equilibrio y estabilidad.\n« Lleve los hombros hacia adelante.\n« Haya un arco en la espalda dorsal.</string>
 </resources>
