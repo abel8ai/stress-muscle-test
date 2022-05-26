@@ -120,5 +120,7 @@
     <string name="resultado">SCORE</string>
     <string name="evaluaci_n">EVALUATION</string>
     <string name="insertar_evaluaci_n">Insert evaluation</string>
+    <string name="masculino">Male</string>
+    <string name="femenino">Female</string>
 
 </resources>

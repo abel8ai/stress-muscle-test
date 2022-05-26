@@ -114,5 +114,7 @@
     <string name="resultado">RESULTADO</string>
     <string name="evaluaci_n">EVALUACIÓN</string>
     <string name="insertar_evaluaci_n">Insertar evaluación</string>
+    <string name="masculino">Masculino</string>
+    <string name="femenino">Femenino</string>
 
 </resources>
