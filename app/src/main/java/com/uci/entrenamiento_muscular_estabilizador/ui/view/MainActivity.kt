@@ -37,6 +37,11 @@ class MainActivity : AppCompatActivity() {
         checkWritePermission()
         practicantViewModel
         athleteViewModel
+
+        binding.tvLeerMasNuestraHistoria.setOnClickListener {
+            val intent = Intent(this, AboutActivity::class.java)
+            startActivity(intent)
+        }
         binding.btPracticantList.setOnClickListener {
             val intent = Intent(this,PersonsActivity::class.java)
             intent.putExtra("person_type","practicant")

@@ -38,11 +38,13 @@
     <string name="a_os_en_el_deporte">Años en el deporte</string>
     <string name="a_os_en_el_deporte1">Años en el deporte:</string>
     <string name="ejercicio_aerobio">Ejercicio Aerobio</string>
-    <string name="spinning">Spinning</string>
+    <string name="spinning" translatable="false">Spinning</string>
     <string name="entrenamiento_musculacion">Entrenamiento Musculacion</string>
     <string name="yoga">Yoga</string>
-    <string name="crossfit">Crossfit</string>
-    <string name="pilates">Pilates</string>
+    <string name="crossfit" translatable="false">Crossfit</string>
+    <string name="pilates" translatable="false">Pilates</string>
     <string name="otro">Otro</string>
     <string name="pruebas">Pruebas</string>
+    <string name="sobre_la_apk_stabilizer_muscle_tests2">La apk pretende ser una herramienta que le permite al usuario poder evaluar, controlar y dirigir el entrenamiento de la resistencia a la fuerza de los músculos estabilizadores para la Actividad Física y el Deporte. La misma le proporciona criterios evaluativos y dosificación de ejercicios físicos específicos para el desarrollo de los músculos estabilizadores.</string>
+    <string name="orientaciones_para_aplicar_los_tests1">ORIENTACIONES PARA APLICAR LOS TESTS</string>
 </resources>
