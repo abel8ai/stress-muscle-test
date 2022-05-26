@@ -108,6 +108,7 @@ class PersonDetailsActivity : AppCompatActivity() {
             binding.tvGender.text = athlete!!.gender
             binding.tvEdad.text = athlete!!.age.toString()
             binding.tvPeso.text = athlete!!.weight.toString()
+            binding.tvEstatura.text = athlete!!.height.toString()
             binding.tvMunicip.text = athlete!!.municipality
             binding.tvProvince.text = athlete!!.province
             binding.tvDeporte.text = athlete!!.sport
@@ -124,6 +125,7 @@ class PersonDetailsActivity : AppCompatActivity() {
         } else if (practicant != null) {
             binding.tvName.text = practicant!!.fullName
             binding.tvGender.text = practicant!!.gender
+            binding.tvEstatura.text = practicant!!.height.toString()
             binding.tvEdad.text = practicant!!.age.toString()
             binding.tvPeso.text = practicant!!.weight.toString()
             binding.tvMunicip.text = practicant!!.municipality
