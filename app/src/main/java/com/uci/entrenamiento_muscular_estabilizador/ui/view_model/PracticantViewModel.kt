@@ -17,7 +17,7 @@ import javax.inject.Inject
 @HiltViewModel
 class PracticantViewModel@Inject constructor(private val personDatabase: PersonDatabase, private val assetManager: AssetManager): ViewModel() {
 
-    val practicantsModel = MutableLiveData<List<PracticantEntity>>()
+    val practicantsModel = MutableLiveData<MutableList<PracticantEntity>>()
     val practicantModel = MutableLiveData<PracticantEntity>()
 
     suspend fun getAllPracticants() {
@@ -37,6 +37,12 @@ class PracticantViewModel@Inject constructor(private val personDatabase: PersonD
         personDatabase.getPracticantDao().updatePracticant(practicant)
         practicantModel.postValue(personDatabase.getPracticantDao().getPracticantById(practicant.id!!))
     }
+
+    suspend fun deletePracticant(practicant: PracticantEntity){
+        personDatabase.getPracticantDao().deletePracticant(practicant)
+        practicantsModel.postValue(personDatabase.getPracticantDao().getAllPracticants())
+    }
+
     fun evaluateTest(testType : TestType, practicant: PracticantEntity, measure:Double):String {
         // Obtain specific test row
         val baseRow = ((practicant.age-7)*20)+3
