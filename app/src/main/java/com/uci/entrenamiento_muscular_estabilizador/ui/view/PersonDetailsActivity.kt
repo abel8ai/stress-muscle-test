@@ -214,4 +214,17 @@ class PersonDetailsActivity : AppCompatActivity() {
         }
     }
 
+    override fun onResume() {
+        super.onResume()
+        if (isAthlete) {
+            CoroutineScope(Dispatchers.IO).launch {
+                athleteViewModel.getAthleteById(intent.extras!!.getInt("athlete_id"))
+            }
+        } else if (isPracticant) {
+            CoroutineScope(Dispatchers.IO).launch {
+                practicantViewModel.getPracticantById(intent.extras!!.getInt("practicant_id"))
+            }
+        }
+    }
+
 }
