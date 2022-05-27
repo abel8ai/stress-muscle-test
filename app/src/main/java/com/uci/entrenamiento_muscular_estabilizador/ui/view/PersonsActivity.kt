@@ -7,6 +7,8 @@ import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.isEmpty
+import androidx.core.view.isVisible
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.uci.entrenamiento_muscular_estabilizador.R
@@ -81,6 +83,20 @@ class PersonsActivity : AppCompatActivity() {
             binding.rvPersonList.adapter = practicantAdapter
         }
     }
+
+//    private fun initRecycleView() {
+//        binding.rvPersonList.layoutManager = LinearLayoutManager(this)
+//        if (!binding.rvPersonList.isEmpty()) {
+//            if (isAthlete) {
+//                athleteAdapter = AthleteAdapter(athletelist)
+//                binding.rvPersonList.adapter = athleteAdapter
+//
+//            } else if (isPracticant) {
+//                practicantAdapter = PracticantAdapter(practicantList)
+//                binding.rvPersonList.adapter = practicantAdapter
+//            }
+//        }
+//    }
 
     private fun loadData() {
         if (isAthlete) {

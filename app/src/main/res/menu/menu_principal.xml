@@ -28,4 +28,8 @@
         android:icon="@drawable/excel_export"
         android:title="@string/menu_exportar_excel"/>
 
+    <item
+        android:id="@+id/salir"
+        android:title="@string/salir"/>
+
 </menu>

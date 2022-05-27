@@ -10,7 +10,9 @@ import android.os.Bundle
 import android.os.Environment
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Toast
 import androidx.activity.viewModels
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
@@ -122,6 +124,10 @@ class MainActivity : AppCompatActivity() {
                 exportExcel()
                 return true
             }
+            R.id.salir -> {
+                onBackPressed()
+                return true
+            }
             R.id.idioma_es->{
                 item.isChecked = true
                 menu.getItem(0).subMenu.getItem(1).isChecked = false
@@ -174,6 +180,24 @@ class MainActivity : AppCompatActivity() {
             }
             else -> super.onRequestPermissionsResult(requestCode, permissions, grantResults)
         }
+    }
+
+
+    override fun onBackPressed() {
+        AlertDialog.Builder(this).apply {
+            setTitle(R.string.salir_confirmar)
+            setMessage(R.string.salir_quieres)
+            setPositiveButton(R.string.salir_si) { _, _ ->
+                // if user press yes, then finish the current activity
+                super.onBackPressed()
+            }
+            setNegativeButton(R.string.salir_no){_, _ ->
+                // if user press no, then return the activity
+                Toast.makeText(this@MainActivity, R.string.salir_gracias,
+                    Toast.LENGTH_LONG).show()
+            }
+            setCancelable(true)
+        }.create().show()
     }
 
 }

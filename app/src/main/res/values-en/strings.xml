@@ -137,5 +137,12 @@
     <string name="rb6"><![CDATA[Mckeon, M. D., Albert, W. J., & Neary, J. P. (2006). Assesment of neuromuscular and haemodynamic activity in individuals with and without chronic low back pain. Dynamic medicine: DM, 5,6.]]></string>
     <string name="rb7"><![CDATA[McGill, S. M., Hughson, R. L., & Parks, K. (2000). Lumbar erector spinae oxygenation during prolonged contractions: implications for prolonged work. Ergonomics, 43(4), 486–493.]]></string>
     <string name="rb8">McGill, S.M., Childs, A. and Liebenson, C. (1999). Endurance times for low back stabilization exercises: clinical targets for testing and training from a normal database. Archives of Physical Medicine and Rehabilitation, 80(8), 941–944. doi:10.1016/S0003–9993(99)90087–4</string>
+    <string name="salir">Exit</string>
+
+    <string name="salir_confirmar">Please confirm</string>
+    <string name="salir_quieres">Are you want to exit the app?</string>
+    <string name="salir_si">YES</string>
+    <string name="salir_no">NO</string>
+    <string name="salir_gracias">Thank you</string>
 
 </resources>
