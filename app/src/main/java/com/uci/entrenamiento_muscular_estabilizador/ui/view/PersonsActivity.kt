@@ -2,6 +2,7 @@ package com.uci.entrenamiento_muscular_estabilizador.ui.view
 
 import android.graphics.Color
 import android.os.Bundle
+import android.view.View
 import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.activity.viewModels
@@ -31,8 +32,8 @@ class PersonsActivity : AppCompatActivity() {
     private val athleteViewModel: AthleteViewModel by viewModels()
     private lateinit var practicantAdapter: PracticantAdapter
     private lateinit var athleteAdapter: AthleteAdapter
-    private val athletelist = mutableListOf<AthleteEntity>()
-    private val practicantList = mutableListOf<PracticantEntity>()
+    private var athletelist = mutableListOf<AthleteEntity>()
+    private var practicantList = mutableListOf<PracticantEntity>()
     private var isAthlete: Boolean = false
     private var isPracticant: Boolean = false
 
@@ -59,13 +60,27 @@ class PersonsActivity : AppCompatActivity() {
         }
         if (isAthlete) {
             athleteViewModel.athletesModel.observe(this, Observer {
-                athleteAdapter = AthleteAdapter(it,athleteViewModel)
-                binding.rvPersonList.adapter = athleteAdapter
+                athletelist = it
+                if (athletelist.isEmpty())
+                    setVisible("iv")
+                else {
+                    setVisible("rv")
+                    athleteAdapter = AthleteAdapter(athletelist, athleteViewModel)
+                    binding.rvPersonList.adapter = athleteAdapter
+                }
+
             })
         } else if (isPracticant) {
             practicantViewModel.practicantsModel.observe(this, Observer {
-                practicantAdapter = PracticantAdapter(it,practicantViewModel)
-                binding.rvPersonList.adapter = practicantAdapter
+                practicantList = it
+                if (practicantList.isEmpty())
+                    setVisible("iv")
+                else {
+                    setVisible("rv")
+                    practicantAdapter = PracticantAdapter(practicantList, practicantViewModel)
+                    binding.rvPersonList.adapter = practicantAdapter
+                }
+
             })
         }
 
@@ -74,11 +89,23 @@ class PersonsActivity : AppCompatActivity() {
     private fun initRecycleView() {
         binding.rvPersonList.layoutManager = LinearLayoutManager(this)
         if (isAthlete) {
-            athleteAdapter = AthleteAdapter(athletelist,athleteViewModel)
-            binding.rvPersonList.adapter = athleteAdapter
+            if (athletelist.isEmpty())
+                setVisible("iv")
+            else {
+                setVisible("rv")
+                athleteAdapter = AthleteAdapter(athletelist, athleteViewModel)
+                binding.rvPersonList.adapter = athleteAdapter
+            }
+
         } else if (isPracticant) {
-            practicantAdapter = PracticantAdapter(practicantList,practicantViewModel)
-            binding.rvPersonList.adapter = practicantAdapter
+            if (practicantList.isEmpty())
+                setVisible("iv")
+            else {
+                setVisible("rv")
+                practicantAdapter = PracticantAdapter(practicantList, practicantViewModel)
+                binding.rvPersonList.adapter = practicantAdapter
+            }
+
         }
     }
 
@@ -296,5 +323,15 @@ class PersonsActivity : AppCompatActivity() {
                 bindingForm.etDeporte.text.isEmpty() ||
                 bindingForm.etAnnos.text.isEmpty() ||
                 bindingForm.etMunicipio.text.isEmpty())
+    }
+
+    private fun setVisible(view: String) {
+        if (view == "rv") {
+            binding.rvPersonList.visibility = View.VISIBLE
+            binding.ivEmptyList.visibility = View.GONE
+        } else if (view == "iv") {
+            binding.rvPersonList.visibility = View.GONE
+            binding.ivEmptyList.visibility = View.VISIBLE
+        }
     }
 }
