@@ -91,13 +91,6 @@ class PersonsActivity : AppCompatActivity() {
 
     private fun initRecycleView() {
         binding.rvPersonList.layoutManager = LinearLayoutManager(this)
-            if (isAthlete) {
-                athleteAdapter = AthleteAdapter(athletelist)
-                binding.rvPersonList.adapter = athleteAdapter
-            } else if (isPracticant) {
-                practicantAdapter = PracticantAdapter(practicantList)
-                binding.rvPersonList.adapter = practicantAdapter
-            }
         if (isAthlete) {
             if (athletelist.isEmpty())
                 setVisible("iv")
