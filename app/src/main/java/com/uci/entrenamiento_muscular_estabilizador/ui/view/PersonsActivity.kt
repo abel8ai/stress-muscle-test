@@ -1,7 +1,9 @@
 package com.uci.entrenamiento_muscular_estabilizador.ui.view
 
 import android.graphics.Color
+import android.opengl.Visibility
 import android.os.Bundle
+import android.view.View
 import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.activity.viewModels
@@ -75,28 +77,15 @@ class PersonsActivity : AppCompatActivity() {
 
     private fun initRecycleView() {
         binding.rvPersonList.layoutManager = LinearLayoutManager(this)
-        if (isAthlete) {
-            athleteAdapter = AthleteAdapter(athletelist)
-            binding.rvPersonList.adapter = athleteAdapter
-        } else if (isPracticant) {
-            practicantAdapter = PracticantAdapter(practicantList)
-            binding.rvPersonList.adapter = practicantAdapter
-        }
+            if (isAthlete) {
+                athleteAdapter = AthleteAdapter(athletelist)
+                binding.rvPersonList.adapter = athleteAdapter
+            } else if (isPracticant) {
+                practicantAdapter = PracticantAdapter(practicantList)
+                binding.rvPersonList.adapter = practicantAdapter
+            }
     }
 
-//    private fun initRecycleView() {
-//        binding.rvPersonList.layoutManager = LinearLayoutManager(this)
-//        if (!binding.rvPersonList.isEmpty()) {
-//            if (isAthlete) {
-//                athleteAdapter = AthleteAdapter(athletelist)
-//                binding.rvPersonList.adapter = athleteAdapter
-//
-//            } else if (isPracticant) {
-//                practicantAdapter = PracticantAdapter(practicantList)
-//                binding.rvPersonList.adapter = practicantAdapter
-//            }
-//        }
-//    }
 
     private fun loadData() {
         if (isAthlete) {
