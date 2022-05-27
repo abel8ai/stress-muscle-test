@@ -16,7 +16,7 @@ import javax.inject.Inject
 @HiltViewModel
 class AthleteViewModel @Inject constructor(private val personDatabase: PersonDatabase, private val assetManager: AssetManager) : ViewModel() {
 
-    val athletesModel = MutableLiveData<List<AthleteEntity>>()
+    val athletesModel = MutableLiveData<MutableList<AthleteEntity>>()
     val athleteModel = MutableLiveData<AthleteEntity>()
 
     suspend fun getAllAthletes() {
@@ -36,6 +36,12 @@ class AthleteViewModel @Inject constructor(private val personDatabase: PersonDat
         personDatabase.getAthleteDao().updateAthlete(athlete)
         athleteModel.postValue(personDatabase.getAthleteDao().getAthleteById(athlete.id!!))
     }
+
+    suspend fun deleteAthlete(athlete: AthleteEntity){
+        personDatabase.getAthleteDao().deleteAthlete(athlete)
+        athletesModel.postValue(personDatabase.getAthleteDao().getAllAthletes())
+    }
+
     fun evaluateTest(testType : TestType, athlete: AthleteEntity, measure:Double):String {
         // Obtain specific test row
         val baseRow = ((athlete.age-7)*20)+3

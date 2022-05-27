@@ -31,8 +31,8 @@ class PersonsActivity : AppCompatActivity() {
     private val athleteViewModel: AthleteViewModel by viewModels()
     private lateinit var practicantAdapter: PracticantAdapter
     private lateinit var athleteAdapter: AthleteAdapter
-    private val athletelist = emptyList<AthleteEntity>()
-    private val practicantList = emptyList<PracticantEntity>()
+    private val athletelist = mutableListOf<AthleteEntity>()
+    private val practicantList = mutableListOf<PracticantEntity>()
     private var isAthlete: Boolean = false
     private var isPracticant: Boolean = false
 
@@ -59,12 +59,12 @@ class PersonsActivity : AppCompatActivity() {
         }
         if (isAthlete) {
             athleteViewModel.athletesModel.observe(this, Observer {
-                athleteAdapter = AthleteAdapter(it)
+                athleteAdapter = AthleteAdapter(it,athleteViewModel)
                 binding.rvPersonList.adapter = athleteAdapter
             })
         } else if (isPracticant) {
             practicantViewModel.practicantsModel.observe(this, Observer {
-                practicantAdapter = PracticantAdapter(it)
+                practicantAdapter = PracticantAdapter(it,practicantViewModel)
                 binding.rvPersonList.adapter = practicantAdapter
             })
         }
@@ -74,10 +74,10 @@ class PersonsActivity : AppCompatActivity() {
     private fun initRecycleView() {
         binding.rvPersonList.layoutManager = LinearLayoutManager(this)
         if (isAthlete) {
-            athleteAdapter = AthleteAdapter(athletelist)
+            athleteAdapter = AthleteAdapter(athletelist,athleteViewModel)
             binding.rvPersonList.adapter = athleteAdapter
         } else if (isPracticant) {
-            practicantAdapter = PracticantAdapter(practicantList)
+            practicantAdapter = PracticantAdapter(practicantList,practicantViewModel)
             binding.rvPersonList.adapter = practicantAdapter
         }
     }

@@ -4,8 +4,11 @@
     <string name="button_accept">Aceptar</string>
     <string name="button_cancel">Cancelar</string>
     <string name="dialog_add_athlete">Adicionar Atleta</string>
+    <string name="dialog_delete_athlete">Eliminar Atleta</string>
+    <string name="dialog_delete_practicant">Eliminar Practicante</string>
     <string name="dialog_add_practicant">Adicionar Practicante</string>
     <string name="mandatory_field">*Campo obligatorio*</string>
+    <string name="confirm_delete">¿Esta seguro que desea eliminar esta persona?</string>
 
     <string name="dialog_block_1">Bloque I</string>
     <string name="dialog_block_2">Bloque II</string>

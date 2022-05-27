@@ -7,18 +7,18 @@ import com.uci.entrenamiento_muscular_estabilizador.data.model.database.entities
 import com.uci.entrenamiento_muscular_estabilizador.databinding.ItemDocumentBinding
 import com.uci.entrenamiento_muscular_estabilizador.ui.view.PersonDetailsActivity
 
-class PracticantViewHolder(view:View):RecyclerView.ViewHolder(view){
+class PracticantViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
-    private val binding = ItemDocumentBinding.bind(view)
-    fun bind(practicant:PracticantEntity){
+    val binding = ItemDocumentBinding.bind(view)
+    fun bind(practicant: PracticantEntity) {
         binding.tvNombre.text = practicant.fullName
         binding.tvEdad.text = practicant.age.toString()
         binding.tvEstatura.text = practicant.height.toString()
         binding.tvPeso.text = practicant.weight.toString()
         binding.tvSexo.text = practicant.gender
-        binding.cvElement.setOnClickListener{
-            val intent = Intent(binding.root.context,PersonDetailsActivity::class.java)
-            intent.putExtra("practicant_id",practicant.id)
+        binding.cvElement.setOnClickListener {
+            val intent = Intent(binding.root.context, PersonDetailsActivity::class.java)
+            intent.putExtra("practicant_id", practicant.id)
             intent.putExtra("person_type", "practicant")
             binding.root.context.startActivity(intent)
         }
