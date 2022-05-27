@@ -55,6 +55,10 @@
     <string name="pilates" translatable="false">Pilates</string>
     <string name="otro">Otro</string>
     <string name="pruebas">Pruebas</string>
+
+    <string name="age_limit_40">La edad debe ser entre 7 y 40 años</string>
+    <string name="age_limit_55">La edad debe ser entre 7 y 55 años</string>
+
     <string name="sobre_la_apk_stabilizer_muscle_tests2">La apk pretende ser una herramienta que le permite al usuario poder evaluar, controlar y dirigir el entrenamiento de la resistencia a la fuerza de los músculos estabilizadores para la Actividad Física y el Deporte. La misma le proporciona criterios evaluativos y dosificación de ejercicios físicos específicos para el desarrollo de los músculos estabilizadores.</string>
     <string name="orientaciones_para_aplicar_los_tests1">ORIENTACIONES PARA APLICAR LOS TESTS</string>
     <string name="antes_de_aplicar_los_test_el_evaluado_debe">Antes de aplicar los test el evaluado debe:</string>

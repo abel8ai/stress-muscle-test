@@ -3,6 +3,7 @@ package com.uci.entrenamiento_muscular_estabilizador.ui.view
 import android.graphics.Color
 import android.os.Bundle
 import android.widget.ArrayAdapter
+import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
@@ -113,7 +114,7 @@ class PersonsActivity : AppCompatActivity() {
             dialog.dismiss()
         }
         bindingForm.btAdicionar.setOnClickListener {
-            if (!validAthleteFields(bindingForm)) {
+            if (!validPracticantFields(bindingForm)) {
                 if (bindingForm.etNombre.text.isEmpty()) {
                     bindingForm.etNombre.hint = hint
                     bindingForm.etNombre.setHintTextColor(Color.RED)
@@ -159,14 +160,32 @@ class PersonsActivity : AppCompatActivity() {
                 val pilates = bindingForm.cbPilates.isChecked
                 val crossfit = bindingForm.cbCrossfit.isChecked
                 val other = bindingForm.etOtro.text.toString()
-                val practicant = PracticantEntity(
-                    null, "$name $lastName", gender, age, height, weight,
-                    province, municip, aerobics, spinning, muscle, crossfit, yoga, pilates, other
-                )
-                CoroutineScope(Dispatchers.IO).launch {
-                    practicantViewModel.addPractricant(practicant)
+                if (age < 7 || age > 55)
+                    Toast.makeText(this, R.string.age_limit_55, Toast.LENGTH_SHORT)
+                        .show()
+                else {
+                    val practicant = PracticantEntity(
+                        null,
+                        "$name $lastName",
+                        gender,
+                        age,
+                        height,
+                        weight,
+                        province,
+                        municip,
+                        aerobics,
+                        spinning,
+                        muscle,
+                        crossfit,
+                        yoga,
+                        pilates,
+                        other
+                    )
+                    CoroutineScope(Dispatchers.IO).launch {
+                        practicantViewModel.addPractricant(practicant)
+                    }
+                    dialog.dismiss()
                 }
-                dialog.dismiss()
             }
         }
     }
@@ -240,20 +259,24 @@ class PersonsActivity : AppCompatActivity() {
                 val municip = bindingForm.etMunicipio.text.toString()
                 val sport = bindingForm.etDeporte.text.toString()
                 val yearsInSport = bindingForm.etAnnos.text.toString().toInt()
-
-                val athlete = AthleteEntity(
-                    null, "$name $lastName", gender, age, height, weight,
-                    province, municip, sport, yearsInSport
-                )
-                CoroutineScope(Dispatchers.IO).launch {
-                    athleteViewModel.addAthlete(athlete)
+                if (age < 7 || age > 40)
+                    Toast.makeText(this, R.string.age_limit_40, Toast.LENGTH_SHORT)
+                        .show()
+                else {
+                    val athlete = AthleteEntity(
+                        null, "$name $lastName", gender, age, height, weight,
+                        province, municip, sport, yearsInSport
+                    )
+                    CoroutineScope(Dispatchers.IO).launch {
+                        athleteViewModel.addAthlete(athlete)
+                    }
+                    dialog.dismiss()
                 }
-                dialog.dismiss()
             }
         }
     }
 
-    private fun validAthleteFields(bindingForm: DialogAddPracticantBinding): Boolean {
+    private fun validPracticantFields(bindingForm: DialogAddPracticantBinding): Boolean {
         return !(bindingForm.etNombre.text.isEmpty() ||
                 bindingForm.etApellidos.text.isEmpty() ||
                 bindingForm.etEdad.text.isEmpty() ||
