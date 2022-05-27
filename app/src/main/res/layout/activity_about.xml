@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -145,14 +146,21 @@
                                 android:layout_gravity="center_vertical"
                                 android:src="@drawable/ic_image2" />
 
-                            <TextView
+                            <io.github.glailton.expandabletextview.ExpandableTextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_gravity="center_vertical"
                                 android:layout_marginTop="10dp"
                                 android:text="@string/orientacion2"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                                android:textColor="@color/grey_90" />
+                                android:textColor="@color/grey_90"
+                                android:textSize="14sp"
+                                app:ellipsizeTextColor="@color/blue_dark"
+                                expandableTextView:animDuration="500"
+                                expandableTextView:collapsedLines="3"
+                                expandableTextView:isExpanded="false"
+                                expandableTextView:readLessText="LEER MENOS"
+                                expandableTextView:readMoreText="LEER MÁS"
+                                expandableTextView:textMode="line" />
 
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
@@ -193,14 +201,21 @@
                                 android:layout_gravity="center_vertical"
                                 android:src="@drawable/ic_image3" />
 
-                            <TextView
+                            <io.github.glailton.expandabletextview.ExpandableTextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_gravity="center_vertical"
                                 android:layout_marginTop="10dp"
                                 android:text="@string/orientacion3"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                                android:textColor="@color/grey_90" />
+                                android:textColor="@color/grey_90"
+                                android:textSize="14sp"
+                                app:ellipsizeTextColor="@color/blue_dark"
+                                expandableTextView:animDuration="500"
+                                expandableTextView:collapsedLines="3"
+                                expandableTextView:isExpanded="false"
+                                expandableTextView:readLessText="LEER MENOS"
+                                expandableTextView:readMoreText="LEER MÁS"
+                                expandableTextView:textMode="line" />
 
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
@@ -282,14 +297,21 @@
                                 android:layout_gravity="center_vertical"
                                 android:src="@drawable/ic_image5" />
 
-                            <TextView
+                            <io.github.glailton.expandabletextview.ExpandableTextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_gravity="center_vertical"
                                 android:layout_marginTop="10dp"
                                 android:text="@string/orientacion5"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                                android:textColor="@color/grey_90" />
+                                android:textColor="@color/grey_90"
+                                android:textSize="14sp"
+                                app:ellipsizeTextColor="@color/blue_dark"
+                                expandableTextView:animDuration="500"
+                                expandableTextView:collapsedLines="3"
+                                expandableTextView:isExpanded="false"
+                                expandableTextView:readLessText="LEER MENOS"
+                                expandableTextView:readMoreText="LEER MÁS"
+                                expandableTextView:textMode="line" />
 
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
@@ -323,14 +345,21 @@
                                 android:layout_gravity="center_vertical"
                                 android:src="@drawable/ic_image6" />
 
-                            <TextView
+                            <io.github.glailton.expandabletextview.ExpandableTextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_gravity="center_vertical"
                                 android:layout_marginTop="10dp"
                                 android:text="@string/orientacion6"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                                android:textColor="@color/grey_90" />
+                                android:textColor="@color/grey_90"
+                                android:textSize="14sp"
+                                app:ellipsizeTextColor="@color/blue_dark"
+                                expandableTextView:animDuration="500"
+                                expandableTextView:collapsedLines="3"
+                                expandableTextView:isExpanded="false"
+                                expandableTextView:readLessText="LEER MENOS"
+                                expandableTextView:readMoreText="LEER MÁS"
+                                expandableTextView:textMode="line" />
 
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
@@ -371,14 +400,21 @@
                                 android:layout_gravity="center_vertical"
                                 android:src="@drawable/ic_image7" />
 
-                            <TextView
+                            <io.github.glailton.expandabletextview.ExpandableTextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_gravity="center_vertical"
                                 android:layout_marginTop="10dp"
                                 android:text="@string/orientacion7"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                                android:textColor="@color/grey_90" />
+                                android:textColor="@color/grey_90"
+                                android:textSize="14sp"
+                                app:ellipsizeTextColor="@color/blue_dark"
+                                expandableTextView:animDuration="500"
+                                expandableTextView:collapsedLines="3"
+                                expandableTextView:isExpanded="false"
+                                expandableTextView:readLessText="LEER MENOS"
+                                expandableTextView:readMoreText="LEER MÁS"
+                                expandableTextView:textMode="line" />
 
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
@@ -501,14 +537,21 @@
                                 android:layout_gravity="center_vertical"
                                 android:src="@drawable/ic_image10" />
 
-                            <TextView
+                            <io.github.glailton.expandabletextview.ExpandableTextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_gravity="center_vertical"
                                 android:layout_marginTop="10dp"
                                 android:text="@string/orientacion10"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                                android:textColor="@color/grey_90" />
+                                android:textColor="@color/grey_90"
+                                android:textSize="14sp"
+                                app:ellipsizeTextColor="@color/blue_dark"
+                                expandableTextView:animDuration="500"
+                                expandableTextView:collapsedLines="3"
+                                expandableTextView:isExpanded="false"
+                                expandableTextView:readLessText="LEER MENOS"
+                                expandableTextView:readMoreText="LEER MÁS"
+                                expandableTextView:textMode="line" />
 
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
@@ -549,14 +592,21 @@
                                 android:layout_gravity="center_vertical"
                                 android:src="@drawable/ic_image11" />
 
-                            <TextView
+                            <io.github.glailton.expandabletextview.ExpandableTextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_gravity="center_vertical"
                                 android:layout_marginTop="10dp"
                                 android:text="@string/orientacion11"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                                android:textColor="@color/grey_90" />
+                                android:textColor="@color/grey_90"
+                                android:textSize="14sp"
+                                app:ellipsizeTextColor="@color/blue_dark"
+                                expandableTextView:animDuration="500"
+                                expandableTextView:collapsedLines="3"
+                                expandableTextView:isExpanded="false"
+                                expandableTextView:readLessText="LEER MENOS"
+                                expandableTextView:readMoreText="LEER MÁS"
+                                expandableTextView:textMode="line" />
 
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
