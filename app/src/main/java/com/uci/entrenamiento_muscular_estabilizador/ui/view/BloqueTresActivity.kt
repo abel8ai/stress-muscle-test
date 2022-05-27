@@ -1,9 +1,13 @@
 package com.uci.entrenamiento_muscular_estabilizador.ui.view
 
+import android.content.Context
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.lifecycle.Observer
+import com.uci.entrenamiento_muscular_estabilizador.R
 import com.uci.entrenamiento_muscular_estabilizador.data.model.database.entities.AthleteEntity
 import com.uci.entrenamiento_muscular_estabilizador.data.model.database.entities.PracticantEntity
 import com.uci.entrenamiento_muscular_estabilizador.databinding.ActivityBloqueTresBinding
@@ -25,12 +29,13 @@ class BloqueTresActivity : AppCompatActivity() {
     private var practicant: PracticantEntity? = null
     private var isAthlete: Boolean = false
     private var isPracticant: Boolean = false
+    private lateinit var context: Context
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityBloqueTresBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        context = this
         practicantViewModel
         athleteViewModel
         isAthlete = intent.extras!!.getString("person_type").equals("athlete")
@@ -52,44 +57,65 @@ class BloqueTresActivity : AppCompatActivity() {
         athleteViewModel.athleteModel.observe(this, Observer {
             athlete = it
         })
-
+        val hint = resources.getString(R.string.mandatory_field)
         binding.btnCang.setOnClickListener {
-            if (isAthlete) {
-                athlete!!.measureCang = binding.etValorCang.text.toString().toDouble()
-                CoroutineScope(Dispatchers.IO).launch {
-                    athleteViewModel.updateAthlete(athlete!!)
+            if (binding.etValorCang.text.isNotEmpty()) {
+                if (isAthlete) {
+                    athlete!!.measureCang = binding.etValorCang.text.toString().toDouble()
+                    CoroutineScope(Dispatchers.IO).launch {
+                        athleteViewModel.updateAthlete(athlete!!)
+                        Toast.makeText(context, R.string.saved_result, Toast.LENGTH_SHORT)
+                    }
+                } else if (isPracticant) {
+                    practicant!!.measureCang = binding.etValorCang.text.toString().toDouble()
+                    CoroutineScope(Dispatchers.IO).launch {
+                        practicantViewModel.updatePracticant(practicant!!)
+                        Toast.makeText(context, R.string.saved_result, Toast.LENGTH_SHORT)
+                    }
                 }
-            } else if (isPracticant) {
-                practicant!!.measureCang = binding.etValorCang.text.toString().toDouble()
-                CoroutineScope(Dispatchers.IO).launch {
-                    practicantViewModel.updatePracticant(practicant!!)
-                }
+            } else {
+                binding.etValorCang.hint = hint
+                binding.etValorCang.setHintTextColor(Color.RED)
             }
         }
         binding.btnCuad.setOnClickListener {
-            if (isAthlete) {
-                athlete!!.measureIsocuad = binding.etValorCuad.text.toString().toDouble()
-                CoroutineScope(Dispatchers.IO).launch {
-                    athleteViewModel.updateAthlete(athlete!!)
+            if (binding.etValorCuad.text.isNotEmpty()) {
+                if (isAthlete) {
+                    athlete!!.measureIsocuad = binding.etValorCuad.text.toString().toDouble()
+                    CoroutineScope(Dispatchers.IO).launch {
+                        athleteViewModel.updateAthlete(athlete!!)
+                        Toast.makeText(context, R.string.saved_result, Toast.LENGTH_SHORT)
+                    }
+                } else if (isPracticant) {
+                    practicant!!.measureIsocuad = binding.etValorCuad.text.toString().toDouble()
+                    CoroutineScope(Dispatchers.IO).launch {
+                        practicantViewModel.updatePracticant(practicant!!)
+                        Toast.makeText(context, R.string.saved_result, Toast.LENGTH_SHORT)
+                    }
                 }
-            } else if (isPracticant) {
-                practicant!!.measureIsocuad = binding.etValorCuad.text.toString().toDouble()
-                CoroutineScope(Dispatchers.IO).launch {
-                    practicantViewModel.updatePracticant(practicant!!)
-                }
+            } else {
+                binding.etValorCuad.hint = hint
+                binding.etValorCuad.setHintTextColor(Color.RED)
             }
         }
         binding.btnPd.setOnClickListener {
-            if (isAthlete) {
-                athlete!!.measurePd = binding.etValorPd.text.toString().toDouble()
-                CoroutineScope(Dispatchers.IO).launch {
-                    athleteViewModel.updateAthlete(athlete!!)
+            if (binding.etValorPd.text.isNotEmpty()) {
+                if (isAthlete) {
+                    athlete!!.measurePd = binding.etValorPd.text.toString().toDouble()
+                    CoroutineScope(Dispatchers.IO).launch {
+                        athleteViewModel.updateAthlete(athlete!!)
+                        Toast.makeText(context, R.string.saved_result, Toast.LENGTH_SHORT)
+                    }
+                } else if (isPracticant) {
+                    practicant!!.measurePd = binding.etValorPd.text.toString().toDouble()
+                    CoroutineScope(Dispatchers.IO).launch {
+                        practicantViewModel.updatePracticant(practicant!!)
+                        Toast.makeText(context, R.string.saved_result, Toast.LENGTH_SHORT)
+                    }
                 }
-            } else if (isPracticant) {
-                practicant!!.measurePd = binding.etValorPd.text.toString().toDouble()
-                CoroutineScope(Dispatchers.IO).launch {
-                    practicantViewModel.updatePracticant(practicant!!)
-                }
+            }else{
+                binding.etValorPd.hint = hint
+                binding.etValorPd.setHintTextColor(Color.RED)
             }
         }
     }
