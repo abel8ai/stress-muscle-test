@@ -9,9 +9,7 @@
                 android:id="@+id/idioma_es"
                 android:title="@string/espa_ol"
                 android:icon="@drawable/banderita_cup"
-                android:enabled="false"
-                android:checkable="true"
-                android:checked="true"/>
+                android:checkable="true"/>
             <item
                 android:id="@+id/idioma_en"
                 android:title="@string/ingl_s"

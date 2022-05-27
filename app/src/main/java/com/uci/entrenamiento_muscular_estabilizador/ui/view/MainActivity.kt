@@ -1,8 +1,11 @@
 package com.uci.entrenamiento_muscular_estabilizador.ui.view
 
 import android.Manifest
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.content.pm.PackageManager
+import android.content.res.Configuration
 import android.os.Bundle
 import android.os.Environment
 import android.view.Menu
@@ -22,6 +25,8 @@ import kotlinx.coroutines.launch
 import org.apache.poi.hssf.usermodel.HSSFWorkbook
 import java.io.File
 import java.io.FileOutputStream
+import java.util.*
+
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -29,9 +34,14 @@ class MainActivity : AppCompatActivity() {
     private val athleteViewModel: AthleteViewModel by viewModels()
     private var writingPermissionGranted:Boolean = false
     private val REQUEST_WRITE_EXTERNAL_STORAGE = 334533
+    private lateinit var menu:Menu
+    private lateinit var sharedPref:SharedPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        sharedPref = getSharedPreferences("lang", Context.MODE_PRIVATE)
+        val lang = sharedPref.getString("lang","es")
+        setLocale(lang!!)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         checkWritePermission()
@@ -84,6 +94,16 @@ class MainActivity : AppCompatActivity() {
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         val inflater = menuInflater
         inflater.inflate(R.menu.menu_principal, menu)
+        this.menu = menu
+        val lang = sharedPref.getString("lang","es")
+        if (lang == "es"){
+            menu.getItem(0).subMenu.getItem(0).isChecked = true
+            menu.getItem(0).subMenu.getItem(1).isChecked = false
+        }
+        else if (lang == "en"){
+            menu.getItem(0).subMenu.getItem(0).isChecked = false
+            menu.getItem(0).subMenu.getItem(1).isChecked = true
+        }
         return super.onCreateOptionsMenu(menu)
     }
 
@@ -102,8 +122,31 @@ class MainActivity : AppCompatActivity() {
                 exportExcel()
                 return true
             }
+            R.id.idioma_es->{
+                item.isChecked = true
+                menu.getItem(0).subMenu.getItem(1).isChecked = false
+                sharedPref.edit().putString("lang","es").commit()
+                setLocale("es")
+                recreate()
+            }
+            R.id.idioma_en ->{
+                item.isChecked = true
+                menu.getItem(0).subMenu.getItem(0).isChecked = false
+                sharedPref.edit().putString("lang","en").commit()
+                setLocale("en")
+                recreate()
+            }
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    private fun setLocale(language: String) {
+        val locale = Locale(language)
+        Locale.setDefault(locale)
+        val config = resources.configuration
+        config.locale = Locale(language)
+        resources.updateConfiguration(config,resources.displayMetrics)
+        onConfigurationChanged(config)
     }
 
     private fun getWritingPermission() {
