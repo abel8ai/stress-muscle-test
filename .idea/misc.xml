@@ -3,19 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Android Studio/sdk/sdk/platforms/android-32/data/res/layout/simple_spinner_item.xml" value="0.17604166666666668" />
         <entry key="..\:/Users/Abel/AndroidStudioProjects/EntrenamientoMuscularEstabilizador/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/Abel/AndroidStudioProjects/EntrenamientoMuscularEstabilizador/app/src/main/res/layout/activity_person_details.xml" value="0.264" />
         <entry key="..\:/Users/Abel/AndroidStudioProjects/EntrenamientoMuscularEstabilizador/app/src/main/res/layout/activity_persons.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/Abel/AndroidStudioProjects/EntrenamientoMuscularEstabilizador/app/src/main/res/layout/form_add_user.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/Abel/AndroidStudioProjects/EntrenamientoMuscularEstabilizador/app/src/main/res/layout/item_document.xml" value="0.22826086956521738" />
-        <entry key="..\:/Users/Abel/AndroidStudioProjects/EntrenamientoMuscularEstabilizador/app/src/main/res/menu/menu_principal.xml" value="0.24739583333333334" />
+        <entry key="..\:/Users/Abel/AndroidStudioProjects/EntrenamientoMuscularEstabilizador/app/src/main/res/layout/item_grid_layout.xml" value="0.24739583333333334" />
+        <entry key="..\:/Users/Hime/AndroidStudioProjects/UCI/Deporte EME/entrenamiento-musculo-estabilizador/app/src/main/res/layout/activity_about.xml" value="0.33" />
+        <entry key="..\:/Users/Hime/AndroidStudioProjects/UCI/Deporte EME/entrenamiento-musculo-estabilizador/app/src/main/res/layout/activity_bibliography.xml" value="0.35052083333333334" />
+        <entry key="..\:/Users/Hime/AndroidStudioProjects/UCI/Deporte EME/entrenamiento-musculo-estabilizador/app/src/main/res/layout/activity_bloque_uno.xml" value="0.2529124389327321" />
+        <entry key="..\:/Users/Hime/AndroidStudioProjects/UCI/Deporte EME/entrenamiento-musculo-estabilizador/app/src/main/res/layout/activity_main.xml" value="0.33240740740740743" />
+        <entry key="..\:/Users/Hime/AndroidStudioProjects/UCI/Deporte EME/entrenamiento-musculo-estabilizador/app/src/main/res/layout/activity_persons.xml" value="0.35052083333333334" />
+        <entry key="..\:/Users/Hime/AndroidStudioProjects/UCI/Deporte EME/entrenamiento-musculo-estabilizador/app/src/main/res/layout/item_document.xml" value="0.35052083333333334" />
+        <entry key="..\:/Users/Hime/AndroidStudioProjects/UCI/Deporte EME/entrenamiento-musculo-estabilizador/app/src/main/res/menu/menu_principal.xml" value="0.228125" />
         <entry key="..\:/Users/Ivelisse/AndroidStudioProjects/Deporte/entrenamiento-musculo-estabilizador/app/src/main/res/drawable/add_24.xml" value="0.2535" />
         <entry key="..\:/Users/Ivelisse/AndroidStudioProjects/Deporte/entrenamiento-musculo-estabilizador/app/src/main/res/drawable/ic_light_mark.xml" value="0.2535" />
-        <entry key="..\:/Users/Ivelisse/AndroidStudioProjects/Deporte/entrenamiento-musculo-estabilizador/app/src/main/res/layout/activity_about.xml" value="0.34923076923076923" />
-        <entry key="..\:/Users/Ivelisse/AndroidStudioProjects/Deporte/entrenamiento-musculo-estabilizador/app/src/main/res/layout/activity_bibliography.xml" value="0.3546875" />
-        <entry key="..\:/Users/Ivelisse/AndroidStudioProjects/Deporte/entrenamiento-musculo-estabilizador/app/src/main/res/layout/activity_bloque_dos.xml" value="0.3546875" />
         <entry key="..\:/Users/Ivelisse/AndroidStudioProjects/Deporte/entrenamiento-musculo-estabilizador/app/src/main/res/layout/activity_bloque_tres.xml" value="0.3546875" />
-        <entry key="..\:/Users/Ivelisse/AndroidStudioProjects/Deporte/entrenamiento-musculo-estabilizador/app/src/main/res/layout/activity_bloque_uno.xml" value="0.28372739916550765" />
+        <entry key="..\:/Users/Ivelisse/AndroidStudioProjects/Deporte/entrenamiento-musculo-estabilizador/app/src/main/res/layout/activity_bloque_uno.xml" value="0.3546875" />
         <entry key="..\:/Users/Ivelisse/AndroidStudioProjects/Deporte/entrenamiento-musculo-estabilizador/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/Ivelisse/AndroidStudioProjects/Deporte/entrenamiento-musculo-estabilizador/app/src/main/res/layout/activity_person_details.xml" value="0.33" />
         <entry key="..\:/Users/Ivelisse/AndroidStudioProjects/Deporte/entrenamiento-musculo-estabilizador/app/src/main/res/layout/activity_persons.xml" value="0.22314814814814815" />
@@ -24,8 +28,6 @@
         <entry key="..\:/Users/Ivelisse/AndroidStudioProjects/Deporte/entrenamiento-musculo-estabilizador/app/src/main/res/layout/dialog_add_person.xml" value="0.25" />
         <entry key="..\:/Users/Ivelisse/AndroidStudioProjects/Deporte/entrenamiento-musculo-estabilizador/app/src/main/res/layout/dialog_add_practicant.xml" value="0.3546875" />
         <entry key="..\:/Users/Ivelisse/AndroidStudioProjects/Deporte/entrenamiento-musculo-estabilizador/app/src/main/res/layout/item_document.xml" value="0.25" />
-        <entry key="..\:/Users/Ivelisse/AndroidStudioProjects/Deporte/entrenamiento-musculo-estabilizador/app/src/main/res/layout/item_grid_layout.xml" value="0.3546875" />
-        <entry key="..\:/Users/Ivelisse/AndroidStudioProjects/Deporte/entrenamiento-musculo-estabilizador/app/src/main/res/layout/item_spinner.xml" value="0.3536458333333333" />
         <entry key="..\:/Users/Ivelisse/AndroidStudioProjects/Deporte/entrenamiento-musculo-estabilizador/app/src/main/res/menu-v26/menu_principal.xml" value="0.24791666666666667" />
         <entry key="..\:/Users/Ivelisse/AndroidStudioProjects/Deporte/entrenamiento-musculo-estabilizador/app/src/main/res/menu/menu_principal.xml" value="0.24791666666666667" />
       </map>
