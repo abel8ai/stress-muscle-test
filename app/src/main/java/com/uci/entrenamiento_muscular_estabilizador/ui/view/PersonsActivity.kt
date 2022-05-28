@@ -332,10 +332,12 @@ class PersonsActivity : AppCompatActivity() {
     private fun setVisible(view: String) {
         if (view == "rv") {
             binding.rvPersonList.visibility = View.VISIBLE
+            binding.tvEmptyList.visibility = View.GONE
             binding.ivEmptyList.visibility = View.GONE
         } else if (view == "iv") {
             binding.rvPersonList.visibility = View.GONE
             binding.ivEmptyList.visibility = View.VISIBLE
+            binding.tvEmptyList.visibility = View.VISIBLE
         }
     }
 }
