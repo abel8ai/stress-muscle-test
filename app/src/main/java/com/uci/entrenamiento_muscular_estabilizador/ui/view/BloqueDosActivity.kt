@@ -61,16 +61,16 @@ class BloqueDosActivity : AppCompatActivity() {
         binding.btnCs.setOnClickListener {
             if (binding.etValorCs.text.isNotEmpty()) {
                 if (isAthlete) {
+                    Toast.makeText(this, R.string.saved_result, Toast.LENGTH_SHORT)
                     athlete!!.measureCs = binding.etValorCs.text.toString().toDouble()
                     CoroutineScope(Dispatchers.IO).launch {
                         athleteViewModel.updateAthlete(athlete!!)
-                        Toast.makeText(context, R.string.saved_result, Toast.LENGTH_SHORT)
                     }
                 } else if (isPracticant) {
+                    Toast.makeText(this, R.string.saved_result, Toast.LENGTH_SHORT)
                     practicant!!.measureCs = binding.etValorCs.text.toString().toDouble()
                     CoroutineScope(Dispatchers.IO).launch {
                         practicantViewModel.updatePracticant(practicant!!)
-                        Toast.makeText(context, R.string.saved_result, Toast.LENGTH_SHORT)
                     }
                 }
             } else {
@@ -81,16 +81,16 @@ class BloqueDosActivity : AppCompatActivity() {
         binding.btnCn.setOnClickListener {
             if (binding.etValorCn.text.isNotEmpty()) {
                 if (isAthlete) {
+                    Toast.makeText(this, R.string.saved_result, Toast.LENGTH_SHORT)
                     athlete!!.measureCn = binding.etValorCn.text.toString().toDouble()
                     CoroutineScope(Dispatchers.IO).launch {
                         athleteViewModel.updateAthlete(athlete!!)
-                        Toast.makeText(context, R.string.saved_result, Toast.LENGTH_SHORT)
                     }
                 } else if (isPracticant) {
+                    Toast.makeText(this, R.string.saved_result, Toast.LENGTH_SHORT)
                     practicant!!.measureCn = binding.etValorCn.text.toString().toDouble()
                     CoroutineScope(Dispatchers.IO).launch {
                         practicantViewModel.updatePracticant(practicant!!)
-                        Toast.makeText(context, R.string.saved_result, Toast.LENGTH_SHORT)
                     }
                 }
             }else{

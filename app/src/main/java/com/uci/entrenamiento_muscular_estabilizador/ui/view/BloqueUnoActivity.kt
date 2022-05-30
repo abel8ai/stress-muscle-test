@@ -62,20 +62,20 @@ class BloqueUnoActivity : AppCompatActivity() {
         binding.btnAbd60.setOnClickListener {
             if (binding.etValorAbd60.text.isNotEmpty()) {
                 if (isAthlete) {
+                    Toast.makeText(this, R.string.saved_result, Toast.LENGTH_SHORT)
                     athlete!!.measureAbd60 = binding.etValorAbd60.text.toString().toDouble()
                     CoroutineScope(Dispatchers.IO).launch {
                         athleteViewModel.updateAthlete(athlete!!)
-                        Toast.makeText(context, R.string.saved_result, Toast.LENGTH_SHORT)
+
                     }
                 } else if (isPracticant) {
+                    Toast.makeText(this, R.string.saved_result, Toast.LENGTH_SHORT)
                     practicant!!.measureAbd60 = binding.etValorAbd60.text.toString().toDouble()
                     CoroutineScope(Dispatchers.IO).launch {
                         practicantViewModel.updatePracticant(practicant!!)
-                        Toast.makeText(context, R.string.saved_result, Toast.LENGTH_SHORT)
                     }
                 }
-            }
-            else{
+            } else {
                 binding.etValorAbd60.hint = hint
                 binding.etValorAbd60.setHintTextColor(Color.RED)
             }
@@ -84,20 +84,19 @@ class BloqueUnoActivity : AppCompatActivity() {
         binding.btnPld.setOnClickListener {
             if (binding.etValorPld.text.isNotEmpty()) {
                 if (isAthlete) {
+                    Toast.makeText(this, R.string.saved_result, Toast.LENGTH_SHORT)
                     athlete!!.measurePld = binding.etValorPld.text.toString().toDouble()
                     CoroutineScope(Dispatchers.IO).launch {
                         athleteViewModel.updateAthlete(athlete!!)
-                        Toast.makeText(context, R.string.saved_result, Toast.LENGTH_SHORT)
                     }
                 } else if (isPracticant) {
+                    Toast.makeText(this, R.string.saved_result, Toast.LENGTH_SHORT)
                     practicant!!.measurePld = binding.etValorPld.text.toString().toDouble()
                     CoroutineScope(Dispatchers.IO).launch {
                         practicantViewModel.updatePracticant(practicant!!)
-                        Toast.makeText(context, R.string.saved_result, Toast.LENGTH_SHORT)
                     }
                 }
-            }
-            else{
+            } else {
                 binding.etValorPld.hint = hint
                 binding.etValorPld.setHintTextColor(Color.RED)
             }
@@ -105,20 +104,21 @@ class BloqueUnoActivity : AppCompatActivity() {
         binding.btnPli.setOnClickListener {
             if (binding.etValorPli.text.isNotEmpty()) {
                 if (isAthlete) {
+                    Toast.makeText(this, R.string.saved_result, Toast.LENGTH_SHORT)
                     athlete!!.measurePli = binding.etValorPli.text.toString().toDouble()
                     CoroutineScope(Dispatchers.IO).launch {
                         athleteViewModel.updateAthlete(athlete!!)
-                        Toast.makeText(context, R.string.saved_result, Toast.LENGTH_SHORT)
+
                     }
                 } else if (isPracticant) {
+                    Toast.makeText(this, R.string.saved_result, Toast.LENGTH_SHORT)
                     practicant!!.measurePli = binding.etValorPli.text.toString().toDouble()
                     CoroutineScope(Dispatchers.IO).launch {
                         practicantViewModel.updatePracticant(practicant!!)
-                        Toast.makeText(context, R.string.saved_result, Toast.LENGTH_SHORT)
+
                     }
                 }
-            }
-            else{
+            } else {
                 binding.etValorPli.hint = hint
                 binding.etValorPli.setHintTextColor(Color.RED)
             }
@@ -126,20 +126,19 @@ class BloqueUnoActivity : AppCompatActivity() {
         binding.btnPp.setOnClickListener {
             if (binding.etValorPp.text.isNotEmpty()) {
                 if (isAthlete) {
+                    Toast.makeText(this, R.string.saved_result, Toast.LENGTH_SHORT)
                     athlete!!.measurePp = binding.etValorPp.text.toString().toDouble()
                     CoroutineScope(Dispatchers.IO).launch {
                         athleteViewModel.updateAthlete(athlete!!)
-                        Toast.makeText(context, R.string.saved_result, Toast.LENGTH_SHORT)
                     }
                 } else if (isPracticant) {
+                    Toast.makeText(this, R.string.saved_result, Toast.LENGTH_SHORT)
                     practicant!!.measurePp = binding.etValorPp.text.toString().toDouble()
                     CoroutineScope(Dispatchers.IO).launch {
                         practicantViewModel.updatePracticant(practicant!!)
-                        Toast.makeText(context, R.string.saved_result, Toast.LENGTH_SHORT)
                     }
                 }
-            }
-            else{
+            } else {
                 binding.etValorPp.hint = hint
                 binding.etValorPp.setHintTextColor(Color.RED)
             }
@@ -147,20 +146,19 @@ class BloqueUnoActivity : AppCompatActivity() {
         binding.btnIsmt.setOnClickListener {
             if (binding.etValorIsmt.text.isNotEmpty()) {
                 if (isAthlete) {
+                    Toast.makeText(this, R.string.saved_result, Toast.LENGTH_SHORT)
                     athlete!!.measureIsmt = binding.etValorIsmt.text.toString().toDouble()
                     CoroutineScope(Dispatchers.IO).launch {
                         athleteViewModel.updateAthlete(athlete!!)
-                        Toast.makeText(context, R.string.saved_result, Toast.LENGTH_SHORT)
                     }
                 } else if (isPracticant) {
+                    Toast.makeText(this, R.string.saved_result, Toast.LENGTH_SHORT)
                     practicant!!.measureIsmt = binding.etValorIsmt.text.toString().toDouble()
                     CoroutineScope(Dispatchers.IO).launch {
                         practicantViewModel.updatePracticant(practicant!!)
-                        Toast.makeText(context, R.string.saved_result, Toast.LENGTH_SHORT)
                     }
                 }
-            }
-            else{
+            } else {
                 binding.etValorIsmt.hint = hint
                 binding.etValorIsmt.setHintTextColor(Color.RED)
             }

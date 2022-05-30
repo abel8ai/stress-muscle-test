@@ -140,8 +140,8 @@ class PersonDetailsActivity : AppCompatActivity() {
             binding.tvProvince.text = practicant!!.province
 
             // remove athletes visibility
-            binding.tvAnnosLabel.visibility = View.GONE
-            binding.tvDeporteLabel.visibility = View.GONE
+            binding.llDeporte.visibility = View.GONE
+            binding.llAnnosDeporte.visibility = View.GONE
 
             if (!practicant!!.aerobicExercise)
                 binding.tvEjercicioAerobio.visibility = View.GONE
@@ -156,7 +156,7 @@ class PersonDetailsActivity : AppCompatActivity() {
             if (!practicant!!.pilates)
                 binding.tvPilates.visibility = View.GONE
             if (practicant!!.other != "") {
-                binding.tvOtro.visibility = View.VISIBLE
+                binding.llOtro.visibility = View.VISIBLE
                 binding.tvOtro.text = practicant!!.other
             }
 
