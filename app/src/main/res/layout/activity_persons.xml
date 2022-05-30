@@ -31,7 +31,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:visibility="gone"
-        android:text="No hay nadie aquí"
+        android:text="@string/no_hay_nadie_aqu"
         android:gravity="center_horizontal"
         android:textColor="@color/grey_40"
         android:textStyle="bold"

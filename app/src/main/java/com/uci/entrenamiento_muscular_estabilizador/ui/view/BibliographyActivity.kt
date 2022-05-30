@@ -11,5 +11,13 @@ class BibliographyActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityBibliographyBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        //actionbar - set back button
+        val actionbar = supportActionBar
+        actionbar!!.setDisplayHomeAsUpEnabled(true)
+    }
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }

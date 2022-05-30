@@ -1,9 +1,9 @@
 package com.uci.entrenamiento_muscular_estabilizador.ui.view
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.uci.entrenamiento_muscular_estabilizador.databinding.ActivityAboutBinding
-import com.uci.entrenamiento_muscular_estabilizador.databinding.ActivityBloqueUnoBinding
+
 
 class AboutActivity : AppCompatActivity() {
     private lateinit var binding: ActivityAboutBinding
@@ -11,5 +11,13 @@ class AboutActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityAboutBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        //actionbar - set back button
+        val actionbar = supportActionBar
+        actionbar!!.setDisplayHomeAsUpEnabled(true)
+    }
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }
