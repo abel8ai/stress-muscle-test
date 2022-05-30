@@ -332,7 +332,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="10dp"
                         android:orientation="horizontal"
-                        android:visibility="visible">
+                        android:visibility="gone">
 
                         <TextView
                             android:id="@+id/tv_otro_label"

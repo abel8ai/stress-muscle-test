@@ -153,6 +153,7 @@
     <string name="salir_no">NO</string>
     <string name="salir_gracias">Gracias</string>
     <string name="no_hay_nadie_aqu">No hay nadie aquí</string>
+    <string name="editar">Editar</string>
 
     <string-array name="genders">
         <item>Masculino</item>

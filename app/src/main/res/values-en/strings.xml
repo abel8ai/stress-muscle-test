@@ -27,6 +27,7 @@
     <string name="entrenamiento_musculacion">Bodybuilding Training</string>
     <string name="otro">Other:</string>
     <string name="pruebas">Tests</string>
+
     <string name="ingl_s">English</string>
     <string name="atleta">HIGH PERFORMANCE ATHLETE</string>
     <string name="espa_ol">Spanish</string>
@@ -148,5 +149,6 @@
     <string name="salir_no">NO</string>
     <string name="salir_gracias">Thank you</string>
     <string name="no_hay_nadie_aqu">There is nobody here</string>
+    <string name="editar">Edit</string>
 
 </resources>

@@ -3,9 +3,12 @@ package com.uci.entrenamiento_muscular_estabilizador.ui.view
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import androidx.activity.viewModels
 import androidx.lifecycle.Observer
+import com.uci.entrenamiento_muscular_estabilizador.R
 import com.uci.entrenamiento_muscular_estabilizador.data.model.database.entities.AthleteEntity
 import com.uci.entrenamiento_muscular_estabilizador.data.model.database.entities.PracticantEntity
 import com.uci.entrenamiento_muscular_estabilizador.databinding.ActivityPersonDetailsBinding
@@ -108,6 +111,22 @@ class PersonDetailsActivity : AppCompatActivity() {
     override fun onSupportNavigateUp(): Boolean {
         onBackPressed()
         return true
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        val inflater = menuInflater
+        inflater.inflate(R.menu.menu_edit_person, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        // Handle presses on the action bar menu items
+        when (item.itemId) {
+            R.id.ic_edit -> {
+                return true
+            }
+        }
+        return super.onOptionsItemSelected(item)
     }
 
     private fun loadData() {
