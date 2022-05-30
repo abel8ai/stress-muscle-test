@@ -125,5 +125,6 @@
     <string name="salir_si">SI</string>
     <string name="salir_no">NO</string>
     <string name="salir_gracias">Gracias</string>
+    <string name="no_hay_nadie_aqu">No hay nadie aquí</string>
 
 </resources>

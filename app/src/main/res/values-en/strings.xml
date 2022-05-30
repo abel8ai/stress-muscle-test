@@ -147,5 +147,6 @@
     <string name="salir_si">YES</string>
     <string name="salir_no">NO</string>
     <string name="salir_gracias">Thank you</string>
+    <string name="no_hay_nadie_aqu">There is nobody here</string>
 
 </resources>
