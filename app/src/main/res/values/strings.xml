@@ -56,7 +56,7 @@
     <string name="yoga" translatable="false">Yoga</string>
     <string name="crossfit" translatable="false">Crossfit</string>
     <string name="pilates" translatable="false">Pilates</string>
-    <string name="otro">Otro</string>
+    <string name="otro">Otro:</string>
     <string name="pruebas">Pruebas</string>
 
     <string name="age_limit_40">La edad debe ser entre 7 y 40 años</string>
