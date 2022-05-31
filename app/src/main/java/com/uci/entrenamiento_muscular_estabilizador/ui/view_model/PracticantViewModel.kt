@@ -45,13 +45,12 @@ class PracticantViewModel@Inject constructor(private val personDatabase: PersonD
 
     fun evaluateTest(testType : TestType, practicant: PracticantEntity, measure:Double):String {
         // Obtain specific test row
-        val baseRow = ((practicant.age-7)*20)+3
-        var genderValue = 0
+        val baseRow = ((practicant.age-7)*20)
+        var testRow = 0
         if (practicant.gender == "Masculino")
-            genderValue = 1
+            testRow = (testType.ordinal+1)*2-1
         else if (practicant.gender == "Femenino")
-            genderValue = 2
-        val testRow = (testType.ordinal+1) * genderValue
+            testRow = (testType.ordinal+1)*2
         val row = baseRow + testRow
         // Open excel from assets
         val myInput = assetManager.open("testResult.xls")

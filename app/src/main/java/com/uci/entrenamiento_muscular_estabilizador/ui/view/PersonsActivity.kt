@@ -347,4 +347,9 @@ class PersonsActivity : AppCompatActivity() {
             binding.tvEmptyList.visibility = View.VISIBLE
         }
     }
+
+    override fun onResume() {
+        super.onResume()
+        loadData()
+    }
 }
