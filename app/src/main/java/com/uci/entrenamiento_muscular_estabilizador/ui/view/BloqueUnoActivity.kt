@@ -30,13 +30,11 @@ class BloqueUnoActivity : AppCompatActivity() {
     private var practicant: PracticantEntity? = null
     private var isAthlete: Boolean = false
     private var isPracticant: Boolean = false
-    private lateinit var context: Context
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityBloqueUnoBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        context = this
         practicantViewModel
         athleteViewModel
         isAthlete = intent.extras!!.getString("person_type").equals("athlete")

@@ -151,4 +151,8 @@
     <string name="no_hay_nadie_aqu">There is nobody here</string>
     <string name="editar">Edit</string>
 
+    <string name="button_modify">Modify</string>
+    <string name="dialog_modify_athlete">Modify Athlete</string>
+    <string name="dialog_modify_practicant">Modify Practitioner</string>
+
 </resources>

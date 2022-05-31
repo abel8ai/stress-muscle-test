@@ -7,6 +7,9 @@
     <string name="dialog_delete_athlete">Eliminar Atleta</string>
     <string name="dialog_delete_practicant">Eliminar Practicante</string>
     <string name="dialog_add_practicant">Adicionar Practicante</string>
+    <string name="button_modify">Modificar</string>
+    <string name="dialog_modify_athlete">Modificar Atleta</string>
+    <string name="dialog_modify_practicant">Modificar Practicante</string>
     <string name="mandatory_field">*Campo obligatorio*</string>
     <string name="confirm_delete">¿Esta seguro que desea eliminar esta persona?</string>
 

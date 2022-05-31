@@ -120,6 +120,10 @@
     <string name="rb_tema">Batería cubana de Test que evalúa la resistencia a la fuerza de los músculos estabilizadores se apoya de los referentes bibliográficos siguientes:</string>
     <string name="salir">Salir</string>
 
+    <string name="button_modify">Modificar</string>
+    <string name="dialog_modify_athlete">Modificar Atleta</string>
+    <string name="dialog_modify_practicant">Modificar Practicante</string>
+
     <string name="salir_confirmar">Por favor confirmar</string>
     <string name="salir_quieres">¿Quieres salir de la aplicación?</string>
     <string name="salir_si">SI</string>
@@ -127,5 +131,10 @@
     <string name="salir_gracias">Gracias</string>
     <string name="no_hay_nadie_aqu">No hay nadie aquí</string>
     <string name="editar">Editar</string>
+
+    <string-array name="genders">
+        <item>Masculino</item>
+        <item>Femenino</item>
+    </string-array>
 
 </resources>
