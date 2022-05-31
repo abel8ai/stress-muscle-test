@@ -30,11 +30,13 @@ class BloqueUnoActivity : AppCompatActivity() {
     private var practicant: PracticantEntity? = null
     private var isAthlete: Boolean = false
     private var isPracticant: Boolean = false
+    private lateinit var context: Context
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityBloqueUnoBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        context = this
         practicantViewModel
         athleteViewModel
         isAthlete = intent.extras!!.getString("person_type").equals("athlete")
@@ -60,17 +62,22 @@ class BloqueUnoActivity : AppCompatActivity() {
         binding.btnAbd60.setOnClickListener {
             if (binding.etValorAbd60.text.isNotEmpty()) {
                 if (isAthlete) {
-                    Toast.makeText(this, R.string.saved_result, Toast.LENGTH_SHORT)
                     athlete!!.measureAbd60 = binding.etValorAbd60.text.toString().toDouble()
                     CoroutineScope(Dispatchers.IO).launch {
                         athleteViewModel.updateAthlete(athlete!!)
-
+                        runOnUiThread {
+                            Toast.makeText(context, R.string.saved_result, Toast.LENGTH_SHORT).show()
+                        }
                     }
+
                 } else if (isPracticant) {
                     Toast.makeText(this, R.string.saved_result, Toast.LENGTH_SHORT)
                     practicant!!.measureAbd60 = binding.etValorAbd60.text.toString().toDouble()
                     CoroutineScope(Dispatchers.IO).launch {
                         practicantViewModel.updatePracticant(practicant!!)
+                        runOnUiThread {
+                            Toast.makeText(context, R.string.saved_result, Toast.LENGTH_SHORT).show()
+                        }
                     }
                 }
             } else {
@@ -82,16 +89,20 @@ class BloqueUnoActivity : AppCompatActivity() {
         binding.btnPld.setOnClickListener {
             if (binding.etValorPld.text.isNotEmpty()) {
                 if (isAthlete) {
-                    Toast.makeText(this, R.string.saved_result, Toast.LENGTH_SHORT)
                     athlete!!.measurePld = binding.etValorPld.text.toString().toDouble()
                     CoroutineScope(Dispatchers.IO).launch {
                         athleteViewModel.updateAthlete(athlete!!)
+                        runOnUiThread {
+                            Toast.makeText(context, R.string.saved_result, Toast.LENGTH_SHORT).show()
+                        }
                     }
                 } else if (isPracticant) {
-                    Toast.makeText(this, R.string.saved_result, Toast.LENGTH_SHORT)
                     practicant!!.measurePld = binding.etValorPld.text.toString().toDouble()
                     CoroutineScope(Dispatchers.IO).launch {
                         practicantViewModel.updatePracticant(practicant!!)
+                        runOnUiThread {
+                            Toast.makeText(context, R.string.saved_result, Toast.LENGTH_SHORT).show()
+                        }
                     }
                 }
             } else {
@@ -102,18 +113,20 @@ class BloqueUnoActivity : AppCompatActivity() {
         binding.btnPli.setOnClickListener {
             if (binding.etValorPli.text.isNotEmpty()) {
                 if (isAthlete) {
-                    Toast.makeText(this, R.string.saved_result, Toast.LENGTH_SHORT)
                     athlete!!.measurePli = binding.etValorPli.text.toString().toDouble()
                     CoroutineScope(Dispatchers.IO).launch {
                         athleteViewModel.updateAthlete(athlete!!)
-
+                        runOnUiThread {
+                            Toast.makeText(context, R.string.saved_result, Toast.LENGTH_SHORT).show()
+                        }
                     }
                 } else if (isPracticant) {
-                    Toast.makeText(this, R.string.saved_result, Toast.LENGTH_SHORT)
                     practicant!!.measurePli = binding.etValorPli.text.toString().toDouble()
                     CoroutineScope(Dispatchers.IO).launch {
                         practicantViewModel.updatePracticant(practicant!!)
-
+                        runOnUiThread {
+                            Toast.makeText(context, R.string.saved_result, Toast.LENGTH_SHORT).show()
+                        }
                     }
                 }
             } else {
@@ -124,16 +137,20 @@ class BloqueUnoActivity : AppCompatActivity() {
         binding.btnPp.setOnClickListener {
             if (binding.etValorPp.text.isNotEmpty()) {
                 if (isAthlete) {
-                    Toast.makeText(this, R.string.saved_result, Toast.LENGTH_SHORT)
                     athlete!!.measurePp = binding.etValorPp.text.toString().toDouble()
                     CoroutineScope(Dispatchers.IO).launch {
                         athleteViewModel.updateAthlete(athlete!!)
+                        runOnUiThread {
+                            Toast.makeText(context, R.string.saved_result, Toast.LENGTH_SHORT).show()
+                        }
                     }
                 } else if (isPracticant) {
-                    Toast.makeText(this, R.string.saved_result, Toast.LENGTH_SHORT)
                     practicant!!.measurePp = binding.etValorPp.text.toString().toDouble()
                     CoroutineScope(Dispatchers.IO).launch {
                         practicantViewModel.updatePracticant(practicant!!)
+                        runOnUiThread {
+                            Toast.makeText(context, R.string.saved_result, Toast.LENGTH_SHORT).show()
+                        }
                     }
                 }
             } else {
@@ -144,16 +161,20 @@ class BloqueUnoActivity : AppCompatActivity() {
         binding.btnIsmt.setOnClickListener {
             if (binding.etValorIsmt.text.isNotEmpty()) {
                 if (isAthlete) {
-                    Toast.makeText(this, R.string.saved_result, Toast.LENGTH_SHORT)
                     athlete!!.measureIsmt = binding.etValorIsmt.text.toString().toDouble()
                     CoroutineScope(Dispatchers.IO).launch {
                         athleteViewModel.updateAthlete(athlete!!)
+                        runOnUiThread {
+                            Toast.makeText(context, R.string.saved_result, Toast.LENGTH_SHORT).show()
+                        }
                     }
                 } else if (isPracticant) {
-                    Toast.makeText(this, R.string.saved_result, Toast.LENGTH_SHORT)
                     practicant!!.measureIsmt = binding.etValorIsmt.text.toString().toDouble()
                     CoroutineScope(Dispatchers.IO).launch {
                         practicantViewModel.updatePracticant(practicant!!)
+                        runOnUiThread {
+                            Toast.makeText(context, R.string.saved_result, Toast.LENGTH_SHORT).show()
+                        }
                     }
                 }
             } else {

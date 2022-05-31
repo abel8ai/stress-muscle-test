@@ -29,11 +29,13 @@ class BloqueDosActivity : AppCompatActivity() {
     private var practicant: PracticantEntity? = null
     private var isAthlete: Boolean = false
     private var isPracticant: Boolean = false
+    private lateinit var context: Context
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityBloqueDosBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        context = this
         practicantViewModel
         athleteViewModel
         isAthlete = intent.extras!!.getString("person_type").equals("athlete")
@@ -59,16 +61,20 @@ class BloqueDosActivity : AppCompatActivity() {
         binding.btnCs.setOnClickListener {
             if (binding.etValorCs.text.isNotEmpty()) {
                 if (isAthlete) {
-                    Toast.makeText(this, R.string.saved_result, Toast.LENGTH_SHORT)
                     athlete!!.measureCs = binding.etValorCs.text.toString().toDouble()
                     CoroutineScope(Dispatchers.IO).launch {
                         athleteViewModel.updateAthlete(athlete!!)
+                        runOnUiThread {
+                            Toast.makeText(context, R.string.saved_result, Toast.LENGTH_SHORT).show()
+                        }
                     }
                 } else if (isPracticant) {
-                    Toast.makeText(this, R.string.saved_result, Toast.LENGTH_SHORT)
                     practicant!!.measureCs = binding.etValorCs.text.toString().toDouble()
                     CoroutineScope(Dispatchers.IO).launch {
                         practicantViewModel.updatePracticant(practicant!!)
+                        runOnUiThread {
+                            Toast.makeText(context, R.string.saved_result, Toast.LENGTH_SHORT).show()
+                        }
                     }
                 }
             } else {
@@ -79,16 +85,20 @@ class BloqueDosActivity : AppCompatActivity() {
         binding.btnCn.setOnClickListener {
             if (binding.etValorCn.text.isNotEmpty()) {
                 if (isAthlete) {
-                    Toast.makeText(this, R.string.saved_result, Toast.LENGTH_SHORT)
                     athlete!!.measureCn = binding.etValorCn.text.toString().toDouble()
                     CoroutineScope(Dispatchers.IO).launch {
                         athleteViewModel.updateAthlete(athlete!!)
+                        runOnUiThread {
+                            Toast.makeText(context, R.string.saved_result, Toast.LENGTH_SHORT).show()
+                        }
                     }
                 } else if (isPracticant) {
-                    Toast.makeText(this, R.string.saved_result, Toast.LENGTH_SHORT)
                     practicant!!.measureCn = binding.etValorCn.text.toString().toDouble()
                     CoroutineScope(Dispatchers.IO).launch {
                         practicantViewModel.updatePracticant(practicant!!)
+                        runOnUiThread {
+                            Toast.makeText(context, R.string.saved_result, Toast.LENGTH_SHORT).show()
+                        }
                     }
                 }
             }else{
