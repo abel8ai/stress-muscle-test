@@ -6,6 +6,7 @@ import android.content.Intent
 import android.content.SharedPreferences
 import android.content.pm.PackageManager
 import android.content.res.Configuration
+import android.net.Uri
 import android.os.Bundle
 import android.os.Environment
 import android.view.Menu
@@ -122,6 +123,8 @@ class MainActivity : AppCompatActivity() {
             }
             R.id.excel_export -> {
                 exportExcel()
+                val intent = composeEmail(arrayOf("stabilizermuscle2022@gmail.com"))
+                startActivity(intent)
                 return true
             }
             R.id.salir -> {
@@ -198,6 +201,15 @@ class MainActivity : AppCompatActivity() {
             }
             setCancelable(true)
         }.create().show()
+    }
+    private fun composeEmail(addresses: Array<String>): Intent {
+        val intent = Intent(Intent.ACTION_SENDTO)
+        intent.data = Uri.parse("mailto:")
+        intent.putExtra(Intent.EXTRA_EMAIL,addresses)
+        val path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS)
+        val file = File("$path/results.xls")
+        intent.putExtra(Intent.ACTION_ATTACH_DATA,file)
+        return intent
     }
 
 }

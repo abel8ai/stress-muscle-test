@@ -15,7 +15,10 @@ import org.apache.poi.ss.usermodel.Workbook
 import javax.inject.Inject
 
 @HiltViewModel
-class PracticantViewModel@Inject constructor(private val personDatabase: PersonDatabase, private val assetManager: AssetManager): ViewModel() {
+class PracticantViewModel @Inject constructor(
+    private val personDatabase: PersonDatabase,
+    private val assetManager: AssetManager
+) : ViewModel() {
 
     val practicantsModel = MutableLiveData<MutableList<PracticantEntity>>()
     val practicantModel = MutableLiveData<PracticantEntity>()
@@ -24,33 +27,36 @@ class PracticantViewModel@Inject constructor(private val personDatabase: PersonD
         practicantsModel.postValue(personDatabase.getPracticantDao().getAllPracticants())
     }
 
-    suspend fun getPracticantById(id:Int){
+    suspend fun getPracticantById(id: Int) {
         practicantModel.postValue(personDatabase.getPracticantDao().getPracticantById(id))
     }
 
-    suspend fun addPractricant(practicant:PracticantEntity):Long {
+    suspend fun addPractricant(practicant: PracticantEntity): Long {
         val success = personDatabase.getPracticantDao().insertPracticant(practicant)
         practicantsModel.postValue(personDatabase.getPracticantDao().getAllPracticants())
         return success
     }
-    suspend fun updatePracticant(practicant: PracticantEntity){
+
+    suspend fun updatePracticant(practicant: PracticantEntity) {
         personDatabase.getPracticantDao().updatePracticant(practicant)
-        practicantModel.postValue(personDatabase.getPracticantDao().getPracticantById(practicant.id!!))
+        practicantModel.postValue(
+            personDatabase.getPracticantDao().getPracticantById(practicant.id!!)
+        )
     }
 
-    suspend fun deletePracticant(practicant: PracticantEntity){
+    suspend fun deletePracticant(practicant: PracticantEntity) {
         personDatabase.getPracticantDao().deletePracticant(practicant)
         practicantsModel.postValue(personDatabase.getPracticantDao().getAllPracticants())
     }
 
-    fun evaluateTest(testType : TestType, practicant: PracticantEntity, measure:Double):String {
+    fun evaluateTest(testType: TestType, practicant: PracticantEntity, measure: Double): String {
         // Obtain specific test row
-        val baseRow = ((practicant.age-7)*20)
+        val baseRow = ((practicant.age - 7) * 20)
         var testRow = 0
         if (practicant.gender == "Masculino")
-            testRow = (testType.ordinal+1)*2-1
+            testRow = (testType.ordinal + 1) * 2 - 1
         else if (practicant.gender == "Femenino")
-            testRow = (testType.ordinal+1)*2
+            testRow = (testType.ordinal + 1) * 2
         val row = baseRow + testRow
         // Open excel from assets
         val myInput = assetManager.open("testResult.xls")
@@ -66,23 +72,24 @@ class PracticantViewModel@Inject constructor(private val personDatabase: PersonD
         return evaluator.evaluate(cell).stringValue
     }
 
-    suspend fun evaluatePracticant(practicant: PracticantEntity){
-        practicant.evalAbd60 = evaluateTest(TestType.ADB60,practicant,practicant.measureAbd60)
-        practicant.evalPp = evaluateTest(TestType.PP,practicant,practicant.measurePp)
-        practicant.evalPld = evaluateTest(TestType.PLD,practicant,practicant.measurePld)
-        practicant.evalPli = evaluateTest(TestType.PLI,practicant,practicant.measurePli)
-        practicant.evalIsmt = evaluateTest(TestType.ISMT,practicant,practicant.measureIsmt)
+    suspend fun evaluatePracticant(practicant: PracticantEntity) {
+        practicant.evalAbd60 = evaluateTest(TestType.ADB60, practicant, practicant.measureAbd60)
+        practicant.evalPp = evaluateTest(TestType.PP, practicant, practicant.measurePp)
+        practicant.evalPld = evaluateTest(TestType.PLD, practicant, practicant.measurePld)
+        practicant.evalPli = evaluateTest(TestType.PLI, practicant, practicant.measurePli)
+        practicant.evalIsmt = evaluateTest(TestType.ISMT, practicant, practicant.measureIsmt)
 
-        practicant.evalCs = evaluateTest(TestType.CS,practicant,practicant.measureCs)
-        practicant.evalCn = evaluateTest(TestType.CN,practicant,practicant.measureCn)
+        practicant.evalCs = evaluateTest(TestType.CS, practicant, practicant.measureCs)
+        practicant.evalCn = evaluateTest(TestType.CN, practicant, practicant.measureCn)
 
-        practicant.evalIsocuad = evaluateTest(TestType.ISOCUAD,practicant,practicant.measureIsocuad)
-        practicant.evalPd = evaluateTest(TestType.PD,practicant,practicant.measurePd)
-        practicant.evalCang = evaluateTest(TestType.PD,practicant,practicant.measureCang)
+        practicant.evalIsocuad =
+            evaluateTest(TestType.ISOCUAD, practicant, practicant.measureIsocuad)
+        practicant.evalPd = evaluateTest(TestType.PD, practicant, practicant.measurePd)
+        practicant.evalCang = evaluateTest(TestType.PD, practicant, practicant.measureCang)
         personDatabase.getPracticantDao().updatePracticant(practicant)
     }
 
-    suspend fun createPracticantSheet(workbook : Workbook){
+    suspend fun createPracticantSheet(workbook: Workbook) {
         val practicantsheet = workbook.createSheet("Practicantes")
         val practicantList = personDatabase.getPracticantDao().getAllPracticants()
         // Create Header
@@ -135,12 +142,19 @@ class PracticantViewModel@Inject constructor(private val personDatabase: PersonD
             row.createCell(5).setCellValue(practicant.province)
             row.createCell(6).setCellValue(practicant.municipality)
 
-            row.createCell(7).setCellValue(practicant.aerobicExercise)
-            row.createCell(8).setCellValue(practicant.spinning)
-            row.createCell(9).setCellValue(practicant.muscleTraining)
-            row.createCell(10).setCellValue(practicant.crossfit)
-            row.createCell(11).setCellValue(practicant.yoga)
-            row.createCell(12).setCellValue(practicant.pilates)
+            if (practicant.aerobicExercise)
+                row.createCell(7).setCellValue("si")
+            if (practicant.spinning)
+                row.createCell(8).setCellValue("si")
+            if (practicant.muscleTraining)
+                row.createCell(9).setCellValue("si")
+            if (practicant.crossfit)
+                row.createCell(10).setCellValue("si")
+            if (practicant.yoga)
+                row.createCell(11).setCellValue("si")
+            if (practicant.pilates)
+                row.createCell(12).setCellValue("si")
+
             row.createCell(13).setCellValue(practicant.other)
 
             row.createCell(14).setCellValue(practicant.measureAbd60)
