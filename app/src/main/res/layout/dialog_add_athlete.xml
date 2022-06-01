@@ -34,7 +34,7 @@
                     android:id="@+id/et_nombre"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
+                    android:layout_marginStart="10dp"
                     android:inputType="textCapWords"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textColor="@color/grey_60" />
@@ -59,7 +59,7 @@
                     android:id="@+id/et_apellidos"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
+                    android:layout_marginStart="10dp"
                     android:inputType="textCapWords"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textColor="@color/grey_60" />
@@ -116,7 +116,7 @@
                         android:id="@+id/et_edad"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="16dp"
+                        android:layout_marginStart="10dp"
                         android:inputType="number"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                         android:textColor="@color/grey_60" />
@@ -151,7 +151,7 @@
                         android:id="@+id/et_estatura"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="16dp"
+                        android:layout_marginStart="10dp"
                         android:layout_marginEnd="10dp"
                         android:inputType="numberDecimal"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
@@ -178,7 +178,7 @@
                         android:id="@+id/et_peso"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="16dp"
+                        android:layout_marginStart="10dp"
                         android:inputType="numberDecimal"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                         android:textColor="@color/grey_60" />
@@ -206,7 +206,7 @@
                     android:id="@+id/et_provincia"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
+                    android:layout_marginStart="10dp"
                     android:inputType="textCapWords"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textColor="@color/grey_60" />
@@ -231,7 +231,7 @@
                     android:id="@+id/et_municipio"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
+                    android:layout_marginStart="10dp"
                     android:inputType="textCapWords"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -255,7 +255,7 @@
                     android:id="@+id/et_deporte"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
+                    android:layout_marginStart="10dp"
                     android:inputType="textCapWords"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textColor="@color/grey_60" />
@@ -278,10 +278,11 @@
 
                 <EditText
                     android:id="@+id/et_annos"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
+                    android:layout_marginStart="10dp"
                     android:inputType="number"
+                    android:ems="4"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textColor="@color/grey_60" />
 
