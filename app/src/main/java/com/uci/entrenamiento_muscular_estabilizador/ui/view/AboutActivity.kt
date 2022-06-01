@@ -20,4 +20,6 @@ class AboutActivity : AppCompatActivity() {
         onBackPressed()
         return true
     }
+
+
 }

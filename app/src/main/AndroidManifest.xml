@@ -9,9 +9,9 @@
         android:name=".EntrenaminetoMusculoEstabilizador"
         android:requestLegacyExternalStorage="true"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_logo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EntrenamientoMuscularEstabilizador">
         <activity
@@ -34,9 +34,6 @@
             android:name=".ui.view.BloqueUnoActivity"
             android:exported="false"
             android:label="@string/dialog_block_1" />
-        <activity
-            android:name=".ui.view.TestsActivity"
-            android:exported="false" />
         <activity
             android:name=".ui.view.PersonDetailsActivity"
             android:exported="false"
