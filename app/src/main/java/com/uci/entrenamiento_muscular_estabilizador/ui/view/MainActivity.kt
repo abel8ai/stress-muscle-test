@@ -123,7 +123,7 @@ class MainActivity : AppCompatActivity() {
             }
             R.id.excel_export -> {
                 exportExcel()
-                val intent = composeEmail(arrayOf("stabilizermuscle2022@gmail.com"))
+                val intent = composeEmail(arrayOf("abochoa91@gmail.com"))
                 startActivity(intent)
                 return true
             }
@@ -208,7 +208,7 @@ class MainActivity : AppCompatActivity() {
         intent.putExtra(Intent.EXTRA_EMAIL,addresses)
         val path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS)
         val file = File("$path/results.xls")
-        intent.putExtra(Intent.ACTION_ATTACH_DATA,file)
+        intent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(file))
         return intent
     }
 
