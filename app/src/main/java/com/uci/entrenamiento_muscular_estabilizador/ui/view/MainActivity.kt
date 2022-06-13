@@ -123,7 +123,7 @@ class MainActivity : AppCompatActivity() {
             }
             R.id.excel_export -> {
                 exportExcel()
-                val intent = composeEmail(arrayOf("abochoa91@gmail.com"))
+                val intent = composeEmail(arrayOf("stabilizermuscle2022@gmail.com"))
                 startActivity(intent)
                 return true
             }
