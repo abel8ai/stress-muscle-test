@@ -51,6 +51,7 @@ class MainActivity : AppCompatActivity() {
         practicantViewModel
         athleteViewModel
 
+
         binding.tvLeerMasNuestraHistoria.setOnClickListener {
             val intent = Intent(this, AboutActivity::class.java)
             startActivity(intent)
