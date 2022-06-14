@@ -131,6 +131,28 @@
                                                                 android:scaleType="centerCrop"
                                                                 android:src="@drawable/abd60" />
 
+                                                            <ImageView
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="40dp"
+                                                                android:layout_alignParentBottom="true"
+                                                                android:src="@color/transparente" />
+
+                                                            <LinearLayout
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="wrap_content"
+                                                                android:orientation="vertical"
+                                                                android:padding="5dp"
+                                                                android:layout_alignParentBottom="true">
+
+                                                                <TextView
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+                                                                    android:text="@string/imagen1"
+                                                                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                                                    android:textColor="@color/white" />
+
+                                                            </LinearLayout>
+
                                                         </RelativeLayout>
 
                                                     </LinearLayout>
@@ -320,11 +342,40 @@
                                                         android:layout_height="wrap_content"
                                                         android:orientation="vertical">
 
-                                                        <ImageView
+                                                        <RelativeLayout
                                                             android:layout_width="match_parent"
-                                                            android:layout_height="110dp"
-                                                            android:scaleType="centerInside"
-                                                            android:src="@drawable/pp" />
+                                                            android:layout_height="wrap_content"
+                                                            android:orientation="vertical">
+
+                                                            <ImageView
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="110dp"
+                                                                android:scaleType="centerCrop"
+                                                                android:src="@drawable/pp" />
+
+<!--                                                            <ImageView-->
+<!--                                                                android:layout_width="match_parent"-->
+<!--                                                                android:layout_height="40dp"-->
+<!--                                                                android:layout_alignParentBottom="true"-->
+<!--                                                                android:src="@color/transparente" />-->
+
+<!--                                                            <LinearLayout-->
+<!--                                                                android:layout_width="match_parent"-->
+<!--                                                                android:layout_height="wrap_content"-->
+<!--                                                                android:orientation="vertical"-->
+<!--                                                                android:padding="5dp"-->
+<!--                                                                android:layout_alignParentBottom="true">-->
+
+<!--                                                                <TextView-->
+<!--                                                                    android:layout_width="match_parent"-->
+<!--                                                                    android:layout_height="match_parent"-->
+<!--                                                                    android:text="@string/imagen1"-->
+<!--                                                                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"-->
+<!--                                                                    android:textColor="@color/white" />-->
+
+<!--                                                            </LinearLayout>-->
+
+                                                        </RelativeLayout>
 
                                                     </LinearLayout>
 
@@ -524,6 +575,27 @@
                                                                 android:scaleType="centerCrop"
                                                                 android:src="@drawable/pld" />
 
+<!--                                                            <ImageView-->
+<!--                                                                android:layout_width="match_parent"-->
+<!--                                                                android:layout_height="40dp"-->
+<!--                                                                android:layout_alignParentBottom="true"-->
+<!--                                                                android:src="@color/transparente" />-->
+
+<!--                                                            <LinearLayout-->
+<!--                                                                android:layout_width="match_parent"-->
+<!--                                                                android:layout_height="wrap_content"-->
+<!--                                                                android:orientation="vertical"-->
+<!--                                                                android:padding="5dp"-->
+<!--                                                                android:layout_alignParentBottom="true">-->
+
+<!--                                                                <TextView-->
+<!--                                                                    android:layout_width="match_parent"-->
+<!--                                                                    android:layout_height="match_parent"-->
+<!--                                                                    android:text="@string/imagen1"-->
+<!--                                                                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"-->
+<!--                                                                    android:textColor="@color/white" />-->
+
+<!--                                                            </LinearLayout>-->
 
                                                         </RelativeLayout>
 
@@ -725,6 +797,27 @@
                                                                 android:scaleType="centerCrop"
                                                                 android:src="@drawable/pli" />
 
+<!--                                                            <ImageView-->
+<!--                                                                android:layout_width="match_parent"-->
+<!--                                                                android:layout_height="40dp"-->
+<!--                                                                android:layout_alignParentBottom="true"-->
+<!--                                                                android:src="@color/transparente" />-->
+
+<!--                                                            <LinearLayout-->
+<!--                                                                android:layout_width="match_parent"-->
+<!--                                                                android:layout_height="wrap_content"-->
+<!--                                                                android:orientation="vertical"-->
+<!--                                                                android:padding="5dp"-->
+<!--                                                                android:layout_alignParentBottom="true">-->
+
+<!--                                                                <TextView-->
+<!--                                                                    android:layout_width="match_parent"-->
+<!--                                                                    android:layout_height="match_parent"-->
+<!--                                                                    android:text="@string/imagen1"-->
+<!--                                                                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"-->
+<!--                                                                    android:textColor="@color/white" />-->
+
+<!--                                                            </LinearLayout>-->
 
                                                         </RelativeLayout>
 
@@ -925,6 +1018,28 @@
                                                                 android:layout_height="180dp"
                                                                 android:scaleType="centerCrop"
                                                                 android:src="@drawable/isomt" />
+
+                                                            <ImageView
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="40dp"
+                                                                android:layout_alignParentBottom="true"
+                                                                android:src="@color/transparente" />
+
+                                                            <LinearLayout
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="wrap_content"
+                                                                android:orientation="vertical"
+                                                                android:padding="5dp"
+                                                                android:layout_alignParentBottom="true">
+
+                                                                <TextView
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+                                                                    android:text="@string/imagen1"
+                                                                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                                                    android:textColor="@color/white" />
+
+                                                            </LinearLayout>
 
                                                         </RelativeLayout>
 

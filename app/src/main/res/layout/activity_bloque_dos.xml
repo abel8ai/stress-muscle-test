@@ -129,6 +129,28 @@
                                                                 android:scaleType="centerCrop"
                                                                 android:src="@drawable/cuclillasissy" />
 
+                                                            <ImageView
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="40dp"
+                                                                android:layout_alignParentBottom="true"
+                                                                android:src="@color/transparente" />
+
+                                                            <LinearLayout
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="wrap_content"
+                                                                android:orientation="vertical"
+                                                                android:padding="5dp"
+                                                                android:layout_alignParentBottom="true">
+
+                                                                <TextView
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+                                                                    android:text="@string/imagen2"
+                                                                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                                                    android:textColor="@color/white" />
+
+                                                            </LinearLayout>
+
                                                         </RelativeLayout>
 
                                                     </LinearLayout>
@@ -329,6 +351,27 @@
                                                                 android:scaleType="centerCrop"
                                                                 android:src="@drawable/curlnordic" />
 
+                                                            <ImageView
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="60dp"
+                                                                android:layout_alignParentBottom="true"
+                                                                android:src="@color/transparente" />
+
+                                                            <LinearLayout
+                                                                android:layout_width="match_parent"
+                                                                android:layout_height="wrap_content"
+                                                                android:orientation="vertical"
+                                                                android:padding="5dp"
+                                                                android:layout_alignParentBottom="true">
+
+                                                                <TextView
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="match_parent"
+                                                                    android:text="@string/imagen3"
+                                                                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                                                                    android:textColor="@color/white" />
+
+                                                            </LinearLayout>
 
                                                         </RelativeLayout>
 

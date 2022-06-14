@@ -149,7 +149,6 @@
     <string name="rb8">McGill, S.M., Childs, A. and Liebenson, C. (1999). Endurance times for low back stabilization exercises: clinical targets for testing and training from a normal database. Archives of Physical Medicine and Rehabilitation, 80(8), 941–944. doi:10.1016/S0003–9993(99)90087–4</string>
     <string name="salir">Salir</string>
 
-
     <string name="salir_confirmar">Por favor confirmar</string>
     <string name="salir_quieres">¿Quieres salir de la aplicación?</string>
     <string name="salir_si">SI</string>
@@ -157,6 +156,14 @@
     <string name="salir_gracias">Gracias</string>
     <string name="no_hay_nadie_aqu">No hay nadie aquí</string>
     <string name="editar">Editar</string>
+
+    //Cita de imagen
+    <string name="imagen1">Imagen tomada de Mcgill’s torso muscular endurance test battery</string>
+    <string name="imagen2">Imagen tomada de Sporlife Julio 2017</string>
+    <string name="imagen3"><![CDATA[Imagen reproduced from Bahr and Mæhlum (2002) with permission from the publisher (rLill-Ann Pris & Gazette Bok)]]></string>
+    <string name="imagen4">Imagen tomada de Sporlife Octubre 2017</string>
+    <string name="imagen5">Tomado de:\nhttp://cdeporte.rediris.es/revista/revista52/artactivacion422.htm</string>
+    <string name="imagen6">Tomado de:\nhttps://sp.depositphotos.com/stock-photos/pose-de-cangrejo.html</string>
 
     <string-array name="genders">
         <item>Masculino</item>
