@@ -165,6 +165,7 @@
 
     <string name="hombre">Male</string>
     <string name="mujer">Female</string>
+    <string name="pdf">Stabilizer muscle training.\nProposal of exercises with dosage</string>
 
     <string-array name="genders">
         <item>Male</item>

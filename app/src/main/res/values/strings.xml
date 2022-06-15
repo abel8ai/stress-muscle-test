@@ -167,6 +167,7 @@
 
     <string name="hombre">Masculino</string>
     <string name="mujer">Femenino</string>
+    <string name="pdf">Entrenamiento de los músculos estabilizadores.\nPropuesta de ejercicios con dosificación</string>
 
     <string-array name="genders">
         <item>Masculino</item>
