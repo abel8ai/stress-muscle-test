@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">Stabilizer Muscle Tests</string>
     <string name="menu_informaci_n">Información</string>
     <string name="menu_idioma">Idioma</string>
     <string name="menu_exportar_excel">Exportar Excel</string>
