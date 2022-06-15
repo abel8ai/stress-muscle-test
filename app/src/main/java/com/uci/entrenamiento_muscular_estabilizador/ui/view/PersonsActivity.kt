@@ -44,6 +44,7 @@ class PersonsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityPersonsBinding.inflate(layoutInflater)
+        supportActionBar!!.title = resources.getString(R.string.lista_personas)
         setContentView(binding.root)
         isAthlete = intent.extras!!.getString("person_type").equals("athlete")
         isPracticant = intent.extras!!.getString("person_type").equals("practicant")

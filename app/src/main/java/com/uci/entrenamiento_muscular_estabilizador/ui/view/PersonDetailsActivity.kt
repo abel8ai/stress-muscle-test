@@ -38,6 +38,7 @@ class PersonDetailsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityPersonDetailsBinding.inflate(layoutInflater)
+        supportActionBar!!.title = resources.getString(R.string.detalle)
         setContentView(binding.root)
         practicantViewModel
         athleteViewModel

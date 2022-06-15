@@ -35,6 +35,7 @@ class BloqueUnoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityBloqueUnoBinding.inflate(layoutInflater)
+        supportActionBar!!.title = resources.getString(R.string.dialog_block_1)
         setContentView(binding.root)
         context = this
         practicantViewModel

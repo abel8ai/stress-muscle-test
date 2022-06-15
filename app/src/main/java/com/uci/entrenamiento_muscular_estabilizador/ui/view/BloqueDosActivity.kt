@@ -34,6 +34,7 @@ class BloqueDosActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityBloqueDosBinding.inflate(layoutInflater)
+        supportActionBar!!.title = resources.getString(R.string.dialog_block_2)
         setContentView(binding.root)
         context = this
         practicantViewModel
