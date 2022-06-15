@@ -165,8 +165,13 @@
     <string name="imagen5">Vera et al. (2013). Tomado de:\nhttp://cdeporte.rediris.es/revista/revista52/artactivacion422.htm</string>
     <string name="imagen6">Tomado de:\nhttps://sp.depositphotos.com/stock-photos/pose-de-cangrejo.html</string>
 
+    <string name="hombre">Masculino</string>
+    <string name="mujer">Femenino</string>
+
     <string-array name="genders">
         <item>Masculino</item>
         <item>Femenino</item>
     </string-array>
+
+
 </resources>

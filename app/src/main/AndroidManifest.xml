@@ -45,7 +45,7 @@
         <activity
             android:name=".ui.view.MainActivity"
             android:exported="true"
-            android:label="Stabilizer Muscle Tests">
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

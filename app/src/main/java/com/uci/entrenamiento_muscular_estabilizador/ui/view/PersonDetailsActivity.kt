@@ -275,9 +275,9 @@ class PersonDetailsActivity : AppCompatActivity() {
         val hint = resources.getString(R.string.mandatory_field)
         bindingForm.spinnerSexo.adapter = adapter
         // auto fill fields
-        if (practicant!!.gender == "Masculino")
+        if (practicant!!.gender == "Masculino" || practicant!!.gender == "Male")
             bindingForm.spinnerSexo.setSelection(0)
-        else if (practicant!!.gender == "Femenino")
+        else if (practicant!!.gender == "Femenino" || practicant!!.gender == "Female")
             bindingForm.spinnerSexo.setSelection(1)
         val splitName = practicant!!.fullName.split(" ", ignoreCase = true, limit = 2)
         bindingForm.etNombre.setText(splitName[0])
