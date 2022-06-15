@@ -45,6 +45,7 @@ class MainActivity : AppCompatActivity() {
         sharedPref = getSharedPreferences("lang", Context.MODE_PRIVATE)
         val lang = sharedPref.getString("lang","es")
         setLocale(lang!!)
+        supportActionBar!!.title = resources.getString(R.string.app_name)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         checkWritePermission()
