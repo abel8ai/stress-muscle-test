@@ -53,9 +53,9 @@ class PracticantViewModel @Inject constructor(
         // Obtain specific test row
         val baseRow = ((practicant.age - 7) * 20)
         var testRow = 0
-        if (practicant.gender == "Masculino")
+        if (practicant.gender == "M")
             testRow = (testType.ordinal + 1) * 2 - 1
-        else if (practicant.gender == "Femenino")
+        else if (practicant.gender == "F")
             testRow = (testType.ordinal + 1) * 2
         val row = baseRow + testRow
         // Open excel from assets

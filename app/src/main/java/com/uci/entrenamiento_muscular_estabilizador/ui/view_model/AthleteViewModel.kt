@@ -46,9 +46,9 @@ class AthleteViewModel @Inject constructor(private val personDatabase: PersonDat
         // Obtain specific test row
         val baseRow = ((athlete.age-7)*20)
         var genderValue = 0
-        if (athlete.gender == "Masculino")
+        if (athlete.gender == "M")
             genderValue = 1
-        else if (athlete.gender == "Femenino")
+        else if (athlete.gender == "F")
             genderValue = 2
         val testRow = (testType.ordinal+1) * genderValue
         val row = baseRow + testRow

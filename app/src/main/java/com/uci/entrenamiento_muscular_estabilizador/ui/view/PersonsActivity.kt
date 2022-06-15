@@ -91,6 +91,7 @@ class PersonsActivity : AppCompatActivity() {
         val actionbar = supportActionBar
         actionbar!!.setDisplayHomeAsUpEnabled(true)
     }
+
     override fun onSupportNavigateUp(): Boolean {
         onBackPressed()
         return true
@@ -185,7 +186,11 @@ class PersonsActivity : AppCompatActivity() {
             } else {
                 val name = bindingForm.etNombre.text.toString()
                 val lastName = bindingForm.etApellidos.text.toString()
-                val gender = bindingForm.spinnerSexo.selectedItem.toString()
+                var gender = ""
+                if (bindingForm.spinnerSexo.selectedItemId == 0L)
+                    gender = "M"
+                else
+                    gender = "F"
                 val age = bindingForm.etEdad.text.toString().toInt()
                 val height = bindingForm.etEstatura.text.toString().toDouble()
                 val weight = bindingForm.etPeso.text.toString().toDouble()
@@ -289,7 +294,11 @@ class PersonsActivity : AppCompatActivity() {
             } else {
                 val name = bindingForm.etNombre.text.toString()
                 val lastName = bindingForm.etApellidos.text.toString()
-                val gender = bindingForm.spinnerSexo.selectedItem.toString()
+                var gender = ""
+                if (bindingForm.spinnerSexo.selectedItemId == 0L)
+                    gender = "M"
+                else
+                    gender = "F"
                 val age = bindingForm.etEdad.text.toString().toInt()
                 val height = bindingForm.etEstatura.text.toString().toDouble()
                 val weight = bindingForm.etPeso.text.toString().toDouble()
