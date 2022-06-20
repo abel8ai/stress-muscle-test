@@ -1,6 +1,7 @@
 package com.uci.entrenamiento_muscular_estabilizador.ui.view
 
 import android.content.Context
+import android.content.SharedPreferences
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -18,11 +19,12 @@ import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import java.util.*
 
 @AndroidEntryPoint
 class BloqueTresActivity : AppCompatActivity() {
     private lateinit var binding: ActivityBloqueTresBinding
-
+    private lateinit var sharedPref: SharedPreferences
     private val practicantViewModel: PracticantViewModel by viewModels()
     private val athleteViewModel: AthleteViewModel by viewModels()
     private var athlete: AthleteEntity? = null
@@ -33,6 +35,9 @@ class BloqueTresActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        sharedPref = getSharedPreferences("lang", Context.MODE_PRIVATE)
+        val lang = sharedPref.getString("lang", "es")
+        setLocale(lang!!)
         binding = ActivityBloqueTresBinding.inflate(layoutInflater)
         supportActionBar!!.title = resources.getString(R.string.dialog_block_3)
         setContentView(binding.root)
@@ -138,5 +143,13 @@ class BloqueTresActivity : AppCompatActivity() {
     override fun onSupportNavigateUp(): Boolean {
         onBackPressed()
         return true
+    }
+    private fun setLocale(language: String) {
+        val locale = Locale(language)
+        Locale.setDefault(locale)
+        val config = resources.configuration
+        config.locale = Locale(language)
+        resources.updateConfiguration(config,resources.displayMetrics)
+        onConfigurationChanged(config)
     }
 }

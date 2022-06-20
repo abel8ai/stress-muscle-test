@@ -1,5 +1,7 @@
 package com.uci.entrenamiento_muscular_estabilizador.ui.view
 
+import android.content.Context
+import android.content.SharedPreferences
 import android.graphics.Color
 import android.opengl.Visibility
 import android.os.Bundle
@@ -27,6 +29,7 @@ import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import java.util.*
 
 @AndroidEntryPoint
 class PersonsActivity : AppCompatActivity() {
@@ -39,10 +42,14 @@ class PersonsActivity : AppCompatActivity() {
     private var practicantList = mutableListOf<PracticantEntity>()
     private var isAthlete: Boolean = false
     private var isPracticant: Boolean = false
+    private lateinit var sharedPref: SharedPreferences
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        sharedPref = getSharedPreferences("lang", Context.MODE_PRIVATE)
+        val lang = sharedPref.getString("lang", "es")
+        setLocale(lang!!)
         binding = ActivityPersonsBinding.inflate(layoutInflater)
         supportActionBar!!.title = resources.getString(R.string.lista_personas)
         setContentView(binding.root)
@@ -361,5 +368,13 @@ class PersonsActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         loadData()
+    }
+    private fun setLocale(language: String) {
+        val locale = Locale(language)
+        Locale.setDefault(locale)
+        val config = resources.configuration
+        config.locale = Locale(language)
+        resources.updateConfiguration(config,resources.displayMetrics)
+        onConfigurationChanged(config)
     }
 }

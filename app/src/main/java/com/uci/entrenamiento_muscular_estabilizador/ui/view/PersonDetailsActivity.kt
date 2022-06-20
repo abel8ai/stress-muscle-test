@@ -1,6 +1,8 @@
 package com.uci.entrenamiento_muscular_estabilizador.ui.view
 
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -24,6 +26,7 @@ import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import java.util.*
 
 @AndroidEntryPoint
 class PersonDetailsActivity : AppCompatActivity() {
@@ -34,9 +37,13 @@ class PersonDetailsActivity : AppCompatActivity() {
     private var practicant: PracticantEntity? = null
     private var isAthlete: Boolean = false
     private var isPracticant: Boolean = false
+    private lateinit var sharedPref: SharedPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        sharedPref = getSharedPreferences("lang", Context.MODE_PRIVATE)
+        val lang = sharedPref.getString("lang", "es")
+        setLocale(lang!!)
         binding = ActivityPersonDetailsBinding.inflate(layoutInflater)
         supportActionBar!!.title = resources.getString(R.string.detalle)
         setContentView(binding.root)
@@ -511,6 +518,14 @@ class PersonDetailsActivity : AppCompatActivity() {
                 bindingForm.etDeporte.text.isEmpty() ||
                 bindingForm.etAnnos.text.isEmpty() ||
                 bindingForm.etMunicipio.text.isEmpty())
+    }
+    private fun setLocale(language: String) {
+        val locale = Locale(language)
+        Locale.setDefault(locale)
+        val config = resources.configuration
+        config.locale = Locale(language)
+        resources.updateConfiguration(config,resources.displayMetrics)
+        onConfigurationChanged(config)
     }
 
 }
