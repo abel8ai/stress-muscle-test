@@ -14,7 +14,7 @@ class PdfReaderActivity : AppCompatActivity() {
         setContentView(binding.root)
         val pdfName = intent.getStringExtra("doc_name")
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
-        supportActionBar!!.title = resources.getString(R.string.documento)
+        supportActionBar!!.title = resources.getString(R.string.pdf1)
         binding.pdfView
             .fromAsset("$pdfName")
             .defaultPage(0)

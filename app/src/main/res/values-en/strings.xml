@@ -36,7 +36,7 @@
     <string name="sobre_la_apk_stabilizer_muscle_tests1">The Stabilizer Muscle Tests apk is the result of the research activity of the R+D+i project \"Prevention of Injuries in Physical Activity and Sport\" that emerged in 2018 and is approved by the Scientific Council of the University of Sciences of the Physical Culture and Sport \"Manuel Fajardo\" in 2019.</string>
     <string name="sobre_la_apk_stabilizer_muscle_tests">ABOUT THE STABILIZER MUSCLE TESTS APK</string>
     <string name="leer_m_s">READ MORE</string>
-    <string name="principales_l_neas_de_investigaci_n1">1. Lifestyle and physical activity and sport.\\n2. Physical education, human development and social inclusion.\\n3. Knowledge management on healthy physical condition and life cycle.</string>
+    <string name="principales_l_neas_de_investigaci_n1">1. Lifestyle and physical activity and sport.\n2. Physical education, human development and social inclusion.\n3. Knowledge management on healthy physical condition and life cycle.</string>
     <string name="principales_l_neas_de_investigaci_n">MAIN LINES OF RESEARCH</string>
     <string name="objetivo1">Contribute to the generation of knowledge and training of skills that promote efficient and responsible professional performance, in the field of Physical Activity, Sports, Health Promotion and Education.</string>
     <string name="objetivo">Objective</string>
@@ -167,7 +167,7 @@
     <string name="hombre">Male</string>
     <string name="mujer">Female</string>
     <string name="pdf">Stabilizer muscle training.\nProposal of exercises with dosage</string>
-
+    <string name="pdf1">Stabilizer muscle training.</string>
     <string-array name="genders">
         <item>Male</item>
         <item>Female</item>
