@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Stabilizer Muscle Tests</string>
+    <string name="menu_informaci_n">Información</string>
+    <string name="menu_idioma">Idioma</string>
+    <string name="menu_exportar_excel">Exportar Excel</string>
+    <string name="misi_n">Misión</string>
+    <string name="misi_n1">Promover la gestión de conocimientos sobre actividad física, el deporte y la educación para la salud, anticipando la demanda social con un enfoque inter, multi y transdisciplinario.</string>
+    <string name="objetivo">Objetivo</string>
+    <string name="objetivo1">Contribuir a la generación de conocimientos y formación de competencias que promuevan un desempeño profesional eficiente y responsable, en el ámbito de la Actividad Física, el Deporte, la Promoción y Educación para la Salud.</string>
+    <string name="principales_l_neas_de_investigaci_n">PRINCIPALES LÍNEAS DE INVESTIGACIÓN</string>
+    <string name="principales_l_neas_de_investigaci_n1">1. Estilo de vida y la actividad física y el deporte.\n2. La educación física, el desarrollo humano y la inclusión social.\n3. Gestión del conocimiento sobre condición física saludable y ciclo de vida</string>
+    <string name="leer_m_s">LEER MÁS</string>
+    <string name="sobre_la_apk_stabilizer_muscle_tests">SOBRE LA APK STABILIZER MUSCLE TESTS</string>
+    <string name="sobre_la_apk_stabilizer_muscle_tests1">La apk Stabilizer Muscle Tests es el resultado de la actividad investigativa del proyecto I+D+i “Prevención de Lesiones en la Actividad Física y el Deporte” que surge en el 2018 y es aprobado por el Consejo Científico de la Universidad de Ciencias de la Cultura Física y el Deporte “Manuel Fajardo” en el 2019.</string>
+    <string name="ic_ceades_tema">Centro de Estudios para la Actividad Física, el Deporte y la Promoción de salud</string>
+    <string name="practicante">PRACTICANTE DE EJERCICIO FÍSICO</string>
+    <string name="atleta">ATLETA DE ALTO RENDIMIENTO</string>
+    <string name="espa_ol">Español</string>
+    <string name="ingl_s">Inglés</string>
+    <string name="nombre">Nombre</string>
+    <string name="nombre1">Nombre:</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="apellidos1">Apellidos:</string>
+    <string name="sexo">Sexo</string>
+    <string name="sexo1">Sexo:</string>
+    <string name="edad">Edad</string>
+    <string name="edad1">Edad:</string>
+    <string name="estatura">Estatura</string>
+    <string name="estatura1">Estatura:</string>
+    <string name="peso">Peso</string>
+    <string name="peso1">Peso:</string>
+    <string name="provincia">Provincia</string>
+    <string name="provincia1">Provincia:</string>
+    <string name="municipio">Municipio</string>
+    <string name="municipio1">Municipio:</string>
+    <string name="deporte">Deporte</string>
+    <string name="deporte1">Deporte:</string>
+    <string name="a_os_en_el_deporte">Años en el deporte</string>
+    <string name="a_os_en_el_deporte1">Años en el deporte:</string>
+    <string name="ejercicio_aerobio">Ejercicio Aerobio</string>
+    <string name="spinning" translatable="false">Spinning</string>
+    <string name="entrenamiento_musculacion">Entrenamiento Musculacion</string>
+    <string name="yoga">Yoga</string>
+    <string name="crossfit" translatable="false">Crossfit</string>
+    <string name="pilates" translatable="false">Pilates</string>
+    <string name="otro">Otro:</string>
+    <string name="pruebas">Pruebas</string>
+    <string name="sobre_la_apk_stabilizer_muscle_tests2">La apk pretende ser una herramienta que le permite al usuario poder evaluar, controlar y dirigir el entrenamiento de la resistencia a la fuerza de los músculos estabilizadores para la Actividad Física y el Deporte. La misma le proporciona criterios evaluativos y dosificación de ejercicios físicos específicos para el desarrollo de los músculos estabilizadores.</string>
+    <string name="orientaciones_para_aplicar_los_tests1">ORIENTACIONES PARA APLICAR LOS TESTS</string>
+    <string name="antes_de_aplicar_los_test_el_evaluado_debe">Antes de aplicar los test el evaluado debe:</string>
+    <string name="orientacion1">1. Realizar el calentamiento general y especial.</string>
+    <string name="orientacion2">2. En cada prueba se debe de respetar la cabalidad de la postura adecuada para la prueba (ver figura por prueba) y la metodología establecida.</string>
+    <string name="orientacion3">3. La prueba es finalizada cuando el sujeto varié o modifique la postura adecuada para la prueba (ver figura por prueba) o se acomode en una posición diferente.</string>
+    <string name="orientacion4">4. Se establece un descanso entre pruebas de 5 a 10 min.</string>
+    <string name="orientacion5">5. Se aplican un día primero los test del Bloque I por el orden en que tienen las pruebas de la 1 a la 4.</string>
+    <string name="orientacion6">6. Se aplican en un segundo día los test del Bloque II por el orden en que tienen las pruebas 1 y 2.</string>
+    <string name="orientacion7">7. Se aplican en un tercer día los test del Bloque III por el orden en que tienen las pruebas de la 1 a la 3.</string>
+    <string name="orientacion8">8. Con dolor, lesión y / o operación no se realiza ninguno de los test.</string>
+    <string name="orientacion9">9. Las pruebas pueden aplicarse cada 7, 15 ó 30 días.</string>
+    <string name="orientacion10">10. Si se pretende determinar la fiabilidad test-retest de las pruebas en un grupo población cada prueba como mínimo se debe de repetir al menos 3 veces con periodos de descanso entre 5 y 7 días para volver a realizar la misma prueba.</string>
+    <string name="orientacion11">11. Lo recomendado es descansar de 24 a 48 horas para aplicar los tests (Bloque I descanso 24 a 48 horas, Bloque II descanso 24 a 48 horas, Bloque III descanso 24 a 48 horas y puedo aplicar cualquier otro tipo de tests).</string>
+    <string name="bloque1_tema">BLOQUE I. Tests de campo para la valoración de la estabilidad del core</string>
+    <string name="bloque1_tema1">1. AbdFle (Flexor endurance test) o Test de resistencia de flexores del tronco (ADB-600)</string>
+    <string name="bt1">Este test implica los músculos principales flexores del tronco, es decir el recto abdominal el cual es una musculatura “global” (McGuill, 2007) y los músculos profundos transverso abdominal cuadrado lumbar y erector espinal. Estos músculos estabilizan la columna vertebral. El ángulo 60 se obtiene midiendo con un goniométro o cinta métrica la flexión del tronco con respecto al piso.</string>
+    <string name="bt1_obj1">Como se hace:</string>
+    <string name="bt1_obj2">El sujeto adopta la postura que se observa en la imagen y tendrá que mantener la misma, sin modificarla, el mayor tiempo posible que es medido con un cronometro por el profesor.</string>
+    <string name="bt1_obj3">Instrumentos:</string>
+    <string name="bt1_obj4">Alfombra de ejercicios y cronómetro.</string>
+    <string name="bt1_obj5">Se termina la prueba cuando:</string>
+    <string name="bt1_obj6">« Hay un cambio notable en la posición del tronco en desviación de la columna vertebral.\n« Lleve los hombros hacia adelante.\n« Haya un arco en la espalda dorsal.</string>
+    <string name="bloque1_tema2"><![CDATA[2. Test de puente prono (Bliss & Teeple, 2005) (PP)]]></string>
+    <string name="bt2">Test isométrico para valorar fundamentalmente la resistencia muscular anterior y posterior del core. Bliss y Teeple (2005) sugieren que el tiempo que deberían soportar los sujetos evaluados debería ser de al menos 60 segundos.</string>
+    <string name="bt1_obj7">El sujeto adopta la postura que se observa en la imagen y tendrá que mantener la misma, sin modificarla, el mayor tiempo posible.</string>
+    <string name="bt1_obj8">« Hay un cambio notable en la posición del tronco en desviación de la columna vertebral.\n« Las caderas cambian abajo o hacia arriba en un esfuerzo para mantener equilibrio y estabilidad.\n« Lleve los hombros hacia adelante.\n« Haya un arco en la espalda dorsal.</string>
+    <string name="sobre_la_apk">Sobre la aplicación</string>
+    <string name="bloque1_tema3">3. RsideB (Lateral side endurance tests-Right RsideB) o Puente lateral derecho (PPLD)</string>
+    <string name="bloque1_tema5">4. LsideB (Lateral side endurance tests-Left LsideB) Puente lateral izquierdo (PPLI)</string>
+    <string name="bt3"><![CDATA[Este test requiere la activación de la musculatura lateral del core, básicamente el cuadrado lumbar y la musculatura oblicua interna y externa, con una baja compresión discal (Lehman et al., 2005; McGuill, 1998; Axler & McGuill, 1997).]]></string>
+    <string name="bt1_obj9">El sujeto adopta la postura que se observa en la imagen y tendrá que mantener la misma, sin modificarla, el mayor tiempo posible.</string>
+    <string name="bt1_obj10">« Hay un cambio notable en la posición del tronco en desviación de la columna vertebral.\n« Las caderas cambian hacia abajo, adelante o hacia atrás en un esfuerzo para mantener equilibrio y estabilidad.\n« Lleve el hombro sin apoyo hacia adelante o hacia atrás.\n« Haya un arco en la espalda dorsal.</string>
+    <string name="bloque1_tema4">5. Test modificado de Biering-Sorensen (Biering-Sorensen, 1984) o Isométrico de tronco (ISM-T)</string>
+    <string name="bt4">Este test activa los músculos principales extensores del tronco, el longísimo y el multífido, los cuales forman parte del sistema estabilizador “local” (McGuill, 2007), pero no de los músculos de la cadera.</string>
+    <string name="bt1_obj11">El sujeto adopta la postura que se observa en la imagen y tendrá que mantener la misma, sin modificarla, el mayor tiempo posible.</string>
+    <string name="bt1_obj12">Alfombra de ejercicios, mesa de masaje, equipo para hacer extensiones de espalda y cronometro.</string>
+    <string name="bt1_obj13">« Hay un cambio notable en la posición del tronco en desviación de la columna vertebral.\n« No puede mantener la posición neutra del tronco con respecto a la horizontal.</string>
+    <string name="bloque2_tema">BLOQUE II. Tests de campo para la valoración de la estabilidad del complejo articular patelofermoral</string>
+    <string name="bloque2_tema1">1. Cuclilla Sissy (CS)</string>
+    <string name="bt5"><![CDATA[Este test implica los músculos principales que extiende la rodilla que conforman el cuádriceps, musculatura “grande y potente” (recto anterior, vasto externo, vasto interno y crural).\n\nPara lograr una correcta postura debes mantener los omóplatos unidos, el complejo lumbo pélvico, el abdomen y glúteos activados que son los que estabilizan la postura.\n\nLas rodillas se mantienen alejadas de la alfombra de ejercicios que se encuentra en el piso a la distancia de 5–7 cm.\n« 5 cm de distancia para ≥ 18 años.\n« 7 cm de distancia para < 18 años.]]></string>
+    <string name="bt2_obj1">El sujeto adopta la postura que se observa en la imagen y tendrá que mantener la misma, sin modificarla, el mayor tiempo posible.</string>
+    <string name="bt2_obj2">Alfombra de ejercicios, pared o espaldera y cronometro.</string>
+    <string name="bt2_obj3">« Hay un cambio notable en la posición del tronco en desviación de la columna vertebral.\n« No puede mantener la posición neutra del tronco con respecto a la vertical.\n« Las caderas cambian adelante o hacia atrás en un esfuerzo para mantener equilibrio y estabilidad.\n« Cuando pegue las rodillas a la alfombra de ejercicios o modifique la distancia de la rodilla con respecto a la alfombra de ejercicios.</string>
+    <string name="bloque2_tema2">2. Curl Nordic o Curl Nórdico (CN)</string>
+    <string name="bt6">Test isométrico valora fundamentalmente la resistencia muscular de los músculos posteriores de la pierna (semitendinoso, semibembranoso y bíceps femoral). El complejo muscular Core, haciendo énfasis en la zona lumbo-pélvica deben estar activado y la región lumbar lo más aplanada posible.\n\nEl ángulo 40 se obtiene midiendo con un goniométro o cinta métrica la flexión del tronco con respecto al piso.</string>
+    <string name="bt2_obj4">El sujeto adopta la postura que se observa en la imagen y tendrá que mantener postura el sujeto 1 a 40 grados (nivel donde está la flecha azul) lo más inclinado, recto y estable posible, sin modificarla, el mayor tiempo posible.</string>
+    <string name="bt2_obj5">« Hay un cambio notable en la posición del tronco en desviación de la columna vertebral.\n« No puede mantener la posición neutra del tronco con respecto a la vertical.\n« Lleve los glúteos hacia atrás.\n« Haya un arco en la espalda dorsal.</string>
+
+    <string name="lista_personas">Listado de personas</string>
+    <string name="detalle">Detalle personal</string>
+    <string name="bloque3_tema">BLOQUE III. Otras propuestas de tests de campos para la valoración de la estabilidad</string>
+    <string name="bloque3_tema1">1. Cuadrupedía (CUAD)</string>
+    <string name="bt7"><![CDATA[Este test implica los músculos principales que estabilizan el complejo articular de los hombros, lumbo pélvico y patelo femoral.\n\nPara lograr una correcta postura debes mantener los omóplatos unidos, brazos extendidos, el complejo lumbo pélvico en posición neutra, cuádriceps, abdomen y glúteos activados que son los que estabilizan la postura y la espalda lo más recta posible.\n\nLas rodillas se mantienen alejadas de la alfombra de ejercicios que se encuentra en el piso a la distancia de 5–7 cm.\n« 5 cm de distancia para ≥ 18 años.\n« 7 cm de distancia para < 18 años.]]></string>
+    <string name="bt3_obj1">El sujeto adopta la postura que se observa en la imagen y tendrá que mantener la misma, sin modificarla, el mayor tiempo posible.</string>
+    <string name="bt3_obj2">« Hay un cambio notable en la posición del tronco en desviación de la columna vertebral.\n« No puede mantener la posición neutra del tronco con respecto a la horizontal.\n« Las caderas cambian abajo o hacia arriba en un esfuerzo para mantener equilibrio y estabilidad.\n« Cuando pegue las rodillas o modifique la distancia a la alfombra de ejercicios.</string>
+    <string name="bloque3_tema2">2. Puente Dorsal (PD)</string>
+    <string name="bt8">Este test implica los músculos principales que eleva la pelvis conforman musculatura extensora del tronco.\n\nPara lograr una correcta postura debes mantener los omóplatos unidos, el complejo lumbo pélvico, el abdomen y glúteos activados que son los que estabilizan la postura y la espalda lo más pegada al piso. Las manos se colocan con una separación a la anchura de los hombros y los pies juntos en flexión dorsal o plantar.</string>
+    <string name="bt3_obj3">El sujeto adopta la postura que se observa en la imagen y tendrá que mantener la misma, sin modificarla, el mayor tiempo posible.</string>
+    <string name="bt3_obj4">Alfombra de ejercicios, mesa de masaje y cronometro.</string>
+    <string name="bt3_obj5">« Hay un cambio notable en la posición del tronco en desviación de la columna vertebral.\n« No puede mantener la posición neutra del tronco con respecto a la horizontal.\n« Las caderas cambian abajo o hacia arriba en un esfuerzo para mantener equilibrio y estabilidad.\n« Flexión del/os codo/s.\n« Los glúteos y extremidades inferiores se acercan al piso, camilla o alfombra de ejercicios.\n« Haya un arco en la espalda dorsal.</string>
+    <string name="bloque3_tema3">3. Cangrejo (CANG)</string>
+    <string name="bt9">Este test implica los músculos principales que estabilizan el complejo extensor del tronco. Para lograr una correcta postura debes mantener los omóplatos unidos, brazos extendidos, el complejo lumbo pélvico alineado con las rodillas, el abdomen y glúteos activados que son los que estabilizan la postura y la espalda lo más recta posible.</string>
+    <string name="bt3_obj6">El sujeto adopta la postura que se observa en la imagen y tendrá que mantener la misma, sin modificarla, el mayor tiempo posible.</string>
+    <string name="bt3_obj7">« Hay un cambio notable en la posición del tronco en desviación de la columna vertebral.\n« No puede mantener la posición neutra del tronco con respecto a la horizontal.\n« Las caderas cambian abajo o hacia arriba en un esfuerzo para mantener equilibrio y estabilidad.\n« Flexión del/os codo/s.</string>
+    <string name="prueba">PRUEBA</string>
+    <string name="resultado">RESULTADO</string>
+    <string name="evaluaci_n">EVALUACIÓN</string>
+    <string name="insertar_evaluaci_n">Insertar evaluación</string>
+    <string name="masculino">Masculino</string>
+    <string name="femenino">Femenino</string>
+    <string name="bibliograf_a">Bibliografías</string>
+    <string name="rb_tema">Batería cubana de Test que evalúa la resistencia a la fuerza de los músculos estabilizadores se apoya de los referentes bibliográficos siguientes:</string>
+    <string name="salir">Salir</string>
+
+    <string name="button_modify">Modificar</string>
+    <string name="dialog_modify_athlete">Modificar Atleta</string>
+    <string name="dialog_modify_practicant">Modificar Practicante</string>
+
+    <string name="salir_confirmar">Por favor confirmar</string>
+    <string name="salir_quieres">¿Quieres salir de la aplicación?</string>
+    <string name="salir_si">SI</string>
+    <string name="salir_no">NO</string>
+    <string name="salir_gracias">Gracias</string>
+    <string name="no_hay_nadie_aqu">No hay nadie aquí</string>
+    <string name="editar">Editar</string>
+
+    //Cita de imagen
+    <string name="imagen1">Imagen tomada de Mcgill’s torso muscular endurance test battery</string>
+    <string name="imagen2">Imagen tomada de Sporlife Julio 2017</string>
+    <string name="imagen3"><![CDATA[Imagen reproduced from Bahr and Mæhlum (2002) with permission from the publisher (rLill-Ann Pris & Gazette Bok)]]></string>
+    <string name="imagen4">Imagen tomada de Sporlife Octubre 2017</string>
+    <string name="imagen5">Vera et al. (2013). Tomado de:\nhttp://cdeporte.rediris.es/revista/revista52/artactivacion422.htm</string>
+    <string name="imagen6">Tomado de:\nhttps://sp.depositphotos.com/stock-photos/pose-de-cangrejo.html</string>
+
+    <string name="hombre">Masculino</string>
+    <string name="mujer">Femenino</string>
+    <string name="pdf">Entrenamiento de los músculos estabilizadores.\nPropuesta de ejercicios con dosificación</string>
+    <string name="pdf1">Entrenamiento de los músculos estabilizadores.</string>
+    <string-array name="genders">
+        <item>Masculino</item>
+        <item>Femenino</item>
+    </string-array>
+
+</resources>

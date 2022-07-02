@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Stabilizer Muscle Tests</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_accept">Accept</string>
+    <string name="nombre">Name</string>
+    <string name="nombre1">Name:</string>
+    <string name="apellidos">Last name</string>
+    <string name="apellidos1">Last name:</string>
+    <string name="edad">Age</string>
+    <string name="edad1">Age:</string>
+    <string name="sexo">Sex</string>
+    <string name="sexo1">Sex:</string>
+    <string name="estatura">Height</string>
+    <string name="estatura1">Height:</string>
+    <string name="peso">Weight</string>
+    <string name="peso1">Weight:</string>
+    <string name="provincia">Province</string>
+    <string name="provincia1">Province:</string>
+    <string name="municipio">Municipality</string>
+    <string name="municipio1">Municipality:</string>
+    <string name="deporte">Sport</string>
+    <string name="deporte1">Sport:</string>
+    <string name="a_os_en_el_deporte">Years in the sport</string>
+    <string name="a_os_en_el_deporte1">Years in the sport:</string>
+    <string name="ejercicio_aerobio">Aerobic Exercise</string>
+    <string name="entrenamiento_musculacion">Bodybuilding Training</string>
+    <string name="otro">Other:</string>
+    <string name="pruebas">Tests</string>
+
+    <string name="ingl_s">English</string>
+    <string name="atleta">HIGH PERFORMANCE ATHLETE</string>
+    <string name="espa_ol">Spanish</string>
+    <string name="practicante">PHYSICAL EXERCISE PRACTITIONER</string>
+    <string name="ic_ceades_tema">Study Center for Physical Activity, Sports and Health Promotion</string>
+    <string name="sobre_la_apk_stabilizer_muscle_tests1">The Stabilizer Muscle Tests apk is the result of the research activity of the R+D+i project \"Prevention of Injuries in Physical Activity and Sport\" that emerged in 2018 and is approved by the Scientific Council of the University of Sciences of the Physical Culture and Sport \"Manuel Fajardo\" in 2019.</string>
+    <string name="sobre_la_apk_stabilizer_muscle_tests">ABOUT THE STABILIZER MUSCLE TESTS APK</string>
+    <string name="leer_m_s">READ MORE</string>
+    <string name="principales_l_neas_de_investigaci_n1">1. Lifestyle and physical activity and sport.\n2. Physical education, human development and social inclusion.\n3. Knowledge management on healthy physical condition and life cycle.</string>
+    <string name="principales_l_neas_de_investigaci_n">MAIN LINES OF RESEARCH</string>
+    <string name="objetivo1">Contribute to the generation of knowledge and training of skills that promote efficient and responsible professional performance, in the field of Physical Activity, Sports, Health Promotion and Education.</string>
+    <string name="objetivo">Objective</string>
+    <string name="misi_n1">Promote the management of knowledge about physical activity, sports and health education, anticipating social demand with an inter, multi and transdisciplinary approach.</string>
+    <string name="misi_n">Mission</string>
+    <string name="menu_exportar_excel">Excel Export</string>
+    <string name="menu_idioma">Language</string>
+    <string name="menu_informaci_n">Information</string>
+    <string name="dialog_block_3">Block III</string>
+    <string name="dialog_block_2">Block II</string>
+    <string name="dialog_block_1">Block I</string>
+    <string name="mandatory_field">*Obligatory field*</string>
+    <string name="dialog_add_practicant">Add Practitioner</string>
+    <string name="dialog_add_athlete">Add Athlete</string>
+
+    <string name="age_limit_40">Age should be between 7 and 40</string>
+    <string name="age_limit_55">Age should be between 7 and 55</string>
+    <string name="saved_result">Result saved</string>
+    <string name="confirm_delete">Are you sure you want to delete this person?</string>
+    <string name="dialog_delete_athlete">Remove Athlete</string>
+    <string name="dialog_delete_practicant">Remove Practitioner</string>
+    <string name="documento">Document</string>
+
+    <string name="read_less">READ LESS</string>
+    <string name="read_more">READ MORE</string>
+
+    <string name="button_add">Add</string>
+    <string name="sobre_la_apk_stabilizer_muscle_tests2">The apk aims to be a tool that allows the user to be able to evaluate, control and direct the training of resistance to the strength of the stabilizing muscles for Physical Activity and Sports. It provides evaluative criteria and dosage of specific physical exercises for the development of stabilizer muscles.</string>
+    <string name="orientaciones_para_aplicar_los_tests1">GUIDELINES TO APPLY THE TESTS</string>
+    <string name="antes_de_aplicar_los_test_el_evaluado_debe">Before applying the tests, the evaluated must:</string>
+    <string name="orientacion1">1. Carry out the general and special warm-up.</string>
+    <string name="orientacion2">2. In each test, the fullness of the proper posture for the test must be respected (see figure by test) and the established methodology.</string>
+    <string name="orientacion3">3. The test is finished when the subject varies or modifies the appropriate posture for the test (see figure for test) or settles in a different position.</string>
+    <string name="orientacion4">4. A break between tests of 5 to 10 min is established.</string>
+    <string name="orientacion5">5. Block I tests are applied one day first in the order in which they have tests from 1 to 4.</string>
+    <string name="orientacion6">6. On a second day, the Block II tests are applied in the order in which they have tests 1 and 2.</string>
+    <string name="orientacion7">7. On a third day, the Block III tests are applied in the order in which they have tests from 1 to 3.</string>
+    <string name="orientacion8">8. With pain, injury and/or operation, none of the tests are performed.</string>
+    <string name="orientacion9">9. Tests can be applied every 7, 15 or 30 days.</string>
+    <string name="orientacion10">10. If the aim is to determine the test-retest reliability of the tests in a population group, each test must be repeated at least 3 times with rest periods between 5 and 7 days to perform the same test again.</string>
+    <string name="orientacion11">11. The recommended thing is to rest from 24 to 48 hours to apply the tests (Block I rest 24 to 48 hours, Block II rest 24 to 48 hours, Block III rest 24 to 48 hours and I can apply any other type of test).</string>
+    <string name="bloque1_tema">BLOCK I. Field tests to assess core stability</string>
+    <string name="bloque1_tema1">1. AbdFle (Flexor endurance test) or Trunk flexor endurance test (FE-600)</string>
+    <string name="bt1">This test involves the main flexor muscles of the trunk, that is, the rectus abdominis, which is a “global” muscle (McGuill, 2007), and the deep transversus abdominis quadratus lumborum and spinal erector muscles. These muscles stabilize the spine. The angle 600 is obtained by measuring the flexion of the trunk with respect to the floor with a goniometer or tape measure.</string>
+    <string name="bt1_obj1">How to do it:</string>
+    <string name="bt1_obj2">The subject adopts the posture that is observed in the image and will have to maintain it, without modifying it, for as long as possible, which is measured with a stopwatch by the teacher.</string>
+    <string name="bt1_obj3">Instruments:</string>
+    <string name="bt1_obj4">Exercise mat and stopwatch.</string>
+    <string name="bt1_obj5">The test ends when:</string>
+    <string name="bt1_obj6">« There is a noticeable change in the position of the trunk in deviation of the spine.\n« Roll your shoulders forward.\n« There is an arch in the dorsal back.</string>
+    <string name="bloque1_tema2">2. Prone bridge test (Bliss &amp; Teeple, 2005) (PB)</string>
+    <string name="bt2">Isometric test to fundamentally assess the anterior and posterior muscular resistance of the core. Bliss and Teeple (2005) suggest that the time that the evaluated subjects should endure should be at least 60 seconds.</string>
+    <string name="bt1_obj7">The subject adopts the posture seen in the image and will have to maintain it, without modifying it, for as long as possible.</string>
+    <string name="bt1_obj8">« There is a noticeable change in the position of the trunk in deviation of the spine.\n« The hips shift down or up in an effort to maintain balance and stability.\n« Roll your shoulders forward.\n« There is an arch in the dorsal back.</string>
+    <string name="sobre_la_apk">About the app</string>
+    <string name="bloque1_tema3">3. RsideB (Lateral side endurance tests-Right RsideB) or Right lateral bridge (RLB)</string>
+    <string name="bloque1_tema5">4. LsideB (Lateral side endurance tests-Left LsideB) Left lateral bridge (LLB)</string>
+    <string name="bt3">This test requires activation of the lateral muscles of the core, basically the quadratus lumborum and the internal and external oblique muscles, with low disc compression (Lehman et al., 2005; McGuill, 1998; Axler &amp; McGuill, 1997).</string>
+    <string name="bt1_obj9">The subject adopts the posture seen in the image and will have to maintain it, without modifying it, for as long as possible.</string>
+    <string name="bt1_obj10">« There is a noticeable change in the position of the trunk in deviation of the spine.\n« The hips shift down, forward, or backward in an effort to maintain balance and stability.\n« Your shoulder forward or backward without support.\n« There is an arch in the dorsal back.</string>
+    <string name="bloque1_tema4">5. Modified Biering-Sorensen test (Biering-Sorensen, 1984) or isometric trunk test (BS-T)</string>
+    <string name="bt4">This test activates the main extensor muscles of the trunk, the longissimus and the multifidus, which are part of the “local” stabilizing system (McGuill, 2007), but not the hip muscles.</string>
+    <string name="bt1_obj11">The subject adopts the posture seen in the image and will have to maintain it, without modifying it, for as long as possible.</string>
+    <string name="bt1_obj12">Exercise mat, massage table, equipment to do back extensions and stopwatch.</string>
+    <string name="bt1_obj13">« There is a noticeable change in the position of the trunk in deviation of the spine.\n« Cannot maintain neutral trunk position relative to horizontal.</string>
+    <string name="bloque2_tema">BLOCK II. Field tests to assess the stability of the patellofermoral joint complex</string>
+    <string name="bloque2_tema1">1. Sissy Squat (SS)</string>
+    <string name="bt5"><![CDATA[This test involves the main muscles that extend the knee that make up the quadriceps, “large and powerful” muscles (anterior rectus, vastus lateralis, vastus medialis and cruris).\n\nTo achieve a correct posture you must keep the shoulder blades together, the lumbopelvic complex, the abdomen and the gluteus activated, which are what stabilize the posture.\n\nThe knees are kept away from the exercise mat lying on the floor at the distance of 5–7 cm.\n« 5 cm distance for ≥ 18 years.\n« 7 cm distance for < 18 years.]]></string>
+    <string name="bt2_obj1">The subject adopts the posture seen in the image and will have to maintain it, without modifying it, for as long as possible.</string>
+    <string name="bt2_obj2">Exercise mat, wall or trellis and stopwatch.</string>
+    <string name="bt2_obj3">« There is a noticeable change in the position of the trunk in deviation of the spine.\n« Cannot maintain neutral trunk position relative to vertical.\n« The hips shift forward or backward in an effort to maintain balance and stability.\n« When you stick your knees to the exercise mat or change the distance of your knee from the exercise mat.</string>
+    <string name="bloque2_tema2">2. Curl Nordic (CN)</string>
+    <string name="bt6">Isometric test fundamentally assesses the muscular resistance of the posterior muscles of the leg (semitendinosus, semibembranosus and biceps femoris). The Core muscle complex, emphasizing the lumbo-pelvic area, must be activated and the lumbar region as flat as possible.\n\nThe angle 40 is obtained by measuring the flexion of the trunk with respect to the floor with a goniometer or tape measure.</string>
+    <string name="bt2_obj4">The subject adopts the posture shown in the image and will have to maintain the subject is posture from 1 to 40 degrees (level where the blue arrow is) as inclined, straight and stable as possible, without modifying it, for as long as possible.</string>
+    <string name="bt2_obj5">« There is a noticeable change in the position of the trunk in deviation of the spine.\n« Cannot maintain neutral trunk position relative to vertical.\n« Pull your buttocks back.\n« There is an arch in the dorsal back.</string>
+
+    <string name="lista_personas">List of people</string>
+    <string name="detalle">Personal detail</string>
+    <string name="bloque3_tema">BLOCK III. Other field test proposals for stability assessment</string>
+    <string name="bloque3_tema1">1. Quadrupedism (QUAD)</string>
+    <string name="bt7"><![CDATA[This test involves the main muscles that stabilize the shoulder joint complex, lumbopelvic and patellofemoral.\n\nTo achieve a correct posture you must keep your shoulder blades together, your arms extended, your lumbopelvic complex in a neutral position, your quadriceps, abdomen and glutes activated, which are what stabilize your posture and your back as straight as possible.\n\nThe knees are kept away from the exercise mat lying on the floor at the distance of 5–7 cm.\n« 5 cm distance for ≥ 18 years.\n« 7 cm distance for < 18 years.]]></string>
+    <string name="bt3_obj1">The subject adopts the posture seen in the image and will have to maintain it, without modifying it, for as long as possible.</string>
+    <string name="bt3_obj2">« There is a noticeable change in the position of the trunk in deviation of the spine.\n« Cannot maintain neutral trunk position relative to horizontal.\n« The hips shift down or up in an effort to maintain balance and stability.\n« When you hit your knees or change the distance to the exercise mat.</string>
+    <string name="bloque3_tema2">2. Dorsal Bridge (DB)</string>
+    <string name="bt8">This test involves the main muscles that raise the pelvis make up the extensor muscles of the trunk.\n\nTo achieve a correct posture you must keep the shoulder blades together, the lumbopelvic complex, the abdomen and the gluteus activated, which are the ones that stabilize the posture and the back as close to the floor as possible. The hands are placed shoulder-width apart and the feet together in dorsiflexion or plantar flexion.</string>
+    <string name="bt3_obj3">The subject adopts the posture seen in the image and will have to maintain it, without modifying it, for as long as possible.</string>
+    <string name="bt3_obj4">Exercise mat, massage table and stopwatch.</string>
+    <string name="bt3_obj5">« There is a noticeable change in the position of the trunk in deviation of the spine.\n« Cannot maintain neutral trunk position relative to horizontal.\n« The hips shift down or up in an effort to maintain balance and stability.\n« Flexion of the elbow(s).\n« The buttocks and lower extremities are brought closer to the floor, stretcher or exercise mat.\n« There is an arch in the dorsal back.</string>
+    <string name="bloque3_tema3">3. Crab (CRAB)</string>
+    <string name="bt9">This test involves the main muscles that stabilize the trunk extensor complex. To achieve a correct posture, you must keep your shoulder blades together, arms extended, the lumbopelvic complex aligned with your knees, your abdomen and buttocks activated, which are what stabilize your posture and your back as straight as possible.</string>
+    <string name="bt3_obj6">The subject adopts the posture seen in the image and will have to maintain it, without modifying it, for as long as possible.</string>
+    <string name="bt3_obj7">« There is a noticeable change in the position of the trunk in deviation of the spine.\n« Cannot maintain neutral trunk position relative to horizontal.\n« The hips shift down or up in an effort to maintain balance and stability.\n« Flexion of the elbow(s).</string>
+    <string name="prueba">TEST</string>
+    <string name="resultado">SCORE</string>
+    <string name="evaluaci_n">EVALUATION</string>
+    <string name="insertar_evaluaci_n">Insert evaluation</string>
+    <string name="masculino">Male</string>
+    <string name="femenino">Female</string>
+    <string name="bibliograf_a">Bibliographies</string>
+    <string name="rb_tema">Cuban Test Battery that evaluates the strength resistance of the stabilizing muscles is supported by the following bibliographical references:</string>
+    <string name="rb1">Anderson, A., Hoffman, J. Johnson, B., Simonson, A., Urquhart, L. (2014). Core Strength Testing: Developing Normative Data for Three Clinical Tests. University Retrieved from Sophia, the St. Catherine University repository</string>
+    <string name="rb2">Dejanovic, A., Cambridge, E., McGill, S. (2014). Isometric torso muscle endurance profiles in adolescents aged 15–18: normative values for age and gender differences. Ann Hum Biol,; 41(2): 153–158</string>
+    <string name="rb3">Heredia, J.R.; Peña, G.; Segarra, V.; Martín, M.; Edir Da Silva Grigoletto, M.E. Moyano, M.; Sampietro, M. (2014) Entrenamiento de la resistencia específica del core: reflexiones y propuestas. Instituto Internacional de Ciencias del Ejercicio Físico y Salud. Recuperado de:</string>
+    <string name="rb4">Dejanovic, A., Harvey, E., McGill, S. (2012). Changes in Torso Muscle Endurance Profiles in Children Aged 7 to 14 Years: Reference Values. Arch Phys Med Rehabil;93 (12):2295–301.</string>
+    <string name="rb5">Vera, F.J.; Barbado, D.; Flores, B.; Alonso, J.I. y Elvira, J.L.L. (2013). Activación de los músculos del tronco en ejercicios de estabilización raquídea / Trunk muscle activation in spine stabilization exercises. Revista Internacional de Medicina y Ciencias de la Actividad Física y el Deporte vol. 13 (52) pp. 673–685.</string>
+    <string name="rb6"><![CDATA[Mckeon, M. D., Albert, W. J., & Neary, J. P. (2006). Assesment of neuromuscular and haemodynamic activity in individuals with and without chronic low back pain. Dynamic medicine: DM, 5,6.]]></string>
+    <string name="rb7"><![CDATA[McGill, S. M., Hughson, R. L., & Parks, K. (2000). Lumbar erector spinae oxygenation during prolonged contractions: implications for prolonged work. Ergonomics, 43(4), 486–493.]]></string>
+    <string name="rb8">McGill, S.M., Childs, A. and Liebenson, C. (1999). Endurance times for low back stabilization exercises: clinical targets for testing and training from a normal database. Archives of Physical Medicine and Rehabilitation, 80(8), 941–944. doi:10.1016/S0003–9993(99)90087–4</string>
+    <string name="salir">Exit</string>
+
+    <string name="salir_confirmar">Please confirm</string>
+    <string name="salir_quieres">Are you want to exit the app?</string>
+    <string name="salir_si">YES</string>
+    <string name="salir_no">NO</string>
+    <string name="salir_gracias">Thank you</string>
+    <string name="no_hay_nadie_aqu">There is nobody here</string>
+    <string name="editar">Edit</string>
+
+    <string name="button_modify">Modify</string>
+    <string name="dialog_modify_athlete">Modify Athlete</string>
+    <string name="dialog_modify_practicant">Modify Practitioner</string>
+
+    //Cita de imagen
+    <string name="imagen1">Image taken from Mcgill\'s muscular torso endurance test battery</string>
+    <string name="imagen2">Image taken from Sporlife July 2017</string>
+    <string name="imagen3">Imagen reproduced from Bahr and Mæhlum (2002) with permission from the publisher (rLill-Ann Pris &amp; Gazette Bok)</string>
+    <string name="imagen4">Image taken from Sporlife October 2017</string>
+    <string name="imagen5">Vera et al. (2013). Taken from:\nhttp://cdeporte.rediris.es/revista/revista52/artactivacion422.htm</string>
+    <string name="imagen6">Taken from:\nhttps://sp.depositphotos.com/stock-photos/pose-de-cangrejo.html</string>
+
+    <string name="hombre">Male</string>
+    <string name="mujer">Female</string>
+    <string name="pdf">Stabilizer muscle training.\nProposal of exercises with dosage</string>
+    <string name="pdf1">Stabilizer muscle training.</string>
+    <string-array name="genders">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+</resources>

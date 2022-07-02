@@ -25,16 +25,19 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Nombre"
+                    android:text="@string/nombre"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/grey_90"
                     android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/et_nombre"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                    android:layout_marginStart="10dp"
+                    android:inputType="textCapWords|textPersonName"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/grey_60" />
 
             </LinearLayout>
 
@@ -47,16 +50,19 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Apellidos"
+                    android:text="@string/apellidos"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/grey_90"
                     android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/et_apellidos"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                    android:layout_marginStart="10dp"
+                    android:inputType="textCapWords|textPersonName"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/grey_60" />
 
             </LinearLayout>
 
@@ -76,8 +82,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Sexo"
+                        android:text="@string/sexo"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/grey_90"
                         android:textStyle="bold" />
 
                     <androidx.appcompat.widget.AppCompatSpinner
@@ -85,7 +92,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
-                        android:layout_marginEnd="10dp" />
+                        android:layout_marginEnd="10dp"
+                        android:padding="10dp" />
 
                 </LinearLayout>
 
@@ -99,15 +107,16 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Edad"
+                        android:text="@string/edad"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/grey_90"
                         android:textStyle="bold" />
 
                     <EditText
                         android:id="@+id/et_edad"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="16dp"
+                        android:layout_marginStart="10dp"
                         android:inputType="number"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -132,15 +141,16 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Estatura"
+                        android:text="@string/estatura"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/grey_90"
                         android:textStyle="bold" />
 
                     <EditText
                         android:id="@+id/et_estatura"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="16dp"
+                        android:layout_marginStart="10dp"
                         android:layout_marginEnd="10dp"
                         android:inputType="numberDecimal"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
@@ -157,15 +167,16 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Peso"
+                        android:text="@string/peso"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/grey_90"
                         android:textStyle="bold" />
 
                     <EditText
                         android:id="@+id/et_peso"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="16dp"
+                        android:layout_marginStart="10dp"
                         android:inputType="numberDecimal"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -183,16 +194,19 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Provincia"
+                    android:text="@string/provincia"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/grey_90"
                     android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/et_provincia"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                    android:layout_marginStart="10dp"
+                    android:inputType="textCapWords"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/grey_60" />
 
             </LinearLayout>
 
@@ -205,16 +219,19 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Municipio"
+                    android:text="@string/municipio"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/grey_90"
                     android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/et_municipio"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                    android:layout_marginStart="10dp"
+                    android:inputType="textCapWords"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/grey_60" />
 
             </LinearLayout>
 
@@ -230,8 +247,9 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Ejercicio Aerobio"
+                    android:text="@string/ejercicio_aerobio"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/grey_90"
                     android:textStyle="bold" />
 
                 <androidx.appcompat.widget.AppCompatCheckBox
@@ -239,8 +257,9 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Spinning"
+                    android:text="@string/spinning"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/grey_90"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -257,8 +276,9 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1.2"
-                    android:text="Entrenamiento Musculacion"
+                    android:text="@string/entrenamiento_musculacion"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/grey_90"
                     android:textStyle="bold" />
 
                 <androidx.appcompat.widget.AppCompatCheckBox
@@ -266,8 +286,9 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.8"
-                    android:text="Yoga"
+                    android:text="@string/yoga"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/grey_90"
                     android:textStyle="bold" />
 
 
@@ -286,8 +307,9 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Crossfit"
+                    android:text="@string/crossfit"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/grey_90"
                     android:textStyle="bold" />
 
                 <androidx.appcompat.widget.AppCompatCheckBox
@@ -295,8 +317,9 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Pilates"
+                    android:text="@string/pilates"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/grey_90"
                     android:textStyle="bold" />
 
 
@@ -312,18 +335,22 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Otro"
+                    android:text="@string/otro"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/grey_90"
                     android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/etOtro"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                    android:layout_marginStart="10dp"
+                    android:inputType="textCapWords"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/grey_60" />
 
             </LinearLayout>
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -335,7 +362,9 @@
                     android:layout_height="wrap_content"
                     android:background="#00FFFFFF"
                     android:text="@string/button_cancel"
-                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textAllCaps="true"
+                    android:textColor="@color/blue_dark"
+                    android:textStyle="bold"
                     app:layout_constraintEnd_toStartOf="@id/bt_adicionar"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -346,9 +375,12 @@
                     android:layout_height="wrap_content"
                     android:background="#00FFFFFF"
                     android:text="@string/button_add"
-                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textAllCaps="true"
+                    android:textColor="@color/blue_dark"
+                    android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>

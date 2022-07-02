@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/seleccion_idioma"
+        android:title="@string/menu_idioma">
+        <menu>
+            <item
+                android:id="@+id/idioma_es"
+                android:title="@string/espa_ol"
+                android:icon="@drawable/banderita_cup"
+                android:checkable="true"/>
+            <item
+                android:id="@+id/idioma_en"
+                android:title="@string/ingl_s"
+                android:icon="@drawable/banderita_gbp"
+                android:checkable="true"/>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/ic_bibliografia"
+        android:icon="@drawable/ic_informacion"
+        android:title="@string/bibliograf_a"/>
+
+    <item
+        android:id="@+id/excel_export"
+        android:icon="@drawable/excel_export"
+        android:title="@string/menu_exportar_excel"/>
+
+    <item
+        android:id="@+id/salir"
+        android:title="@string/salir"/>
+
+</menu>

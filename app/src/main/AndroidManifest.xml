@@ -7,24 +7,49 @@
 
     <application
         android:name=".EntrenaminetoMusculoEstabilizador"
+        android:requestLegacyExternalStorage="true"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_logo_muscle"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_logo_muscle_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EntrenamientoMuscularEstabilizador">
         <activity
-            android:name=".ui.view.TestsActivity"
-            android:exported="false" />
+            android:name=".ui.view.BibliographyActivity"
+            android:exported="false"
+            android:label="@string/bibliograf_a"/>
+        <activity
+            android:name=".ui.view.AboutActivity"
+            android:exported="false"
+            android:label="@string/sobre_la_apk" />
+        <activity
+            android:name=".ui.view.BloqueTresActivity"
+            android:exported="false"
+            android:label="@string/dialog_block_3" />
+        <activity
+            android:name=".ui.view.BloqueDosActivity"
+            android:exported="false"
+            android:label="@string/dialog_block_2" />
+        <activity
+            android:name=".ui.view.BloqueUnoActivity"
+            android:exported="false"
+            android:label="@string/dialog_block_1" />
         <activity
             android:name=".ui.view.PersonDetailsActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/detalle" />
         <activity
             android:name=".ui.view.PersonsActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:label="@string/lista_personas" />
+        <activity
+            android:name=".ui.view.PdfReaderActivity"
+            android:exported="false"
+            android:label="@string/pdf1" />
         <activity
             android:name=".ui.view.MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

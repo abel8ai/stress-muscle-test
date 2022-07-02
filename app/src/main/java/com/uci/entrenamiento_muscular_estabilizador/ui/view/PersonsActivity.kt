@@ -1,11 +1,18 @@
 package com.uci.entrenamiento_muscular_estabilizador.ui.view
 
+import android.content.Context
+import android.content.SharedPreferences
 import android.graphics.Color
+import android.opengl.Visibility
 import android.os.Bundle
+import android.view.View
 import android.widget.ArrayAdapter
+import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.isEmpty
+import androidx.core.view.isVisible
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.uci.entrenamiento_muscular_estabilizador.R
@@ -22,6 +29,7 @@ import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import java.util.*
 
 @AndroidEntryPoint
 class PersonsActivity : AppCompatActivity() {
@@ -30,15 +38,20 @@ class PersonsActivity : AppCompatActivity() {
     private val athleteViewModel: AthleteViewModel by viewModels()
     private lateinit var practicantAdapter: PracticantAdapter
     private lateinit var athleteAdapter: AthleteAdapter
-    private val athletelist = emptyList<AthleteEntity>()
-    private val practicantList = emptyList<PracticantEntity>()
+    private var athletelist = mutableListOf<AthleteEntity>()
+    private var practicantList = mutableListOf<PracticantEntity>()
     private var isAthlete: Boolean = false
     private var isPracticant: Boolean = false
+    private lateinit var sharedPref: SharedPreferences
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        sharedPref = getSharedPreferences("lang", Context.MODE_PRIVATE)
+        val lang = sharedPref.getString("lang", "es")
+        setLocale(lang!!)
         binding = ActivityPersonsBinding.inflate(layoutInflater)
+        supportActionBar!!.title = resources.getString(R.string.lista_personas)
         setContentView(binding.root)
         isAthlete = intent.extras!!.getString("person_type").equals("athlete")
         isPracticant = intent.extras!!.getString("person_type").equals("practicant")
@@ -57,29 +70,64 @@ class PersonsActivity : AppCompatActivity() {
                 addPracticantDialog()
         }
         if (isAthlete) {
-            athleteViewModel.athleteModel.observe(this, Observer {
-                athleteAdapter = AthleteAdapter(it)
-                binding.rvPersonList.adapter = athleteAdapter
+            athleteViewModel.athletesModel.observe(this, Observer {
+                athletelist = it
+                if (athletelist.isEmpty())
+                    setVisible("iv")
+                else {
+                    setVisible("rv")
+                    athleteAdapter = AthleteAdapter(athletelist, athleteViewModel)
+                    binding.rvPersonList.adapter = athleteAdapter
+                }
+
             })
         } else if (isPracticant) {
-            practicantViewModel.practicantModel.observe(this, Observer {
-                practicantAdapter = PracticantAdapter(it)
-                binding.rvPersonList.adapter = practicantAdapter
+            practicantViewModel.practicantsModel.observe(this, Observer {
+                practicantList = it
+                if (practicantList.isEmpty())
+                    setVisible("iv")
+                else {
+                    setVisible("rv")
+                    practicantAdapter = PracticantAdapter(practicantList, practicantViewModel)
+                    binding.rvPersonList.adapter = practicantAdapter
+                }
+
             })
         }
 
+        //actionbar - set back button
+        val actionbar = supportActionBar
+        actionbar!!.setDisplayHomeAsUpEnabled(true)
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 
     private fun initRecycleView() {
         binding.rvPersonList.layoutManager = LinearLayoutManager(this)
         if (isAthlete) {
-            athleteAdapter = AthleteAdapter(athletelist)
-            binding.rvPersonList.adapter = athleteAdapter
+            if (athletelist.isEmpty())
+                setVisible("iv")
+            else {
+                setVisible("rv")
+                athleteAdapter = AthleteAdapter(athletelist, athleteViewModel)
+                binding.rvPersonList.adapter = athleteAdapter
+            }
+
         } else if (isPracticant) {
-            practicantAdapter = PracticantAdapter(practicantList)
-            binding.rvPersonList.adapter = practicantAdapter
+            if (practicantList.isEmpty())
+                setVisible("iv")
+            else {
+                setVisible("rv")
+                practicantAdapter = PracticantAdapter(practicantList, practicantViewModel)
+                binding.rvPersonList.adapter = practicantAdapter
+            }
+
         }
     }
+
 
     private fun loadData() {
         if (isAthlete) {
@@ -113,7 +161,7 @@ class PersonsActivity : AppCompatActivity() {
             dialog.dismiss()
         }
         bindingForm.btAdicionar.setOnClickListener {
-            if (!validAthleteFields(bindingForm)) {
+            if (!validPracticantFields(bindingForm)) {
                 if (bindingForm.etNombre.text.isEmpty()) {
                     bindingForm.etNombre.hint = hint
                     bindingForm.etNombre.setHintTextColor(Color.RED)
@@ -146,7 +194,11 @@ class PersonsActivity : AppCompatActivity() {
             } else {
                 val name = bindingForm.etNombre.text.toString()
                 val lastName = bindingForm.etApellidos.text.toString()
-                val gender = bindingForm.spinnerSexo.selectedItem.toString()
+                var gender = ""
+                if (bindingForm.spinnerSexo.selectedItemId == 0L)
+                    gender = "M"
+                else
+                    gender = "F"
                 val age = bindingForm.etEdad.text.toString().toInt()
                 val height = bindingForm.etEstatura.text.toString().toDouble()
                 val weight = bindingForm.etPeso.text.toString().toDouble()
@@ -159,14 +211,32 @@ class PersonsActivity : AppCompatActivity() {
                 val pilates = bindingForm.cbPilates.isChecked
                 val crossfit = bindingForm.cbCrossfit.isChecked
                 val other = bindingForm.etOtro.text.toString()
-                val practicant = PracticantEntity(
-                    null, "$name $lastName", gender, age, height, weight,
-                    province, municip, aerobics, spinning, muscle, crossfit, yoga, pilates, other
-                )
-                CoroutineScope(Dispatchers.IO).launch {
-                    practicantViewModel.addPractricant(practicant)
+                if (age < 7 || age > 55)
+                    Toast.makeText(this, R.string.age_limit_55, Toast.LENGTH_SHORT)
+                        .show()
+                else {
+                    val practicant = PracticantEntity(
+                        null,
+                        "$name $lastName",
+                        gender,
+                        age,
+                        height,
+                        weight,
+                        province,
+                        municip,
+                        aerobics,
+                        spinning,
+                        muscle,
+                        crossfit,
+                        yoga,
+                        pilates,
+                        other
+                    )
+                    CoroutineScope(Dispatchers.IO).launch {
+                        practicantViewModel.addPractricant(practicant)
+                    }
+                    dialog.dismiss()
                 }
-                dialog.dismiss()
             }
         }
     }
@@ -232,7 +302,11 @@ class PersonsActivity : AppCompatActivity() {
             } else {
                 val name = bindingForm.etNombre.text.toString()
                 val lastName = bindingForm.etApellidos.text.toString()
-                val gender = bindingForm.spinnerSexo.selectedItem.toString()
+                var gender = ""
+                if (bindingForm.spinnerSexo.selectedItemId == 0L)
+                    gender = "M"
+                else
+                    gender = "F"
                 val age = bindingForm.etEdad.text.toString().toInt()
                 val height = bindingForm.etEstatura.text.toString().toDouble()
                 val weight = bindingForm.etPeso.text.toString().toDouble()
@@ -240,20 +314,24 @@ class PersonsActivity : AppCompatActivity() {
                 val municip = bindingForm.etMunicipio.text.toString()
                 val sport = bindingForm.etDeporte.text.toString()
                 val yearsInSport = bindingForm.etAnnos.text.toString().toInt()
-
-                val athlete = AthleteEntity(
-                    null, "$name $lastName", gender, age, height, weight,
-                    province, municip, sport, yearsInSport
-                )
-                CoroutineScope(Dispatchers.IO).launch {
-                    athleteViewModel.addAthlete(athlete)
+                if (age < 7 || age > 40)
+                    Toast.makeText(this, R.string.age_limit_40, Toast.LENGTH_SHORT)
+                        .show()
+                else {
+                    val athlete = AthleteEntity(
+                        null, "$name $lastName", gender, age, height, weight,
+                        province, municip, sport, yearsInSport
+                    )
+                    CoroutineScope(Dispatchers.IO).launch {
+                        athleteViewModel.addAthlete(athlete)
+                    }
+                    dialog.dismiss()
                 }
-                dialog.dismiss()
             }
         }
     }
 
-    private fun validAthleteFields(bindingForm: DialogAddPracticantBinding): Boolean {
+    private fun validPracticantFields(bindingForm: DialogAddPracticantBinding): Boolean {
         return !(bindingForm.etNombre.text.isEmpty() ||
                 bindingForm.etApellidos.text.isEmpty() ||
                 bindingForm.etEdad.text.isEmpty() ||
@@ -273,5 +351,30 @@ class PersonsActivity : AppCompatActivity() {
                 bindingForm.etDeporte.text.isEmpty() ||
                 bindingForm.etAnnos.text.isEmpty() ||
                 bindingForm.etMunicipio.text.isEmpty())
+    }
+
+    private fun setVisible(view: String) {
+        if (view == "rv") {
+            binding.rvPersonList.visibility = View.VISIBLE
+            binding.tvEmptyList.visibility = View.GONE
+            binding.ivEmptyList.visibility = View.GONE
+        } else if (view == "iv") {
+            binding.rvPersonList.visibility = View.GONE
+            binding.ivEmptyList.visibility = View.VISIBLE
+            binding.tvEmptyList.visibility = View.VISIBLE
+        }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        loadData()
+    }
+    private fun setLocale(language: String) {
+        val locale = Locale(language)
+        Locale.setDefault(locale)
+        val config = resources.configuration
+        config.locale = Locale(language)
+        resources.updateConfiguration(config,resources.displayMetrics)
+        onConfigurationChanged(config)
     }
 }
