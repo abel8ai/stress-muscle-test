@@ -158,8 +158,8 @@
                                 expandableTextView:animDuration="500"
                                 expandableTextView:collapsedLines="3"
                                 expandableTextView:isExpanded="false"
-                                expandableTextView:readLessText="LEER MENOS"
-                                expandableTextView:readMoreText="LEER MÁS"
+                                expandableTextView:readLessText="@string/read_less"
+                                expandableTextView:readMoreText="@string/read_more"
                                 expandableTextView:textMode="line" />
 
                         </LinearLayout>
@@ -213,8 +213,8 @@
                                 expandableTextView:animDuration="500"
                                 expandableTextView:collapsedLines="3"
                                 expandableTextView:isExpanded="false"
-                                expandableTextView:readLessText="LEER MENOS"
-                                expandableTextView:readMoreText="LEER MÁS"
+                                expandableTextView:readLessText="@string/read_less"
+                                expandableTextView:readMoreText="@string/read_more"
                                 expandableTextView:textMode="line" />
 
                         </LinearLayout>
@@ -309,8 +309,8 @@
                                 expandableTextView:animDuration="500"
                                 expandableTextView:collapsedLines="3"
                                 expandableTextView:isExpanded="false"
-                                expandableTextView:readLessText="LEER MENOS"
-                                expandableTextView:readMoreText="LEER MÁS"
+                                expandableTextView:readLessText="@string/read_less"
+                                expandableTextView:readMoreText="@string/read_more"
                                 expandableTextView:textMode="line" />
 
                         </LinearLayout>
@@ -357,8 +357,8 @@
                                 expandableTextView:animDuration="500"
                                 expandableTextView:collapsedLines="3"
                                 expandableTextView:isExpanded="false"
-                                expandableTextView:readLessText="LEER MENOS"
-                                expandableTextView:readMoreText="LEER MÁS"
+                                expandableTextView:readLessText="@string/read_less"
+                                expandableTextView:readMoreText="@string/read_more"
                                 expandableTextView:textMode="line" />
 
                         </LinearLayout>
@@ -412,8 +412,8 @@
                                 expandableTextView:animDuration="500"
                                 expandableTextView:collapsedLines="3"
                                 expandableTextView:isExpanded="false"
-                                expandableTextView:readLessText="LEER MENOS"
-                                expandableTextView:readMoreText="LEER MÁS"
+                                expandableTextView:readLessText="@string/read_less"
+                                expandableTextView:readMoreText="@string/read_more"
                                 expandableTextView:textMode="line" />
 
                         </LinearLayout>
@@ -549,8 +549,8 @@
                                 expandableTextView:animDuration="500"
                                 expandableTextView:collapsedLines="3"
                                 expandableTextView:isExpanded="false"
-                                expandableTextView:readLessText="LEER MENOS"
-                                expandableTextView:readMoreText="LEER MÁS"
+                                expandableTextView:readLessText="@string/read_less"
+                                expandableTextView:readMoreText="@string/read_more"
                                 expandableTextView:textMode="line" />
 
                         </LinearLayout>
@@ -604,8 +604,8 @@
                                 expandableTextView:animDuration="500"
                                 expandableTextView:collapsedLines="3"
                                 expandableTextView:isExpanded="false"
-                                expandableTextView:readLessText="LEER MENOS"
-                                expandableTextView:readMoreText="LEER MÁS"
+                                expandableTextView:readLessText="@string/read_less"
+                                expandableTextView:readMoreText="@string/read_more"
                                 expandableTextView:textMode="line" />
 
                         </LinearLayout>

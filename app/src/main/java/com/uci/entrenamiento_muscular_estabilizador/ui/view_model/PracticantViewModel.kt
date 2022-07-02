@@ -5,7 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.uci.entrenamiento_muscular_estabilizador.core.TestType
 import com.uci.entrenamiento_muscular_estabilizador.data.model.database.PersonDatabase
-import com.uci.entrenamiento_muscular_estabilizador.data.model.database.entities.AthleteEntity
+import com.uci.entrenamiento_muscular_estabilizador.data.model.database.dao.PracticantDao
 import com.uci.entrenamiento_muscular_estabilizador.data.model.database.entities.PracticantEntity
 import dagger.hilt.android.lifecycle.HiltViewModel
 import org.apache.poi.hssf.usermodel.HSSFWorkbook
@@ -16,7 +16,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class PracticantViewModel @Inject constructor(
-    private val personDatabase: PersonDatabase,
+    private val practicantDao: PracticantDao,
     private val assetManager: AssetManager
 ) : ViewModel() {
 
@@ -24,29 +24,29 @@ class PracticantViewModel @Inject constructor(
     val practicantModel = MutableLiveData<PracticantEntity>()
 
     suspend fun getAllPracticants() {
-        practicantsModel.postValue(personDatabase.getPracticantDao().getAllPracticants())
+        practicantsModel.postValue(practicantDao.getAllPracticants())
     }
 
     suspend fun getPracticantById(id: Int) {
-        practicantModel.postValue(personDatabase.getPracticantDao().getPracticantById(id))
+        practicantModel.postValue(practicantDao.getPracticantById(id))
     }
 
     suspend fun addPractricant(practicant: PracticantEntity): Long {
-        val success = personDatabase.getPracticantDao().insertPracticant(practicant)
-        practicantsModel.postValue(personDatabase.getPracticantDao().getAllPracticants())
+        val success = practicantDao.insertPracticant(practicant)
+        practicantsModel.postValue(practicantDao.getAllPracticants())
         return success
     }
 
     suspend fun updatePracticant(practicant: PracticantEntity) {
-        personDatabase.getPracticantDao().updatePracticant(practicant)
+        practicantDao.updatePracticant(practicant)
         practicantModel.postValue(
-            personDatabase.getPracticantDao().getPracticantById(practicant.id!!)
+            practicantDao.getPracticantById(practicant.id!!)
         )
     }
 
     suspend fun deletePracticant(practicant: PracticantEntity) {
-        personDatabase.getPracticantDao().deletePracticant(practicant)
-        practicantsModel.postValue(personDatabase.getPracticantDao().getAllPracticants())
+        practicantDao.deletePracticant(practicant)
+        practicantsModel.postValue(practicantDao.getAllPracticants())
     }
 
     fun evaluateTest(testType: TestType, practicant: PracticantEntity, measure: Double): String {
@@ -86,12 +86,12 @@ class PracticantViewModel @Inject constructor(
             evaluateTest(TestType.ISOCUAD, practicant, practicant.measureIsocuad)
         practicant.evalPd = evaluateTest(TestType.PD, practicant, practicant.measurePd)
         practicant.evalCang = evaluateTest(TestType.PD, practicant, practicant.measureCang)
-        personDatabase.getPracticantDao().updatePracticant(practicant)
+        practicantDao.updatePracticant(practicant)
     }
 
     suspend fun createPracticantSheet(workbook: Workbook) {
         val practicantsheet = workbook.createSheet("Practicantes")
-        val practicantList = personDatabase.getPracticantDao().getAllPracticants()
+        val practicantList = practicantDao.getAllPracticants()
         // Create Header
         val head = practicantsheet.createRow(0)
         head.createCell(0).setCellValue("Nombre y Apellidos")

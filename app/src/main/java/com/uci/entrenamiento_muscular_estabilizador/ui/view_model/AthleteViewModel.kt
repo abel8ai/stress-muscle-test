@@ -5,6 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.uci.entrenamiento_muscular_estabilizador.core.TestType
 import com.uci.entrenamiento_muscular_estabilizador.data.model.database.PersonDatabase
+import com.uci.entrenamiento_muscular_estabilizador.data.model.database.dao.AthleteDao
 import com.uci.entrenamiento_muscular_estabilizador.data.model.database.entities.AthleteEntity
 import dagger.hilt.android.lifecycle.HiltViewModel
 import org.apache.poi.hssf.usermodel.HSSFWorkbook
@@ -14,32 +15,32 @@ import org.apache.poi.ss.usermodel.Workbook
 import javax.inject.Inject
 
 @HiltViewModel
-class AthleteViewModel @Inject constructor(private val personDatabase: PersonDatabase, private val assetManager: AssetManager) : ViewModel() {
+class AthleteViewModel @Inject constructor(private val athleteDao: AthleteDao, private val assetManager: AssetManager) : ViewModel() {
 
     val athletesModel = MutableLiveData<MutableList<AthleteEntity>>()
     val athleteModel = MutableLiveData<AthleteEntity>()
 
     suspend fun getAllAthletes() {
-        athletesModel.postValue(personDatabase.getAthleteDao().getAllAthletes())
+        athletesModel.postValue(athleteDao.getAllAthletes())
     }
 
     suspend fun getAthleteById(id:Int){
-        athleteModel.postValue(personDatabase.getAthleteDao().getAthleteById(id))
+        athleteModel.postValue(athleteDao.getAthleteById(id))
     }
 
     suspend fun addAthlete(athlete:AthleteEntity):Long {
-        val success = personDatabase.getAthleteDao().insertAthlete(athlete)
-        athletesModel.postValue(personDatabase.getAthleteDao().getAllAthletes())
+        val success = athleteDao.insertAthlete(athlete)
+        athletesModel.postValue(athleteDao.getAllAthletes())
         return success
     }
     suspend fun updateAthlete(athlete: AthleteEntity){
-        personDatabase.getAthleteDao().updateAthlete(athlete)
-        athleteModel.postValue(personDatabase.getAthleteDao().getAthleteById(athlete.id!!))
+        athleteDao.updateAthlete(athlete)
+        athleteModel.postValue(athleteDao.getAthleteById(athlete.id!!))
     }
 
     suspend fun deleteAthlete(athlete: AthleteEntity){
-        personDatabase.getAthleteDao().deleteAthlete(athlete)
-        athletesModel.postValue(personDatabase.getAthleteDao().getAllAthletes())
+        athleteDao.deleteAthlete(athlete)
+        athletesModel.postValue(athleteDao.getAllAthletes())
     }
 
     fun evaluateTest(testType : TestType, athlete: AthleteEntity, measure:Double):String {
@@ -79,12 +80,12 @@ class AthleteViewModel @Inject constructor(private val personDatabase: PersonDat
         athlete.evalIsocuad = evaluateTest(TestType.ISOCUAD,athlete,athlete.measureIsocuad)
         athlete.evalPd = evaluateTest(TestType.PD,athlete,athlete.measurePd)
         athlete.evalCang = evaluateTest(TestType.CANG,athlete,athlete.measureCang)
-        personDatabase.getAthleteDao().updateAthlete(athlete)
+        athleteDao.updateAthlete(athlete)
     }
 
     suspend fun createAthleteSheet(workbook : Workbook){
         val athletesheet = workbook.createSheet("Atletas")
-        val athleteList = personDatabase.getAthleteDao().getAllAthletes()
+        val athleteList = athleteDao.getAllAthletes()
         // Create Header
         val head = athletesheet.createRow(0)
         head.createCell(0).setCellValue("Nombre y Apellidos")
